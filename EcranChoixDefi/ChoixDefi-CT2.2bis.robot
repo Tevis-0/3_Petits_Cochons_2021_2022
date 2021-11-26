@@ -28,7 +28,6 @@ testBoutonsbloqués
         END
         ${coordsx} =   ${coordsy} + 110
     END
-
-
+    
     @{coordsxy} =   ${coordsx}    ${coordsxy}
             sk.Click Region     ${coordsxy}
