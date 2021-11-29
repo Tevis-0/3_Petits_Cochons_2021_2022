@@ -1,766 +1,816 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211129 11:29:17.109" rpa="false" schemaversion="2">
-<suite id="s1" name="ChoixDefi-CT" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT.robot">
-<test id="s1-t1" name="prerequisDuChoixDuDefi">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211129 16:38:20.025" rpa="false" schemaversion="2">
+<suite id="s1" name="ChoixDefi-CT2.2" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT2.2.robot">
+<test id="s1-t1" name="Manyfik">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20211129 11:29:20.341" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:20.329" endtime="20211129 11:29:20.341"/>
+<msg timestamp="20211129 16:38:23.505" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\ChoixDefi-CT2]</msg>
+<status status="PASS" starttime="20211129 16:38:23.493" endtime="20211129 16:38:23.506"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:20.328" endtime="20211129 11:29:20.341"/>
+<status status="PASS" starttime="20211129 16:38:23.493" endtime="20211129 16:38:23.506"/>
 </kw>
-<kw name="creationProfil">
+<kw name="Trobi1">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211129 11:29:21.621" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20211129 11:29:21.621" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181760844.png'/&gt;
-[log] CLICK on L[388,1064]@S(0) (551 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:20.342" endtime="20211129 11:29:21.621"/>
+<msg timestamp="20211129 16:38:24.783" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20211129 16:38:24.783" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200304013.png'/&gt;
+[log] CLICK on L[351,1064]@S(0) (545 msec)</msg>
+<status status="PASS" starttime="20211129 16:38:23.506" endtime="20211129 16:38:24.783"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>creerUnProfil.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:22.676" level="INFO">Params: [creerUnProfil.png]</msg>
-<msg timestamp="20211129 11:29:22.676" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181761880.png'/&gt;
-[log] CLICK on L[511,432]@S(0) (540 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:21.621" endtime="20211129 11:29:22.676"/>
-</kw>
-<kw name="Input Text" library="sk">
-<arg>cadrePsedo.png</arg>
-<arg>Psedo0</arg>
-<doc>Input text
- Image could be empty</doc>
-<msg timestamp="20211129 11:29:24.459" level="INFO">Params: [cadrePsedo.png, Psedo0]
-Input Text:
-Psedo0</msg>
-<msg timestamp="20211129 11:29:24.459" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181763238.png'/&gt;
-[log] CLICK on L[1015,363]@S(0) (537 msec)
-[log]  TYPE "Psedo0"</msg>
-<status status="PASS" starttime="20211129 11:29:22.676" endtime="20211129 11:29:24.459"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>choixCouleur.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:25.473" level="INFO">Params: [choixCouleur.png]</msg>
-<msg timestamp="20211129 11:29:25.473" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181764689.png'/&gt;
-[log] CLICK on L[919,456]@S(0) (540 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:24.459" endtime="20211129 11:29:25.473"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>eregistrePsedo.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:26.441" level="INFO">Params: [eregistrePsedo.png]</msg>
-<msg timestamp="20211129 11:29:26.441" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181765689.png'/&gt;
-[log] CLICK on L[963,659]@S(0) (537 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:25.473" endtime="20211129 11:29:26.441"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>boutonJouer.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:28.505" level="INFO">Params: [boutonJouer.png]</msg>
-<msg timestamp="20211129 11:29:28.505" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181767689.png'/&gt;
-[log] CLICK on L[708,443]@S(0) (530 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:26.441" endtime="20211129 11:29:28.505"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>Progression.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:29.849" level="INFO">Params: [Progression.png]</msg>
-<msg timestamp="20211129 11:29:29.849" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181769086.png'/&gt;
-[log] CLICK on L[961,531]@S(0) (526 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:28.506" endtime="20211129 11:29:29.849"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:20.342" endtime="20211129 11:29:29.849"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:20.328" endtime="20211129 11:29:29.850"/>
-</test>
-<test id="s1-t2" name="ChoixDefi-CT1.1">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:29.857" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:29.852" endtime="20211129 11:29:29.858"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:29.852" endtime="20211129 11:29:29.858"/>
-</kw>
-<kw name="verificationTitre">
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:29:31.874" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211129 11:29:29.859" endtime="20211129 11:29:31.874"/>
+<msg timestamp="20211129 16:38:26.788" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211129 16:38:24.783" endtime="20211129 16:38:26.788"/>
 </kw>
-<kw name="Get Text" library="sk">
-<var>${titre}</var>
-<arg>\\ChoixDefi-CT1\\titre.png</arg>
-<doc>Get text</doc>
-<msg timestamp="20211129 11:29:32.326" level="INFO">Params: [\ChoixDefi-CT1\titre.png]</msg>
-<msg timestamp="20211129 11:29:32.326" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181772123.png'/&gt;</msg>
-<msg timestamp="20211129 11:29:32.326" level="INFO">${titre} = JOUER</msg>
-<status status="PASS" starttime="20211129 11:29:31.874" endtime="20211129 11:29:32.326"/>
+<kw name="Create List" library="BuiltIn">
+<var>${reg}</var>
+<arg>${571}</arg>
+<arg>${527}</arg>
+<arg>${83}</arg>
+<arg>${88}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211129 16:38:26.792" level="INFO">${reg} = [571, 527, 83, 88]</msg>
+<status status="PASS" starttime="20211129 16:38:26.788" endtime="20211129 16:38:26.793"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:29.858" endtime="20211129 11:29:32.326"/>
+<for flavor="IN RANGE">
+<var>${difficultes}</var>
+<value>3</value>
+<iter>
+<var name="${difficultes}">0</var>
+<for flavor="IN RANGE">
+<var>${defis}</var>
+<value>6</value>
+<iter>
+<var name="${defis}">0</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:30.456" level="INFO">Params: [[Ljava.lang.Object;@4bfea72f]</msg>
+<msg timestamp="20211129 16:38:30.456" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200306836.png'/&gt;
+[log] CLICK on L[612,571]@S(0) (543 msec)</msg>
+<msg timestamp="20211129 16:38:30.456" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200310442.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:26.794" endtime="20211129 16:38:30.456"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:29.851" endtime="20211129 11:29:32.327"/>
-</test>
-<test id="s1-t3" name="ChoixDefi-CT1.2">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:32.332" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:32.328" endtime="20211129 11:29:32.333"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:32.328" endtime="20211129 11:29:32.333"/>
-</kw>
-<kw name="verificationPsedo">
-<kw name="Sleep" library="BuiltIn">
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
 <arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:29:34.347" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211129 11:29:32.334" endtime="20211129 11:29:34.347"/>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:30.876" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:30.876" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200310768.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:30.457" endtime="20211129 16:38:30.876"/>
 </kw>
-<kw name="Get Text" library="sk">
-<arg>\\ChoixDefi-CT1\\Psedo.png</arg>
-<doc>Get text</doc>
-<msg timestamp="20211129 11:29:34.749" level="INFO">Params: [\ChoixDefi-CT1\Psedo.png]</msg>
-<msg timestamp="20211129 11:29:34.749" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181774598.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:34.347" endtime="20211129 11:29:34.749"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:30.878" level="INFO">${buff} = 691</msg>
+<status status="PASS" starttime="20211129 16:38:30.877" endtime="20211129 16:38:30.878"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:32.333" endtime="20211129 11:29:34.749"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:30.878" endtime="20211129 16:38:30.878"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:32.327" endtime="20211129 11:29:34.750"/>
-</test>
-<test id="s1-t4" name="ChoixDefi-CT1.3">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:34.755" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:34.752" endtime="20211129 11:29:34.755"/>
+<status status="PASS" starttime="20211129 16:38:26.794" endtime="20211129 16:38:30.878"/>
+</iter>
+<iter>
+<var name="${defis}">1</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:34.478" level="INFO">Params: [[Ljava.lang.Object;@60858a9f]</msg>
+<msg timestamp="20211129 16:38:34.478" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200310905.png'/&gt;
+[log] CLICK on L[732,571]@S(0) (531 msec)</msg>
+<msg timestamp="20211129 16:38:34.478" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200314471.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:30.878" endtime="20211129 16:38:34.478"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:34.751" endtime="20211129 11:29:34.755"/>
-</kw>
-<kw name="verificationXP">
-<kw name="Get Text" library="sk">
-<arg>\\ChoixDefi-CT1\\XP0.png</arg>
-<doc>Get text</doc>
-<msg timestamp="20211129 11:29:35.118" level="INFO">Params: [\ChoixDefi-CT1\XP0.png]</msg>
-<msg timestamp="20211129 11:29:35.118" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181774971.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:34.756" endtime="20211129 11:29:35.118"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:34.756" endtime="20211129 11:29:35.118"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:34.751" endtime="20211129 11:29:35.119"/>
-</test>
-<test id="s1-t5" name="ChoixDefi-CT1.4">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:35.123" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:35.120" endtime="20211129 11:29:35.123"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:35.120" endtime="20211129 11:29:35.124"/>
-</kw>
-<kw name="verificationAffichageNiveaux">
-<kw name="Get Text" library="sk">
-<arg>\\ChoixDefi-CT1\\niveaux.png</arg>
-<doc>Get text</doc>
-<msg timestamp="20211129 11:29:35.544" level="INFO">Params: [\ChoixDefi-CT1\niveaux.png]</msg>
-<msg timestamp="20211129 11:29:35.544" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181775360.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:35.124" endtime="20211129 11:29:35.545"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:35.124" endtime="20211129 11:29:35.545"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:35.119" endtime="20211129 11:29:35.545"/>
-</test>
-<test id="s1-t6" name="ChoixDefi-CT1.5">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:35.550" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:35.547" endtime="20211129 11:29:35.550"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:35.546" endtime="20211129 11:29:35.550"/>
-</kw>
-<kw name="verificationDefi">
-<kw name="Mouse Move" library="sk">
-<arg>\\ChoixDefi-CT1\\boutonDefi1.png</arg>
-<doc>Mouse moveMove the mouse pointer to the target</doc>
-<msg timestamp="20211129 11:29:36.335" level="INFO">Params: [\ChoixDefi-CT1\boutonDefi1.png]</msg>
-<msg timestamp="20211129 11:29:36.335" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181775814.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:35.551" endtime="20211129 11:29:36.335"/>
-</kw>
-<kw name="Screen Should Contain" library="sk">
-<arg>\\ChoixDefi-CT1\\boutonDefi1Hover.png</arg>
-<doc>Screen should contain</doc>
-<msg timestamp="20211129 11:29:36.591" level="INFO">Params: [\ChoixDefi-CT1\boutonDefi1Hover.png]</msg>
-<msg timestamp="20211129 11:29:36.591" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181776581.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:36.335" endtime="20211129 11:29:36.591"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:35.551" endtime="20211129 11:29:36.591"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:35.546" endtime="20211129 11:29:36.591"/>
-</test>
-<test id="s1-t7" name="ChoixDefi-CT1.6">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:36.596" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:36.593" endtime="20211129 11:29:36.596"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:36.593" endtime="20211129 11:29:36.596"/>
-</kw>
-<kw name="verificationRetour">
-<kw name="Mouse Move" library="sk">
-<arg>\\ChoixDefi-CT1\\boutonRetour.png</arg>
-<doc>Mouse moveMove the mouse pointer to the target</doc>
-<msg timestamp="20211129 11:29:37.368" level="INFO">Params: [\ChoixDefi-CT1\boutonRetour.png]</msg>
-<msg timestamp="20211129 11:29:37.368" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181776846.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:36.597" endtime="20211129 11:29:37.369"/>
-</kw>
-<kw name="Screen Should Contain" library="sk">
-<arg>\\ChoixDefi-CT1\\boutonRetourHover.png</arg>
-<doc>Screen should contain</doc>
-<msg timestamp="20211129 11:29:37.637" level="INFO">Params: [\ChoixDefi-CT1\boutonRetourHover.png]</msg>
-<msg timestamp="20211129 11:29:37.637" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181777626.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:37.369" endtime="20211129 11:29:37.637"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:36.597" endtime="20211129 11:29:37.637"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:36.592" endtime="20211129 11:29:37.638"/>
-</test>
-<test id="s1-t8" name="ChoixDefi-CT1.7">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:37.645" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:37.640" endtime="20211129 11:29:37.645"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:37.640" endtime="20211129 11:29:37.645"/>
-</kw>
-<kw name="recuperationXP1">
-<kw name="Get Text" library="sk">
-<var>${XP1}</var>
-<arg>\\ChoixDefi-CT1\\XP0.png</arg>
-<doc>Get text</doc>
-<msg timestamp="20211129 11:29:37.998" level="INFO">Params: [\ChoixDefi-CT1\XP0.png]</msg>
-<msg timestamp="20211129 11:29:37.998" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181777863.png'/&gt;</msg>
-<msg timestamp="20211129 11:29:37.998" level="INFO">${XP1} = 0/50 EXP.</msg>
-<status status="PASS" starttime="20211129 11:29:37.646" endtime="20211129 11:29:37.998"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:37.646" endtime="20211129 11:29:37.998"/>
-</kw>
-<kw name="jeu">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\boutonDefi1.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:39.002" level="INFO">Params: [\ChoixDefi-CT1\boutonDefi1.png]</msg>
-<msg timestamp="20211129 11:29:39.002" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181778252.png'/&gt;
-[log] CLICK on L[610,449]@S(0) (553 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:37.999" endtime="20211129 11:29:39.003"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\piece1.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:41.003" level="INFO">Params: [\ChoixDefi-CT1\piece1.png]</msg>
-<msg timestamp="20211129 11:29:41.003" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181780252.png'/&gt;
-[log] CLICK on L[1341,322]@S(0) (538 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:39.003" endtime="20211129 11:29:41.004"/>
-</kw>
-<kw name="Wheel Up" library="sk">
-<arg>3</arg>
-<doc>Wheel up
- Move mouse to the target, and wheel up with give steps</doc>
-<msg timestamp="20211129 11:29:41.203" level="INFO">Params: [3]</msg>
-<status status="PASS" starttime="20211129 11:29:41.004" endtime="20211129 11:29:41.204"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\enplacement1.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:42.225" level="INFO">Params: [\ChoixDefi-CT1\enplacement1.png]</msg>
-<msg timestamp="20211129 11:29:42.225" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181781455.png'/&gt;
-[log] CLICK on L[555,345]@S(0) (535 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:41.204" endtime="20211129 11:29:42.225"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\piece2.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:43.333" level="INFO">Params: [\ChoixDefi-CT1\piece2.png]</msg>
-<msg timestamp="20211129 11:29:43.334" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181782536.png'/&gt;
-[log] CLICK on L[1458,566]@S(0) (529 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:42.225" endtime="20211129 11:29:43.334"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\enplacement2.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:44.364" level="INFO">Params: [\ChoixDefi-CT1\enplacement2.png]</msg>
-<msg timestamp="20211129 11:29:44.364" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181783595.png'/&gt;
-[log] CLICK on L[828,473]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:43.335" endtime="20211129 11:29:44.364"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\piece3.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:45.395" level="INFO">Params: [\ChoixDefi-CT1\piece3.png]</msg>
-<msg timestamp="20211129 11:29:45.395" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181784627.png'/&gt;
-[log] CLICK on L[1345,794]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:44.365" endtime="20211129 11:29:45.395"/>
-</kw>
-<kw name="Wheel Up" library="sk">
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
 <arg>2</arg>
-<doc>Wheel up
- Move mouse to the target, and wheel up with give steps</doc>
-<msg timestamp="20211129 11:29:45.521" level="INFO">Params: [2]</msg>
-<status status="PASS" starttime="20211129 11:29:45.395" endtime="20211129 11:29:45.522"/>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:34.888" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:34.888" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200314782.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:34.478" endtime="20211129 16:38:34.888"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT1\\enplacement3.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:46.581" level="INFO">Params: [\ChoixDefi-CT1\enplacement3.png]</msg>
-<msg timestamp="20211129 11:29:46.581" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181785800.png'/&gt;
-[log] CLICK on L[432,470]@S(0) (538 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:45.522" endtime="20211129 11:29:46.581"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:34.889" level="INFO">${buff} = 811</msg>
+<status status="PASS" starttime="20211129 16:38:34.888" endtime="20211129 16:38:34.889"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:37.999" endtime="20211129 11:29:46.581"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:34.889" endtime="20211129 16:38:34.889"/>
 </kw>
-<kw name="recuperationXP2">
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:29:49.595" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211129 11:29:46.582" endtime="20211129 11:29:49.595"/>
+<status status="PASS" starttime="20211129 16:38:30.878" endtime="20211129 16:38:34.889"/>
+</iter>
+<iter>
+<var name="${defis}">2</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:38.514" level="INFO">Params: [[Ljava.lang.Object;@f00f14d]</msg>
+<msg timestamp="20211129 16:38:38.514" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200314921.png'/&gt;
+[log] CLICK on L[852,571]@S(0) (536 msec)</msg>
+<msg timestamp="20211129 16:38:38.514" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200318506.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:34.889" endtime="20211129 16:38:38.514"/>
 </kw>
-<kw name="Get Text" library="sk">
-<var>${XP2}</var>
-<arg>\\ChoixDefi-CT1\\XP1.png</arg>
-<doc>Get text</doc>
-<msg timestamp="20211129 11:29:49.965" level="INFO">Params: [\ChoixDefi-CT1\XP1.png]</msg>
-<msg timestamp="20211129 11:29:49.965" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181789831.png'/&gt;</msg>
-<msg timestamp="20211129 11:29:49.965" level="INFO">${XP2} = 20/100 EXP.</msg>
-<status status="PASS" starttime="20211129 11:29:49.595" endtime="20211129 11:29:49.965"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:38.948" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:38.948" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200318836.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:38.514" endtime="20211129 16:38:38.948"/>
 </kw>
-<if>
-<branch type="IF" condition="&quot;${XP2}&quot; &gt; &quot;${XP1}&quot;">
-<kw name="Log" library="BuiltIn">
-<arg>l'XP s'incrémente bien</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211129 11:29:49.966" level="INFO">l'XP s'incrémente bien</msg>
-<status status="PASS" starttime="20211129 11:29:49.966" endtime="20211129 11:29:49.966"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:38.949" level="INFO">${buff} = 931</msg>
+<status status="PASS" starttime="20211129 16:38:38.948" endtime="20211129 16:38:38.949"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:49.965" endtime="20211129 11:29:49.966"/>
-</branch>
-<status status="PASS" starttime="20211129 11:29:49.965" endtime="20211129 11:29:49.966"/>
-</if>
-<status status="PASS" starttime="20211129 11:29:46.581" endtime="20211129 11:29:49.966"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:38.949" endtime="20211129 16:38:38.949"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:37.639" endtime="20211129 11:29:49.967"/>
-</test>
-<test id="s1-t9" name="ChoixDefi-CT1.8">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:49.972" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:49.968" endtime="20211129 11:29:49.973"/>
+<status status="PASS" starttime="20211129 16:38:34.889" endtime="20211129 16:38:38.949"/>
+</iter>
+<iter>
+<var name="${defis}">3</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:42.580" level="INFO">Params: [[Ljava.lang.Object;@9e2c28a]</msg>
+<msg timestamp="20211129 16:38:42.580" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200318993.png'/&gt;
+[log] CLICK on L[972,571]@S(0) (530 msec)</msg>
+<msg timestamp="20211129 16:38:42.580" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200322573.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:38.949" endtime="20211129 16:38:42.580"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:49.968" endtime="20211129 11:29:49.973"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:42.992" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:42.992" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200322899.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:42.581" endtime="20211129 16:38:42.992"/>
 </kw>
-<kw name="verificationXPRestante">
-<kw name="Screen Should Contain" library="sk">
-<arg>\\ChoixDefi-CT1\\visuXPRestante.png</arg>
-<doc>Screen should contain</doc>
-<msg timestamp="20211129 11:29:50.201" level="INFO">Params: [\ChoixDefi-CT1\visuXPRestante.png]</msg>
-<msg timestamp="20211129 11:29:50.201" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181790191.png'/&gt;</msg>
-<status status="PASS" starttime="20211129 11:29:49.973" endtime="20211129 11:29:50.201"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:42.993" level="INFO">${buff} = 1051</msg>
+<status status="PASS" starttime="20211129 16:38:42.992" endtime="20211129 16:38:42.993"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:49.973" endtime="20211129 11:29:50.202"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:42.993" endtime="20211129 16:38:42.993"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:49.968" endtime="20211129 11:29:50.203"/>
-</test>
-<test id="s1-t10" name="ChoixDefi-CT2.1">
-<kw name="Add Needed Image Path" type="SETUP">
-<kw name="Add Image Path" library="sk">
-<arg>${IMAGE_DIR}</arg>
-<doc>Add image path</doc>
-<msg timestamp="20211129 11:29:50.211" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211129 11:29:50.206" endtime="20211129 11:29:50.211"/>
+<status status="PASS" starttime="20211129 16:38:38.949" endtime="20211129 16:38:42.993"/>
+</iter>
+<iter>
+<var name="${defis}">4</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:46.939" level="INFO">Params: [[Ljava.lang.Object;@1591d37d]</msg>
+<msg timestamp="20211129 16:38:46.939" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200323010.png'/&gt;
+[log] CLICK on L[1092,571]@S(0) (539 msec)</msg>
+<msg timestamp="20211129 16:38:46.939" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200326929.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:42.993" endtime="20211129 16:38:46.939"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:50.205" endtime="20211129 11:29:50.211"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:47.366" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:47.366" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200327259.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:46.939" endtime="20211129 16:38:47.366"/>
 </kw>
-<kw name="verificationDefisRealisables1">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\StarterDefi1.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:51.205" level="INFO">Params: [\ChoixDefi-CT2\StarterDefi1.png]</msg>
-<msg timestamp="20211129 11:29:51.205" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181790454.png'/&gt;
-[log] CLICK on L[611,450]@S(0) (534 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:50.212" endtime="20211129 11:29:51.205"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:47.367" level="INFO">${buff} = 1171</msg>
+<status status="PASS" starttime="20211129 16:38:47.366" endtime="20211129 16:38:47.367"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:50.212" endtime="20211129 11:29:51.205"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:47.367" endtime="20211129 16:38:47.367"/>
 </kw>
-<kw name="jeuBreak">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\pause.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:52.878" level="INFO">Params: [\ChoixDefi-CT2\pause.png]</msg>
-<msg timestamp="20211129 11:29:52.879" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181792113.png'/&gt;
-[log] CLICK on L[1448,176]@S(0) (542 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:51.206" endtime="20211129 11:29:52.879"/>
+<status status="PASS" starttime="20211129 16:38:42.993" endtime="20211129 16:38:47.367"/>
+</iter>
+<iter>
+<var name="${defis}">5</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:50.989" level="INFO">Params: [[Ljava.lang.Object;@7d0744ab]</msg>
+<msg timestamp="20211129 16:38:50.989" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200327401.png'/&gt;
+[log] CLICK on L[1212,571]@S(0) (528 msec)</msg>
+<msg timestamp="20211129 16:38:50.989" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200330981.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:47.367" endtime="20211129 16:38:50.989"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\quitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:54.191" level="INFO">Params: [\ChoixDefi-CT2\quitter.png]</msg>
-<msg timestamp="20211129 11:29:54.191" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181793439.png'/&gt;
-[log] CLICK on L[963,623]@S(0) (537 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:52.879" endtime="20211129 11:29:54.192"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:51.404" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:51.404" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200331308.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:50.989" endtime="20211129 16:38:51.405"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\ouiQuitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:55.191" level="INFO">Params: [\ChoixDefi-CT2\ouiQuitter.png]</msg>
-<msg timestamp="20211129 11:29:55.191" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181794439.png'/&gt;
-[log] CLICK on L[864,645]@S(0) (528 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:54.192" endtime="20211129 11:29:55.191"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:51.405" level="INFO">${buff} = 1291</msg>
+<status status="PASS" starttime="20211129 16:38:51.405" endtime="20211129 16:38:51.405"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:29:56.698" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20211129 11:29:55.192" endtime="20211129 11:29:56.698"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:51.405" endtime="20211129 16:38:51.406"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\menu.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:29:58.410" level="INFO">Params: [\ChoixDefi-CT2\menu.png]</msg>
-<msg timestamp="20211129 11:29:58.410" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181797642.png'/&gt;
-[log] CLICK on L[369,839]@S(0) (526 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:56.699" endtime="20211129 11:29:58.410"/>
+<status status="PASS" starttime="20211129 16:38:47.367" endtime="20211129 16:38:51.406"/>
+</iter>
+<status status="PASS" starttime="20211129 16:38:26.793" endtime="20211129 16:38:51.406"/>
+</for>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buffy}</var>
+<arg>${reg}[1]+${110}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:51.406" level="INFO">${buffy} = 637</msg>
+<status status="PASS" starttime="20211129 16:38:51.406" endtime="20211129 16:38:51.406"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:51.206" endtime="20211129 11:29:58.410"/>
-</kw>
-<kw name="verificationDefisRealisables2">
-<kw name="Sleep" library="BuiltIn">
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
 <arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:29:59.423" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211129 11:29:58.411" endtime="20211129 11:29:59.423"/>
+<arg>${buffy}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:51.406" endtime="20211129 16:38:51.407"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\StarterDefi2.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:00.406" level="INFO">Params: [\ChoixDefi-CT2\StarterDefi2.png]</msg>
-<msg timestamp="20211129 11:30:00.406" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181799657.png'/&gt;
-[log] CLICK on L[730,451]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211129 11:29:59.424" endtime="20211129 11:30:00.406"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${coordsx}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:51.407" endtime="20211129 16:38:51.407"/>
 </kw>
-<status status="PASS" starttime="20211129 11:29:58.411" endtime="20211129 11:30:00.406"/>
+<status status="PASS" starttime="20211129 16:38:26.793" endtime="20211129 16:38:51.407"/>
+</iter>
+<iter>
+<var name="${difficultes}">1</var>
+<for flavor="IN RANGE">
+<var>${defis}</var>
+<value>6</value>
+<iter>
+<var name="${defis}">0</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:55.040" level="INFO">Params: [[Ljava.lang.Object;@1d972f05]</msg>
+<msg timestamp="20211129 16:38:55.040" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200331448.png'/&gt;
+[log] CLICK on L[612,681]@S(0) (530 msec)</msg>
+<msg timestamp="20211129 16:38:55.040" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200335024.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:51.407" endtime="20211129 16:38:55.040"/>
 </kw>
-<kw name="jeuBreak">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\pause.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:02.066" level="INFO">Params: [\ChoixDefi-CT2\pause.png]</msg>
-<msg timestamp="20211129 11:30:02.067" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181801312.png'/&gt;
-[log] CLICK on L[1448,176]@S(0) (529 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:00.407" endtime="20211129 11:30:02.067"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:55.433" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:55.433" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200335339.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:55.040" endtime="20211129 16:38:55.433"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\quitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:03.378" level="INFO">Params: [\ChoixDefi-CT2\quitter.png]</msg>
-<msg timestamp="20211129 11:30:03.379" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181802625.png'/&gt;
-[log] CLICK on L[963,623]@S(0) (540 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:02.067" endtime="20211129 11:30:03.379"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:55.434" level="INFO">${buff} = 691</msg>
+<status status="PASS" starttime="20211129 16:38:55.433" endtime="20211129 16:38:55.434"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\ouiQuitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:04.379" level="INFO">Params: [\ChoixDefi-CT2\ouiQuitter.png]</msg>
-<msg timestamp="20211129 11:30:04.379" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181803626.png'/&gt;
-[log] CLICK on L[864,645]@S(0) (532 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:03.379" endtime="20211129 11:30:04.379"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:55.434" endtime="20211129 16:38:55.434"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:05.891" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20211129 11:30:04.379" endtime="20211129 11:30:05.891"/>
+<status status="PASS" starttime="20211129 16:38:51.407" endtime="20211129 16:38:55.434"/>
+</iter>
+<iter>
+<var name="${defis}">1</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:38:59.075" level="INFO">Params: [[Ljava.lang.Object;@19d27dd6]</msg>
+<msg timestamp="20211129 16:38:59.075" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200335465.png'/&gt;
+[log] CLICK on L[732,681]@S(0) (541 msec)</msg>
+<msg timestamp="20211129 16:38:59.075" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200339067.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:55.434" endtime="20211129 16:38:59.075"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\menu.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:07.584" level="INFO">Params: [\ChoixDefi-CT2\menu.png]</msg>
-<msg timestamp="20211129 11:30:07.584" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181806799.png'/&gt;
-[log] CLICK on L[369,839]@S(0) (541 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:05.891" endtime="20211129 11:30:07.584"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:38:59.474" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:38:59.474" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200339377.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:59.075" endtime="20211129 16:38:59.474"/>
 </kw>
-<status status="PASS" starttime="20211129 11:30:00.407" endtime="20211129 11:30:07.584"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:38:59.475" level="INFO">${buff} = 811</msg>
+<status status="PASS" starttime="20211129 16:38:59.474" endtime="20211129 16:38:59.475"/>
 </kw>
-<kw name="verificationDefisRealisables3">
-<kw name="Sleep" library="BuiltIn">
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:38:59.475" endtime="20211129 16:38:59.475"/>
+</kw>
+<status status="PASS" starttime="20211129 16:38:55.434" endtime="20211129 16:38:59.475"/>
+</iter>
+<iter>
+<var name="${defis}">2</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:03.103" level="INFO">Params: [[Ljava.lang.Object;@7ca27e0b]</msg>
+<msg timestamp="20211129 16:39:03.103" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200339502.png'/&gt;
+[log] CLICK on L[852,681]@S(0) (537 msec)</msg>
+<msg timestamp="20211129 16:39:03.103" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200343094.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:38:59.475" endtime="20211129 16:39:03.103"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:03.473" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:03.473" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200343376.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:03.103" endtime="20211129 16:39:03.473"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:03.474" level="INFO">${buff} = 931</msg>
+<status status="PASS" starttime="20211129 16:39:03.473" endtime="20211129 16:39:03.474"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:03.474" endtime="20211129 16:39:03.474"/>
+</kw>
+<status status="PASS" starttime="20211129 16:38:59.475" endtime="20211129 16:39:03.474"/>
+</iter>
+<iter>
+<var name="${defis}">3</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:07.109" level="INFO">Params: [[Ljava.lang.Object;@5ee0869c]</msg>
+<msg timestamp="20211129 16:39:07.109" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200343500.png'/&gt;
+[log] CLICK on L[972,681]@S(0) (537 msec)</msg>
+<msg timestamp="20211129 16:39:07.109" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200347105.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:03.474" endtime="20211129 16:39:07.109"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:07.516" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:07.516" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200347419.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:07.109" endtime="20211129 16:39:07.516"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:07.517" level="INFO">${buff} = 1051</msg>
+<status status="PASS" starttime="20211129 16:39:07.516" endtime="20211129 16:39:07.517"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:07.517" endtime="20211129 16:39:07.517"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:03.474" endtime="20211129 16:39:07.517"/>
+</iter>
+<iter>
+<var name="${defis}">4</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:08.150" level="INFO">Params: [[Ljava.lang.Object;@5298b392]</msg>
+<msg timestamp="20211129 16:39:08.150" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200347543.png'/&gt;
+[log] CLICK on L[1092,681]@S(0) (536 msec)</msg>
+<msg timestamp="20211129 16:39:08.150" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200348146.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:07.517" endtime="20211129 16:39:08.150"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:08.555" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:08.555" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200348453.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:08.150" endtime="20211129 16:39:08.555"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:08.555" level="INFO">${buff} = 1171</msg>
+<status status="PASS" starttime="20211129 16:39:08.555" endtime="20211129 16:39:08.555"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:08.555" endtime="20211129 16:39:08.556"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:07.517" endtime="20211129 16:39:08.556"/>
+</iter>
+<iter>
+<var name="${defis}">5</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:12.521" level="INFO">Params: [[Ljava.lang.Object;@1cb4918f]</msg>
+<msg timestamp="20211129 16:39:12.521" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200348593.png'/&gt;
+[log] CLICK on L[1212,681]@S(0) (536 msec)</msg>
+<msg timestamp="20211129 16:39:12.521" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200352512.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:08.556" endtime="20211129 16:39:12.521"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:12.951" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:12.951" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200352841.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:12.521" endtime="20211129 16:39:12.952"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:12.953" level="INFO">${buff} = 1291</msg>
+<status status="PASS" starttime="20211129 16:39:12.952" endtime="20211129 16:39:12.953"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:12.953" endtime="20211129 16:39:12.954"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:08.556" endtime="20211129 16:39:12.954"/>
+</iter>
+<status status="PASS" starttime="20211129 16:38:51.407" endtime="20211129 16:39:12.954"/>
+</for>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buffy}</var>
+<arg>${reg}[1]+${110}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:12.955" level="INFO">${buffy} = 747</msg>
+<status status="PASS" starttime="20211129 16:39:12.954" endtime="20211129 16:39:12.955"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
 <arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:08.597" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211129 11:30:07.585" endtime="20211129 11:30:08.597"/>
+<arg>${buffy}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:12.955" endtime="20211129 16:39:12.955"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\StarterDefi3.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:09.600" level="INFO">Params: [\ChoixDefi-CT2\StarterDefi3.png]</msg>
-<msg timestamp="20211129 11:30:09.600" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181808845.png'/&gt;
-[log] CLICK on L[850,450]@S(0) (536 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:08.597" endtime="20211129 11:30:09.600"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${coordsx}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:12.955" endtime="20211129 16:39:12.956"/>
 </kw>
-<status status="PASS" starttime="20211129 11:30:07.585" endtime="20211129 11:30:09.600"/>
+<status status="PASS" starttime="20211129 16:38:51.407" endtime="20211129 16:39:12.956"/>
+</iter>
+<iter>
+<var name="${difficultes}">2</var>
+<for flavor="IN RANGE">
+<var>${defis}</var>
+<value>6</value>
+<iter>
+<var name="${defis}">0</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:16.568" level="INFO">Params: [[Ljava.lang.Object;@7ca6f0cc]</msg>
+<msg timestamp="20211129 16:39:16.568" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200352982.png'/&gt;
+[log] CLICK on L[612,791]@S(0) (540 msec)</msg>
+<msg timestamp="20211129 16:39:16.568" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200356560.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:12.956" endtime="20211129 16:39:16.568"/>
 </kw>
-<kw name="jeuBreak">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\pause.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:11.271" level="INFO">Params: [\ChoixDefi-CT2\pause.png]</msg>
-<msg timestamp="20211129 11:30:11.271" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181810502.png'/&gt;
-[log] CLICK on L[1448,176]@S(0) (550 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:09.601" endtime="20211129 11:30:11.271"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:16.979" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:16.979" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200356871.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:16.568" endtime="20211129 16:39:16.979"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\quitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:12.582" level="INFO">Params: [\ChoixDefi-CT2\quitter.png]</msg>
-<msg timestamp="20211129 11:30:12.582" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181811834.png'/&gt;
-[log] CLICK on L[963,623]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:11.271" endtime="20211129 11:30:12.582"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:16.980" level="INFO">${buff} = 691</msg>
+<status status="PASS" starttime="20211129 16:39:16.980" endtime="20211129 16:39:16.980"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\ouiQuitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:13.926" level="INFO">Params: [\ChoixDefi-CT2\ouiQuitter.png]</msg>
-<msg timestamp="20211129 11:30:13.926" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181813157.png'/&gt;
-[log] CLICK on L[864,645]@S(0) (528 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:12.582" endtime="20211129 11:30:13.926"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:16.980" endtime="20211129 16:39:16.980"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:15.439" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20211129 11:30:13.927" endtime="20211129 11:30:15.439"/>
+<status status="PASS" starttime="20211129 16:39:12.956" endtime="20211129 16:39:16.980"/>
+</iter>
+<iter>
+<var name="${defis}">1</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:20.609" level="INFO">Params: [[Ljava.lang.Object;@294c6981]</msg>
+<msg timestamp="20211129 16:39:20.609" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200356997.png'/&gt;
+[log] CLICK on L[732,791]@S(0) (538 msec)</msg>
+<msg timestamp="20211129 16:39:20.609" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200360600.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:16.981" endtime="20211129 16:39:20.609"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\menu.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:17.144" level="INFO">Params: [\ChoixDefi-CT2\menu.png]</msg>
-<msg timestamp="20211129 11:30:17.144" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181816375.png'/&gt;
-[log] CLICK on L[369,839]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:15.440" endtime="20211129 11:30:17.144"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:21.060" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:21.060" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200360954.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:20.609" endtime="20211129 16:39:21.060"/>
 </kw>
-<status status="PASS" starttime="20211129 11:30:09.601" endtime="20211129 11:30:17.144"/>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:21.061" level="INFO">${buff} = 811</msg>
+<status status="PASS" starttime="20211129 16:39:21.061" endtime="20211129 16:39:21.061"/>
 </kw>
-<kw name="verificationDefisRealisables4">
-<kw name="Sleep" library="BuiltIn">
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:21.061" endtime="20211129 16:39:21.061"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:16.981" endtime="20211129 16:39:21.062"/>
+</iter>
+<iter>
+<var name="${defis}">2</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:24.684" level="INFO">Params: [[Ljava.lang.Object;@148fb461]</msg>
+<msg timestamp="20211129 16:39:24.684" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200361094.png'/&gt;
+[log] CLICK on L[852,791]@S(0) (536 msec)</msg>
+<msg timestamp="20211129 16:39:24.684" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200364673.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:21.062" endtime="20211129 16:39:24.684"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:25.125" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:25.125" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200365018.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:24.685" endtime="20211129 16:39:25.125"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:25.126" level="INFO">${buff} = 931</msg>
+<status status="PASS" starttime="20211129 16:39:25.125" endtime="20211129 16:39:25.126"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:25.126" endtime="20211129 16:39:25.126"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:21.062" endtime="20211129 16:39:25.126"/>
+</iter>
+<iter>
+<var name="${defis}">3</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:28.751" level="INFO">Params: [[Ljava.lang.Object;@4e1f9b37]</msg>
+<msg timestamp="20211129 16:39:28.752" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200365157.png'/&gt;
+[log] CLICK on L[972,791]@S(0) (536 msec)</msg>
+<msg timestamp="20211129 16:39:28.752" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200368747.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:25.126" endtime="20211129 16:39:28.752"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:29.185" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:29.185" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200369075.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:28.752" endtime="20211129 16:39:29.185"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:29.186" level="INFO">${buff} = 1051</msg>
+<status status="PASS" starttime="20211129 16:39:29.185" endtime="20211129 16:39:29.186"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:29.186" endtime="20211129 16:39:29.186"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:25.126" endtime="20211129 16:39:29.186"/>
+</iter>
+<iter>
+<var name="${defis}">4</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:32.795" level="INFO">Params: [[Ljava.lang.Object;@78329b35]</msg>
+<msg timestamp="20211129 16:39:32.795" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200369214.png'/&gt;
+[log] CLICK on L[1092,791]@S(0) (528 msec)</msg>
+<msg timestamp="20211129 16:39:32.795" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200372784.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:29.186" endtime="20211129 16:39:32.795"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:33.208" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:33.208" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200373111.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:32.795" endtime="20211129 16:39:33.208"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:33.209" level="INFO">${buff} = 1171</msg>
+<status status="PASS" starttime="20211129 16:39:33.208" endtime="20211129 16:39:33.209"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:33.209" endtime="20211129 16:39:33.209"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:29.186" endtime="20211129 16:39:33.209"/>
+</iter>
+<iter>
+<var name="${defis}">5</var>
+<kw name="Click Region" library="sk">
+<arg>${reg}</arg>
+<doc>Click region</doc>
+<msg timestamp="20211129 16:39:36.843" level="INFO">Params: [[Ljava.lang.Object;@383e6976]</msg>
+<msg timestamp="20211129 16:39:36.843" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200373237.png'/&gt;
+[log] CLICK on L[1212,791]@S(0) (536 msec)</msg>
+<msg timestamp="20211129 16:39:36.843" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200376834.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:33.209" endtime="20211129 16:39:36.843"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>ecranJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211129 16:39:37.237" level="INFO">Params: [ecranJeu.png, 2]</msg>
+<msg timestamp="20211129 16:39:37.237" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638200377142.png'/&gt;</msg>
+<status status="PASS" starttime="20211129 16:39:36.843" endtime="20211129 16:39:37.237"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${120}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:37.238" level="INFO">${buff} = 1291</msg>
+<status status="PASS" starttime="20211129 16:39:37.237" endtime="20211129 16:39:37.238"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${buff}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:37.238" endtime="20211129 16:39:37.238"/>
+</kw>
+<status status="PASS" starttime="20211129 16:39:33.209" endtime="20211129 16:39:37.238"/>
+</iter>
+<status status="PASS" starttime="20211129 16:39:12.956" endtime="20211129 16:39:37.238"/>
+</for>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buffy}</var>
+<arg>${reg}[1]+${110}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20211129 16:39:37.239" level="INFO">${buffy} = 857</msg>
+<status status="PASS" starttime="20211129 16:39:37.238" endtime="20211129 16:39:37.239"/>
+</kw>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
 <arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:18.160" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211129 11:30:17.145" endtime="20211129 11:30:18.160"/>
+<arg>${buffy}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:37.239" endtime="20211129 16:39:37.239"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\StarterDefi4.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:19.142" level="INFO">Params: [\ChoixDefi-CT2\StarterDefi4.png]</msg>
-<msg timestamp="20211129 11:30:19.142" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181818393.png'/&gt;
-[log] CLICK on L[971,451]@S(0) (536 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:18.160" endtime="20211129 11:30:19.142"/>
+<kw name="Set List Value" library="Collections">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${coordsx}</arg>
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<status status="PASS" starttime="20211129 16:39:37.239" endtime="20211129 16:39:37.239"/>
 </kw>
-<status status="PASS" starttime="20211129 11:30:17.144" endtime="20211129 11:30:19.142"/>
+<status status="PASS" starttime="20211129 16:39:12.956" endtime="20211129 16:39:37.239"/>
+</iter>
+<status status="PASS" starttime="20211129 16:38:26.793" endtime="20211129 16:39:37.239"/>
+</for>
+<status status="PASS" starttime="20211129 16:38:23.506" endtime="20211129 16:39:37.239"/>
 </kw>
-<kw name="jeuBreak">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\pause.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:20.834" level="INFO">Params: [\ChoixDefi-CT2\pause.png]</msg>
-<msg timestamp="20211129 11:30:20.834" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181820066.png'/&gt;
-[log] CLICK on L[1448,176]@S(0) (545 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:19.143" endtime="20211129 11:30:20.835"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\quitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:22.162" level="INFO">Params: [\ChoixDefi-CT2\quitter.png]</msg>
-<msg timestamp="20211129 11:30:22.163" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181821410.png'/&gt;
-[log] CLICK on L[963,623]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:20.835" endtime="20211129 11:30:22.163"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\ouiQuitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:23.488" level="INFO">Params: [\ChoixDefi-CT2\ouiQuitter.png]</msg>
-<msg timestamp="20211129 11:30:23.488" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181822726.png'/&gt;
-[log] CLICK on L[864,645]@S(0) (539 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:22.163" endtime="20211129 11:30:23.488"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:25.001" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20211129 11:30:23.488" endtime="20211129 11:30:25.001"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\menu.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:26.719" level="INFO">Params: [\ChoixDefi-CT2\menu.png]</msg>
-<msg timestamp="20211129 11:30:26.719" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181825939.png'/&gt;
-[log] CLICK on L[369,839]@S(0) (526 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:25.002" endtime="20211129 11:30:26.719"/>
-</kw>
-<status status="PASS" starttime="20211129 11:30:19.142" endtime="20211129 11:30:26.719"/>
-</kw>
-<kw name="verificationDefisRealisables5">
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:27.721" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211129 11:30:26.720" endtime="20211129 11:30:27.721"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\StarterDefi5.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:28.754" level="INFO">Params: [\ChoixDefi-CT2\StarterDefi5.png]</msg>
-<msg timestamp="20211129 11:30:28.754" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181827986.png'/&gt;
-[log] CLICK on L[1090,450]@S(0) (543 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:27.721" endtime="20211129 11:30:28.754"/>
-</kw>
-<status status="PASS" starttime="20211129 11:30:26.719" endtime="20211129 11:30:28.754"/>
-</kw>
-<kw name="jeuBreak">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\pause.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:30.426" level="INFO">Params: [\ChoixDefi-CT2\pause.png]</msg>
-<msg timestamp="20211129 11:30:30.426" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181829643.png'/&gt;
-[log] CLICK on L[1448,176]@S(0) (548 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:28.755" endtime="20211129 11:30:30.426"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\quitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:31.722" level="INFO">Params: [\ChoixDefi-CT2\quitter.png]</msg>
-<msg timestamp="20211129 11:30:31.722" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181830969.png'/&gt;
-[log] CLICK on L[963,623]@S(0) (538 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:30.427" endtime="20211129 11:30:31.722"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\ouiQuitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:33.035" level="INFO">Params: [\ChoixDefi-CT2\ouiQuitter.png]</msg>
-<msg timestamp="20211129 11:30:33.035" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181832284.png'/&gt;
-[log] CLICK on L[864,645]@S(0) (529 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:31.723" endtime="20211129 11:30:33.035"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:34.548" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20211129 11:30:33.035" endtime="20211129 11:30:34.548"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\menu.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:36.238" level="INFO">Params: [\ChoixDefi-CT2\menu.png]</msg>
-<msg timestamp="20211129 11:30:36.239" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181835471.png'/&gt;
-[log] CLICK on L[369,839]@S(0) (536 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:34.548" endtime="20211129 11:30:36.239"/>
-</kw>
-<status status="PASS" starttime="20211129 11:30:28.755" endtime="20211129 11:30:36.239"/>
-</kw>
-<kw name="verificationDefisRealisables6">
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:37.244" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211129 11:30:36.240" endtime="20211129 11:30:37.244"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\StarterDefi6.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:38.299" level="INFO">Params: [\ChoixDefi-CT2\StarterDefi6.png]</msg>
-<msg timestamp="20211129 11:30:38.299" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181837513.png'/&gt;
-[log] CLICK on L[1210,450]@S(0) (554 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:37.245" endtime="20211129 11:30:38.299"/>
-</kw>
-<status status="PASS" starttime="20211129 11:30:36.240" endtime="20211129 11:30:38.299"/>
-</kw>
-<kw name="jeuBreak">
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\pause.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:39.972" level="INFO">Params: [\ChoixDefi-CT2\pause.png]</msg>
-<msg timestamp="20211129 11:30:39.972" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181839206.png'/&gt;
-[log] CLICK on L[1448,176]@S(0) (541 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:38.300" endtime="20211129 11:30:39.972"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\quitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:41.316" level="INFO">Params: [\ChoixDefi-CT2\quitter.png]</msg>
-<msg timestamp="20211129 11:30:41.317" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181840535.png'/&gt;
-[log] CLICK on L[963,623]@S(0) (526 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:39.972" endtime="20211129 11:30:41.317"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\ouiQuitter.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:42.645" level="INFO">Params: [\ChoixDefi-CT2\ouiQuitter.png]</msg>
-<msg timestamp="20211129 11:30:42.645" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181841893.png'/&gt;
-[log] CLICK on L[864,645]@S(0) (530 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:41.317" endtime="20211129 11:30:42.645"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1.5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211129 11:30:44.160" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" starttime="20211129 11:30:42.645" endtime="20211129 11:30:44.160"/>
-</kw>
-<kw name="Click" library="sk">
-<arg>\\ChoixDefi-CT2\\menu.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211129 11:30:45.863" level="INFO">Params: [\ChoixDefi-CT2\menu.png]</msg>
-<msg timestamp="20211129 11:30:45.863" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638181845095.png'/&gt;
-[log] CLICK on L[369,839]@S(0) (532 msec)</msg>
-<status status="PASS" starttime="20211129 11:30:44.161" endtime="20211129 11:30:45.863"/>
-</kw>
-<status status="PASS" starttime="20211129 11:30:38.300" endtime="20211129 11:30:45.863"/>
-</kw>
-<kw name="arretServeur">
-<kw name="Stop Remote Server" library="sk">
+<kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211129 11:30:45.870" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211129 11:30:45.864" endtime="20211129 11:30:45.870"/>
+<msg timestamp="20211129 16:39:37.242" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211129 16:39:37.240" endtime="20211129 16:39:37.243"/>
 </kw>
-<status status="PASS" starttime="20211129 11:30:45.864" endtime="20211129 11:30:45.870"/>
-</kw>
-<status status="PASS" starttime="20211129 11:29:50.204" endtime="20211129 11:30:45.871"/>
+<status status="PASS" starttime="20211129 16:38:23.492" endtime="20211129 16:39:37.243"/>
 </test>
 <doc>Sikuli Library Demo</doc>
-<status status="PASS" starttime="20211129 11:29:17.110" endtime="20211129 11:30:45.873"/>
+<status status="PASS" starttime="20211129 16:38:20.027" endtime="20211129 16:39:37.244"/>
 </suite>
 <statistics>
 <total>
-<stat pass="10" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="10" fail="0" skip="0" id="s1" name="ChoixDefi-CT">ChoixDefi-CT</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="ChoixDefi-CT2.2">ChoixDefi-CT2.2</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20211129 16:38:23.483" level="ERROR">Error in file 'C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT2.2.robot' on line 7: Importing library 'BuildIn' failed: ModuleNotFoundError: No module named 'BuildIn'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Nico\AppData\Local\Programs\Python\Python38\Scripts\robot.exe
+  c:\users\nico\appdata\local\programs\python\python38\python38.zip
+  c:\users\nico\appdata\local\programs\python\python38\DLLs
+  c:\users\nico\appdata\local\programs\python\python38\lib
+  c:\users\nico\appdata\local\programs\python\python38
+  c:\users\nico\appdata\local\programs\python\python38\lib\site-packages</msg>
 </errors>
 </robot>
