@@ -110,7 +110,7 @@ recuperationXP2
     ${XP2}           Get Text         \\ChoixDefi-CT1\\XP1.png
     
     IF  "${XP2}" > "${XP1}"
-    Log     l'XP s'incrémente bien
+    Log     l'XP s'incrémente correctement
     END
 
 verificationXPRestante
