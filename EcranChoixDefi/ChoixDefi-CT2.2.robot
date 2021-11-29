@@ -7,7 +7,8 @@ Library           ImageHorizonLibrary
 
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\ChoixDefi-CT2
-
+${coordsx}  ${360}
+${coordsy}  ${470}
 *** Test Cases ***
 Manyfik
     Trobi1
@@ -18,8 +19,11 @@ Trobi1
     sk.Click        jeu.png
     Sleep           2
 
-    ${coordsx}  Set Variable  ${360}
-    ${coordsy}  Set Variable  ${470}
+    Log To Console  ${coordsx}
+    Log To Console  ${coordsy}
+    ${coordsxy}=    Evaluate    ${coordsx}+${coordsy}
+    Log To Console  ${coordsxy}
+
     FOR     ${difficultés}  IN RANGE    3
         FOR     ${defis}    IN RANGE    6
             @{coordsxy} =   ${coordsx}    ${coordsxy}
