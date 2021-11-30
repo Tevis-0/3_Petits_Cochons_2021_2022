@@ -17,8 +17,7 @@ ${defis}        ${6}
 
 *** Test Cases ***
 ChoixDefi-CT2.2
-    verificationBoutonsBloque
-    
+    verificationBoutonsBloque    
 
 *** Keywords ***
 verificationBoutonsBloque
