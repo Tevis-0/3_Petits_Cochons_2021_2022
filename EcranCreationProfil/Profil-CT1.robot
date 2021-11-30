@@ -34,6 +34,9 @@ choixCouleur
     Log To Console  ${coordsx}
     Log To Console  ${coordsy}
     ${coordsxy}=    Evaluate    ${coordsx}+${coordsy}
+    Log To Console  ${coordsxy}
+
+    FOR     ${
 annuler
     sk.click        annuler.PNG
 confirmer
