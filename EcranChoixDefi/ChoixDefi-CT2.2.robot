@@ -16,12 +16,12 @@ ${difficultes}  ${3}
 ${defis}        ${6}
 
 *** Test Cases ***
-Manyfik
-    Trobi1
+ChoixDefi-CT2.2
+    verificationBoutonsBloque
     
 
 *** Keywords ***
-Trobi1
+verificationBoutonsBloque
     sk.Click        jeu.png
     Sleep           2
 

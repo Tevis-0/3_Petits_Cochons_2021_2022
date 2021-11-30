@@ -3,12 +3,20 @@ Documentation     Sikuli Library Demo
 Test Setup        Add Needed Image Path
 Library           SikuliLibrary     WITH NAME       sk
 Library           ImageHorizonLibrary
+Library           OperatingSystem
+Suite Setup       viderLogs
+Suite Teardown    Stop Remote Server
 
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 ${XP1} 
 ${XP2}
+
+${coordsx}  ${571}
+${coordsy}  ${527}
+${difficultes}  ${3}
+${defis}        ${6}
 
 
 *** Test Cases ***
@@ -57,7 +65,15 @@ ChoixDefi-CT2.1
     jeuBreak
     arretServeur
 
+ChoixDefi-CT2.2
+    verificationBoutonsBloque
+    arretServeur
+
+
 *** Keywords ***
+
+viderLogs
+    run     .\\clear_logs.bat
 
 creationProfil
     sk.Click     jeu.png
@@ -145,6 +161,28 @@ verificationDefisRealisables5
 verificationDefisRealisables6
     Sleep           1
     sk.Click        \\ChoixDefi-CT2\\StarterDefi6.png
+
+verificationBoutonsBloque
+
+    ${reg}          Create List     ${571}  ${527}  ${83}   ${88}
+
+
+    FOR     ${difficultes}  IN RANGE    3
+        FOR     ${defis}    IN RANGE    6
+
+            sk.Click Region  ${reg}
+            sk.Wait Until Screen Contain    ecranJeu.png    2
+
+            ${buff}=  Evaluate    ${reg}[0]+${120}
+            Set List Value   ${reg}     0   ${buff}     
+
+        END
+
+        ${buffy}=     Evaluate    ${reg}[1]+${115}
+        Set List Value   ${reg}     1   ${buffy}
+        Set List Value   ${reg}     0   ${coordsx}
+
+    END
 
 arretServeur
     Stop Remote Server
