@@ -1,90 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211130 11:21:34.641" rpa="false" schemaversion="2">
-<suite id="s1" name="ChoixDefi-CT2.3" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT2.3.robot">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211130 11:31:43.771" rpa="false" schemaversion="2">
+<suite id="s1" name="ChoixDefi-CT2.4" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT2.4.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20211130 11:21:38.068" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20211130 11:21:38.063" endtime="20211130 11:21:38.102"/>
+<msg timestamp="20211130 11:31:47.175" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20211130 11:31:47.170" endtime="20211130 11:31:47.200"/>
 </kw>
-<status status="PASS" starttime="20211130 11:21:38.063" endtime="20211130 11:21:38.102"/>
+<status status="PASS" starttime="20211130 11:31:47.170" endtime="20211130 11:31:47.200"/>
 </kw>
-<test id="s1-t1" name="ChoixDefi-CT2.3">
+<test id="s1-t1" name="ChoixDefi-CT2.4">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20211130 11:21:38.115" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211130 11:21:38.103" endtime="20211130 11:21:38.115"/>
+<msg timestamp="20211130 11:31:47.214" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\Choix Defi - CT2\]
+[error] ImagePath: add: folder does not exist (C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\Choix Defi - CT2)
+[error] ImagePath: add: not valid: C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\Choix Defi - CT2\</msg>
+<status status="PASS" starttime="20211130 11:31:47.201" endtime="20211130 11:31:47.214"/>
 </kw>
-<status status="PASS" starttime="20211130 11:21:38.102" endtime="20211130 11:21:38.115"/>
+<status status="PASS" starttime="20211130 11:31:47.201" endtime="20211130 11:31:47.214"/>
 </kw>
-<kw name="verificationCliqueRetour">
+<kw name="verifCliqueDiurne">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 11:21:39.378" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20211130 11:21:39.378" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638267698599.png'/&gt;
-[log] CLICK on L[351,1064]@S(0) (543 msec)</msg>
-<status status="PASS" starttime="20211130 11:21:38.116" endtime="20211130 11:21:39.378"/>
+<msg timestamp="20211130 11:31:50.753" level="INFO">Params: [jeu.png]
+[error] ImagePath: find: not there: jeu.png</msg>
+<msg timestamp="20211130 11:31:50.753" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638268310504.png'/&gt;
+[error] ImagePath: find: not there: jeu.png</msg>
+<msg timestamp="20211130 11:31:50.754" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(jeu.png -- not valid!) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20211130 11:31:47.215" endtime="20211130 11:31:50.754"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211130 11:21:41.385" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211130 11:21:39.379" endtime="20211130 11:21:41.385"/>
+<status status="NOT RUN" starttime="20211130 11:31:50.754" endtime="20211130 11:31:50.755"/>
 </kw>
 <kw name="Click" library="sk">
-<arg>.\\ChoixDefi-CT1\\boutonRetour.png</arg>
+<arg>btnCliqueDiurne.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 11:21:42.474" level="INFO">Params: [.\ChoixDefi-CT1\boutonRetour.png]</msg>
-<msg timestamp="20211130 11:21:42.474" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638267701683.png'/&gt;
-[log] CLICK on L[332,330]@S(0) (550 msec)</msg>
-<status status="PASS" starttime="20211130 11:21:41.385" endtime="20211130 11:21:42.474"/>
+<status status="NOT RUN" starttime="20211130 11:31:50.755" endtime="20211130 11:31:50.755"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
-<arg>.\\ChoixDefi-CT2\\choixMode.png=0.70</arg>
-<arg>3</arg>
+<arg>ecranJeu.png=0.5</arg>
+<arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20211130 11:21:43.262" level="INFO">Params: [.\ChoixDefi-CT2\choixMode.png=0.70, 3]</msg>
-<msg timestamp="20211130 11:21:43.262" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638267703113.png'/&gt;</msg>
-<status status="PASS" starttime="20211130 11:21:42.474" endtime="20211130 11:21:43.262"/>
+<status status="NOT RUN" starttime="20211130 11:31:50.755" endtime="20211130 11:31:50.755"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>.\\Progression.png</arg>
-<doc>Click</doc>
-<msg timestamp="20211130 11:21:44.295" level="INFO">Params: [.\Progression.png]</msg>
-<msg timestamp="20211130 11:21:44.295" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638267703503.png'/&gt;
-[log] CLICK on L[961,531]@S(0) (560 msec)</msg>
-<status status="PASS" starttime="20211130 11:21:43.262" endtime="20211130 11:21:44.295"/>
-</kw>
-<status status="PASS" starttime="20211130 11:21:38.116" endtime="20211130 11:21:44.295"/>
+<status status="FAIL" starttime="20211130 11:31:47.214" endtime="20211130 11:31:50.756"/>
 </kw>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211130 11:21:44.301" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211130 11:21:44.296" endtime="20211130 11:21:44.301"/>
+<msg timestamp="20211130 11:31:50.759" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211130 11:31:50.756" endtime="20211130 11:31:50.760"/>
 </kw>
-<status status="PASS" starttime="20211130 11:21:38.102" endtime="20211130 11:21:44.301"/>
+<status status="FAIL" starttime="20211130 11:31:47.200" endtime="20211130 11:31:50.760">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(jeu.png -- not valid!) S: 0.699999988079071</status>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211130 11:21:44.307" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211130 11:21:44.304" endtime="20211130 11:21:44.307"/>
+<msg timestamp="20211130 11:31:50.764" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211130 11:31:50.761" endtime="20211130 11:31:50.764"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="PASS" starttime="20211130 11:21:34.642" endtime="20211130 11:21:44.307"/>
+<status status="FAIL" starttime="20211130 11:31:43.772" endtime="20211130 11:31:50.764"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="ChoixDefi-CT2.3">ChoixDefi-CT2.3</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="ChoixDefi-CT2.4">ChoixDefi-CT2.4</stat>
 </suite>
 </statistics>
 <errors>
