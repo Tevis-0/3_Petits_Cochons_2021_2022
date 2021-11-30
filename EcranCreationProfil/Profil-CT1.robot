@@ -18,12 +18,35 @@ ${colonne} ${4}
 
 *** Test Cases ***
 Profil-CT1
+    ouvrirMenu
     ecrirePseudo
+    annuler
 Profil-CT2
+    ouvrirMenu
     ecrirePseudoVide
     confirmer
+    annuler
+Profil-CT3
+    ouvrirMenu
+    ecrirePseudoVideEspaces
+    confirmer
+    annuler
+Profil-CT4
+    ouvrirMenu
+    ecrirePseudoLong
+    confirmer
+Profil-CT5
+    ouvrirMenu
+    choixCouleur
+    annuler
+Profil-CT6
+    ouvrirMenu
+    ecrirePseudo
+    confirmer
+    ecrirePseudo
+    confirmer
     arretServeur
-
+    
 *** Keywords ***
 ouvrirMenu
     sk.click        creerUnProfil.PNG
@@ -53,6 +76,7 @@ choixCouleur
          Set List Value  ${reg}      0   ${coordsx}
     END    
     
+
 annuler
     sk.click        annuler.PNG
 confirmer
