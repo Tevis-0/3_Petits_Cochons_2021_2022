@@ -67,8 +67,10 @@ ChoixDefi-CT2.1
 
 ChoixDefi-CT2.2
     verificationBoutonsBloque
-    arretServeur
 
+ChoixDefi-CT2.3
+    verificationCliqueRetour
+    arretServeur
 
 *** Keywords ***
 
@@ -183,6 +185,12 @@ verificationBoutonsBloque
         Set List Value   ${reg}     0   ${coordsx}
 
     END
+
+verificationCliqueRetour
+
+    sk.Click    .\\ChoixDefi-CT1\\boutonRetour.png
+    sk.Wait Until Screen Contain    .\\ChoixDefi-CT2\\choixMode.png=0.70     3
+    sk.Click    .\\Progression.png
 
 arretServeur
     Stop Remote Server

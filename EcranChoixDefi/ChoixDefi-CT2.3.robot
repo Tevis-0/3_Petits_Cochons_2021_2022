@@ -17,7 +17,12 @@ ChoixDefi-CT2.3
 
 *** Keywords ***
 verificationCliqueRetour
-    sk.Click    .\\ChoixDefi-CT1\\
+    sk.Click        jeu.png
+    Sleep           2
+    
+    sk.Click    .\\ChoixDefi-CT1\\boutonRetour.png
+    sk.Wait Until Screen Contain    .\\ChoixDefi-CT2\\choixMode.png=0.70     3
+    sk.Click    .\\Progression.png
 
 ViderLogs
     Run     .\\clear_logs.bat
