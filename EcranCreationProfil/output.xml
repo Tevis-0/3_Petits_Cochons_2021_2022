@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211129 13:40:12.982" rpa="false" schemaversion="2">
 <suite id="s1" name="Profil-CT1" source="D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot">
@@ -93,3 +94,100 @@ PYTHONPATH:
   C:\Users\Dross\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
 </errors>
 </robot>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211129 13:40:12.982" rpa="false" schemaversion="2">
+<suite id="s1" name="Profil-CT1" source="D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot">
+<test id="s1-t1" name="Profil-CT1">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20211129 13:40:17.723" endtime="20211129 13:40:17.754"/>
+</kw>
+<status status="PASS" starttime="20211129 13:40:17.723" endtime="20211129 13:40:17.755"/>
+</kw>
+<kw name="ecrirePseudo">
+<kw name="Click" library="sk">
+<arg>creerUnProfil.PNG</arg>
+<doc>Click</doc>
+<msg timestamp="20211129 13:40:19.530" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638189618544.png'/&gt;
+[log] CLICK on L[627,445]@S(0) (534 msec)</msg>
+<status status="PASS" starttime="20211129 13:40:17.755" endtime="20211129 13:40:19.530"/>
+</kw>
+<kw name="Input Text" library="sk">
+<arg>cadrePsedo.PNG</arg>
+<arg>test0</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20211129 13:40:21.360" level="INFO">Input Text:
+test0</msg>
+<msg timestamp="20211129 13:40:21.360" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638189619960.png'/&gt;
+[log] CLICK on L[1131,376]@S(0) (543 msec)
+[log]  TYPE "test0"</msg>
+<status status="PASS" starttime="20211129 13:40:19.530" endtime="20211129 13:40:21.360"/>
+</kw>
+<status status="PASS" starttime="20211129 13:40:17.755" endtime="20211129 13:40:21.360"/>
+</kw>
+<status status="PASS" starttime="20211129 13:40:17.723" endtime="20211129 13:40:21.361"/>
+</test>
+<test id="s1-t2" name="Profil-CT2">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20211129 13:40:21.365" endtime="20211129 13:40:21.374"/>
+</kw>
+<status status="PASS" starttime="20211129 13:40:21.365" endtime="20211129 13:40:21.375"/>
+</kw>
+<kw name="ecrirePseudoVide">
+<kw name="Click" library="sk">
+<arg>creerUnProfil.PNG</arg>
+<doc>Click</doc>
+<msg timestamp="20211129 13:40:24.934" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638189624624.png'/&gt;</msg>
+<msg timestamp="20211129 13:40:24.936" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
+<status status="FAIL" starttime="20211129 13:40:21.378" endtime="20211129 13:40:24.936"/>
+</kw>
+<kw name="Input Text" library="sk">
+<arg>cadrePsedo.PNG</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<status status="NOT RUN" starttime="20211129 13:40:24.936" endtime="20211129 13:40:24.936"/>
+</kw>
+<status status="FAIL" starttime="20211129 13:40:21.376" endtime="20211129 13:40:24.937"/>
+</kw>
+<kw name="confirmer">
+<status status="NOT RUN" starttime="20211129 13:40:24.938" endtime="20211129 13:40:24.938"/>
+</kw>
+<kw name="arretServeur">
+<status status="NOT RUN" starttime="20211129 13:40:24.938" endtime="20211129 13:40:24.938"/>
+</kw>
+<status status="FAIL" starttime="20211129 13:40:21.364" endtime="20211129 13:40:24.938">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+</test>
+<doc>Sikuli Library Demo</doc>
+<status status="FAIL" starttime="20211129 13:40:12.985" endtime="20211129 13:40:24.942"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Profil-CT1">Profil-CT1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211129 13:40:17.719" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 5: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Dross\AppData\Local\Programs\Python\Python310\Scripts\robot.exe
+  C:\Users\Dross\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\Dross\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\Dross\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\Dross\AppData\Local\Programs\Python\Python310
+  C:\Users\Dross\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
+</errors>
+</robot>
+>>>>>>> 2ca6a9e83bfa110be18ae442abcd3df3aef46955
