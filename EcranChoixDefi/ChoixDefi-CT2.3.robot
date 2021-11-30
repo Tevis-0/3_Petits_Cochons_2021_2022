@@ -9,18 +9,20 @@ Suite Setup       ViderLogs
 Suite Teardown    Stop Remote Server
 
 *** Variables ***
-${IMAGE_DIR}      ${CURDIR}\\imgProjet\\ChoixDefi-CT1
+${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-ChoixDefi-CT1.1
-    verificationTitre
-    
+ChoixDefi-CT2.3
+    verificationCliqueRetour
 
 *** Keywords ***
-verificationTitre
+verificationCliqueRetour
     sk.Click        jeu.png
     Sleep           2
-    ${titre}        Get Text      titre.png
+    
+    sk.Click    .\\ChoixDefi-CT1\\boutonRetour.png
+    sk.Wait Until Screen Contain    .\\ChoixDefi-CT2\\choixMode.png=0.70     3
+    sk.Click    .\\Progression.png
 
 ViderLogs
     Run     .\\clear_logs.bat

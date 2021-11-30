@@ -4,33 +4,44 @@ Test Setup        Add Needed Image Path
 Test Teardown     Stop Remote Server
 Library           SikuliLibrary     WITH NAME       sk
 Library           ImageHorizonLibrary
+Library           BuildIn
+Library           Collections
 
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\ChoixDefi-CT2
-${coordsx}  ${360}
-${coordsy}  ${470}
+${coordsx}  ${571}
+${coordsy}  ${527}
+
+${difficultes}  ${3}
+${defis}        ${6}
+
 *** Test Cases ***
-Manyfik
-    Trobi1
-    
+ChoixDefi-CT2.2
+    verificationBoutonsBloque    
 
 *** Keywords ***
-Trobi1
+verificationBoutonsBloque
     sk.Click        jeu.png
     Sleep           2
 
-    Log To Console  ${coordsx}
-    Log To Console  ${coordsy}
-    ${coordsxy}=    Evaluate    ${coordsx}+${coordsy}
-    Log To Console  ${coordsxy}
+    ${reg}          Create List     ${571}  ${527}  ${83}   ${88}
 
-    FOR     ${difficultés}  IN RANGE    3
+
+    FOR     ${difficultes}  IN RANGE    3
         FOR     ${defis}    IN RANGE    6
-            @{coordsxy} =   ${coordsx}    ${coordsxy}
-            sk.Click Region     ${coordsxy}
-            ${coordsx}   Set Variable    ${{coordsx + 120}}
+
+            sk.Click Region  ${reg}
+            sk.Wait Until Screen Contain    ecranJeu.png    2
+
+            ${buff}=  Evaluate    ${reg}[0]+${120}
+            Set List Value   ${reg}     0   ${buff}     
+
         END
-        ${coordsx} =   ${coordsy} + ${110}
+
+        ${buffy}=     Evaluate    ${reg}[1]+${115}
+        Set List Value   ${reg}     1   ${buffy}
+        Set List Value   ${reg}     0   ${coordsx}
+
     END
 
 Add Needed Image Path

@@ -1,113 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211126 14:25:23.245" rpa="false" schemaversion="2">
-<suite id="s1" name="ChoixDefi-CT2.2" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT2.2.robot">
-<test id="s1-t1" name="Manyfik">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211130 14:35:46.635" rpa="false" schemaversion="2">
+<suite id="s1" name="ChoixDefi-CT2.4" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT2.4.robot">
+<kw name="ViderLogs" type="SETUP">
+<kw name="Run" library="OperatingSystem">
+<arg>.\\clear_logs.bat</arg>
+<doc>Runs the given command in the system and returns the output.</doc>
+<msg timestamp="20211130 14:35:49.740" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20211130 14:35:49.734" endtime="20211130 14:35:49.768"/>
+</kw>
+<status status="PASS" starttime="20211130 14:35:49.734" endtime="20211130 14:35:49.768"/>
+</kw>
+<test id="s1-t1" name="ChoixDefi-CT2.4">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20211126 14:25:26.627" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\ChoixDefi-CT2]</msg>
-<status status="PASS" starttime="20211126 14:25:26.614" endtime="20211126 14:25:26.627"/>
+<msg timestamp="20211130 14:35:49.781" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
+<status status="PASS" starttime="20211130 14:35:49.769" endtime="20211130 14:35:49.782"/>
 </kw>
-<status status="PASS" starttime="20211126 14:25:26.614" endtime="20211126 14:25:26.627"/>
+<status status="PASS" starttime="20211130 14:35:49.769" endtime="20211130 14:35:49.782"/>
 </kw>
-<kw name="Trobi1">
+<kw name="verifCliqueDiurne">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211126 14:25:27.895" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20211126 14:25:27.895" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1637933127134.png'/&gt;
-[log] CLICK on L[314,1064]@S(0) (541 msec)</msg>
-<status status="PASS" starttime="20211126 14:25:26.628" endtime="20211126 14:25:27.895"/>
+<msg timestamp="20211130 14:35:51.033" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20211130 14:35:51.033" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638279350278.png'/&gt;
+[log] CLICK on L[314,1064]@S(0) (537 msec)</msg>
+<status status="PASS" starttime="20211130 14:35:49.782" endtime="20211130 14:35:51.033"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211126 14:25:29.905" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211126 14:25:27.895" endtime="20211126 14:25:29.905"/>
+<msg timestamp="20211130 14:35:53.045" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211130 14:35:51.033" endtime="20211130 14:35:53.045"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${coordsx}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211126 14:25:29.905" endtime="20211126 14:25:29.907"/>
+<kw name="Click" library="sk">
+<arg>\\Choix Defi - CT2\\btnNocturneDiurne.png=0.5</arg>
+<doc>Click</doc>
+<msg timestamp="20211130 14:35:54.077" level="INFO">Params: [\Choix Defi - CT2\btnNocturneDiurne.png=0.5]</msg>
+<msg timestamp="20211130 14:35:54.077" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638279353309.png'/&gt;
+[log] CLICK on L[936,328]@S(0) (539 msec)</msg>
+<status status="PASS" starttime="20211130 14:35:53.045" endtime="20211130 14:35:54.077"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${coordsy}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211126 14:25:29.907" endtime="20211126 14:25:29.908"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\Choix Defi - CT2\\ecranJeuNocturne.png=0.5</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211130 14:35:54.525" level="INFO">Params: [\Choix Defi - CT2\ecranJeuNocturne.png=0.5, 2]</msg>
+<msg timestamp="20211130 14:35:54.525" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638279354400.png'/&gt;</msg>
+<status status="PASS" starttime="20211130 14:35:54.078" endtime="20211130 14:35:54.525"/>
 </kw>
-<kw name="Evaluate" library="BuiltIn">
-<var>${coordsxy}</var>
-<arg>${coordsx}+${coordsy}</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211126 14:25:29.910" level="INFO">${coordsxy} = 830</msg>
-<status status="PASS" starttime="20211126 14:25:29.908" endtime="20211126 14:25:29.910"/>
+<kw name="Click" library="sk">
+<arg>\\Choix Defi - CT2\\btnDiurneNocturne.png=0.5</arg>
+<doc>Click</doc>
+<msg timestamp="20211130 14:35:55.545" level="INFO">Params: [\Choix Defi - CT2\btnDiurneNocturne.png=0.5]</msg>
+<msg timestamp="20211130 14:35:55.545" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638279354760.png'/&gt;
+[log] CLICK on L[602,328]@S(0) (538 msec)</msg>
+<status status="PASS" starttime="20211130 14:35:54.526" endtime="20211130 14:35:55.545"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${coordsxy}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211126 14:25:29.910" endtime="20211126 14:25:29.912"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\Choix Defi - CT2\\ecranJeu.png=0.5</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20211130 14:35:55.906" level="INFO">Params: [\Choix Defi - CT2\ecranJeu.png=0.5, 2]</msg>
+<msg timestamp="20211130 14:35:55.906" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638279355791.png'/&gt;</msg>
+<status status="PASS" starttime="20211130 14:35:55.545" endtime="20211130 14:35:55.906"/>
 </kw>
-<for flavor="IN RANGE">
-<var>${difficultés}</var>
-<value>3</value>
-<iter>
-<var name="${difficultés}">0</var>
-<for flavor="IN RANGE">
-<var>${defis}</var>
-<value>6</value>
-<iter>
-<var name="${defis}">0</var>
-<kw>
-<var>@{coordsxy} =</var>
-<var>${coordsx}</var>
-<var>${coordsxy}</var>
-<msg timestamp="20211126 14:25:29.912" level="FAIL">Keyword name cannot be empty.</msg>
-<status status="FAIL" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.912"/>
-</kw>
-<kw name="Click Region" library="sk">
-<arg>${coordsxy}</arg>
-<doc>Click region</doc>
-<status status="NOT RUN" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.912"/>
-</kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${coordsx}</var>
-<arg>${{coordsx + 120}}</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.912"/>
-</kw>
-<status status="FAIL" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.913"/>
-</iter>
-<status status="FAIL" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.913"/>
-</for>
-<kw name="${coordsy} + ${110}">
-<var>${coordsx} =</var>
-<status status="NOT RUN" starttime="20211126 14:25:29.914" endtime="20211126 14:25:29.914"/>
-</kw>
-<status status="FAIL" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.914"/>
-</iter>
-<status status="FAIL" starttime="20211126 14:25:29.912" endtime="20211126 14:25:29.915"/>
-</for>
-<status status="FAIL" starttime="20211126 14:25:26.628" endtime="20211126 14:25:29.915"/>
+<status status="PASS" starttime="20211130 14:35:49.782" endtime="20211130 14:35:55.906"/>
 </kw>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211126 14:25:29.918" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211126 14:25:29.915" endtime="20211126 14:25:29.918"/>
+<msg timestamp="20211130 14:35:55.910" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211130 14:35:55.907" endtime="20211130 14:35:55.910"/>
 </kw>
-<status status="FAIL" starttime="20211126 14:25:26.613" endtime="20211126 14:25:29.919">Keyword name cannot be empty.</status>
+<status status="PASS" starttime="20211130 14:35:49.768" endtime="20211130 14:35:55.910"/>
 </test>
+<kw name="Stop Remote Server" library="sk" type="TEARDOWN">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20211130 14:35:55.914" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211130 14:35:55.912" endtime="20211130 14:35:55.914"/>
+</kw>
 <doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20211126 14:25:23.246" endtime="20211126 14:25:29.920"/>
+<status status="PASS" starttime="20211130 14:35:46.639" endtime="20211130 14:35:55.914"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="ChoixDefi-CT2.2">ChoixDefi-CT2.2</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="ChoixDefi-CT2.4">ChoixDefi-CT2.4</stat>
 </suite>
 </statistics>
 <errors>
