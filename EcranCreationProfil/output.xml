@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211201 09:40:11.612" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211201 10:04:16.904" rpa="false" schemaversion="2">
 <suite id="s1" name="Profil-CT1" source="D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20211201 09:40:14.615" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20211201 09:40:14.611" endtime="20211201 09:40:14.626"/>
+<msg timestamp="20211201 10:04:19.940" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20211201 10:04:19.935" endtime="20211201 10:04:19.948"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:14.611" endtime="20211201 09:40:14.626"/>
+<status status="PASS" starttime="20211201 10:04:19.935" endtime="20211201 10:04:19.948"/>
 </kw>
 <test id="s1-t1" name="Profil-CT1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211201 09:40:14.627" endtime="20211201 09:40:14.648"/>
+<status status="PASS" starttime="20211201 10:04:19.949" endtime="20211201 10:04:19.971"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:14.627" endtime="20211201 09:40:14.649"/>
+<status status="PASS" starttime="20211201 10:04:19.949" endtime="20211201 10:04:19.972"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:16.054" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348015216.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (538 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:14.650" endtime="20211201 09:40:16.054"/>
+<msg timestamp="20211201 10:04:21.403" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349460534.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (547 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:19.973" endtime="20211201 10:04:21.403"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:14.649" endtime="20211201 09:40:16.054"/>
+<status status="PASS" starttime="20211201 10:04:19.972" endtime="20211201 10:04:21.403"/>
 </kw>
 <kw name="ecrirePseudo">
 <kw name="Input Text" library="sk">
@@ -35,86 +35,86 @@
 <arg>test0</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211201 09:40:17.570" level="INFO">Input Text:
+<msg timestamp="20211201 10:04:23.217" level="INFO">Input Text:
 test0</msg>
-<msg timestamp="20211201 09:40:17.570" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348016348.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (534 msec)
+<msg timestamp="20211201 10:04:23.217" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349462032.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (540 msec)
 [log]  TYPE "test0"</msg>
-<status status="PASS" starttime="20211201 09:40:16.055" endtime="20211201 09:40:17.570"/>
+<status status="PASS" starttime="20211201 10:04:21.404" endtime="20211201 10:04:23.217"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:16.055" endtime="20211201 09:40:17.570"/>
+<status status="PASS" starttime="20211201 10:04:21.403" endtime="20211201 10:04:23.218"/>
 </kw>
 <kw name="annuler">
 <kw name="Click" library="sk">
 <arg>annuler.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:18.594" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348017808.png'/&gt;
-[log] CLICK on L[1210,244]@S(0) (550 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:17.571" endtime="20211201 09:40:18.594"/>
+<msg timestamp="20211201 10:04:24.243" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349463456.png'/&gt;
+[log] CLICK on L[1210,244]@S(0) (552 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:23.219" endtime="20211201 10:04:24.243"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:17.571" endtime="20211201 09:40:18.594"/>
+<status status="PASS" starttime="20211201 10:04:23.218" endtime="20211201 10:04:24.244"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:14.626" endtime="20211201 09:40:18.595"/>
+<status status="PASS" starttime="20211201 10:04:19.948" endtime="20211201 10:04:24.244"/>
 </test>
 <test id="s1-t2" name="Profil-CT2">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211201 09:40:18.599" endtime="20211201 09:40:18.605"/>
+<status status="PASS" starttime="20211201 10:04:24.247" endtime="20211201 10:04:24.252"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:18.598" endtime="20211201 09:40:18.605"/>
+<status status="PASS" starttime="20211201 10:04:24.246" endtime="20211201 10:04:24.252"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:19.677" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348018878.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (532 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:18.606" endtime="20211201 09:40:19.677"/>
+<msg timestamp="20211201 10:04:25.341" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349464544.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (527 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:24.254" endtime="20211201 10:04:25.341"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:18.606" endtime="20211201 09:40:19.677"/>
+<status status="PASS" starttime="20211201 10:04:24.253" endtime="20211201 10:04:25.342"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:20.982" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348020229.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (529 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:19.678" endtime="20211201 09:40:20.982"/>
+<msg timestamp="20211201 10:04:26.694" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349465943.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (535 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:25.343" endtime="20211201 10:04:26.695"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:19.678" endtime="20211201 09:40:20.983"/>
+<status status="PASS" starttime="20211201 10:04:25.342" endtime="20211201 10:04:26.695"/>
 </kw>
 <kw name="annuler">
 <kw name="Click" library="sk">
 <arg>annuler.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:22.017" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348021234.png'/&gt;
-[log] CLICK on L[1210,244]@S(0) (530 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:20.984" endtime="20211201 09:40:22.017"/>
+<msg timestamp="20211201 10:04:27.772" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349466961.png'/&gt;
+[log] CLICK on L[1210,244]@S(0) (552 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:26.696" endtime="20211201 10:04:27.772"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:20.983" endtime="20211201 09:40:22.018"/>
+<status status="PASS" starttime="20211201 10:04:26.696" endtime="20211201 10:04:27.773"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:18.597" endtime="20211201 09:40:22.018"/>
+<status status="PASS" starttime="20211201 10:04:24.246" endtime="20211201 10:04:27.773"/>
 </test>
 <test id="s1-t3" name="Profil-CT3">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211201 09:40:22.021" endtime="20211201 09:40:22.026"/>
+<status status="PASS" starttime="20211201 10:04:27.775" endtime="20211201 10:04:27.780"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:22.020" endtime="20211201 09:40:22.026"/>
+<status status="PASS" starttime="20211201 10:04:27.775" endtime="20211201 10:04:27.780"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:23.142" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348022331.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (549 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:22.027" endtime="20211201 09:40:23.142"/>
+<msg timestamp="20211201 10:04:28.899" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349468086.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (529 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:27.781" endtime="20211201 10:04:28.899"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:22.027" endtime="20211201 09:40:23.142"/>
+<status status="PASS" starttime="20211201 10:04:27.780" endtime="20211201 10:04:28.899"/>
 </kw>
 <kw name="ecrirePseudoVideEspaces">
 <kw name="Input Text" library="sk">
@@ -122,147 +122,244 @@ test0</msg>
 <arg>${SPACE}</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211201 09:40:24.583" level="INFO">Input Text:</msg>
-<msg timestamp="20211201 09:40:24.583" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348023739.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (531 msec)
+<msg timestamp="20211201 10:04:30.369" level="INFO">Input Text:</msg>
+<msg timestamp="20211201 10:04:30.369" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349469511.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (528 msec)
 [log]  TYPE " "</msg>
-<status status="PASS" starttime="20211201 09:40:23.143" endtime="20211201 09:40:24.583"/>
+<status status="PASS" starttime="20211201 10:04:28.900" endtime="20211201 10:04:30.369"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:23.143" endtime="20211201 09:40:24.584"/>
+<status status="PASS" starttime="20211201 10:04:28.900" endtime="20211201 10:04:30.370"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:25.599" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348024817.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (533 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:24.585" endtime="20211201 09:40:25.599"/>
+<msg timestamp="20211201 10:04:31.420" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349470622.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (536 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:30.371" endtime="20211201 10:04:31.421"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:24.584" endtime="20211201 09:40:25.600"/>
+<status status="PASS" starttime="20211201 10:04:30.370" endtime="20211201 10:04:31.421"/>
 </kw>
-<kw name="annuler">
+<kw name="deconnexion">
 <kw name="Click" library="sk">
-<arg>annuler.PNG</arg>
+<arg>deconnexion.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:26.663" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348025881.png'/&gt;
-[log] CLICK on L[1210,244]@S(0) (536 msec)</msg>
-<status status="PASS" starttime="20211201 09:40:25.602" endtime="20211201 09:40:26.663"/>
+<msg timestamp="20211201 10:04:33.468" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349472702.png'/&gt;
+[log] CLICK on L[1600,824]@S(0) (536 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:31.422" endtime="20211201 10:04:33.469"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:25.601" endtime="20211201 09:40:26.664"/>
+<status status="PASS" starttime="20211201 10:04:31.421" endtime="20211201 10:04:33.469"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:22.020" endtime="20211201 09:40:26.664"/>
+<status status="PASS" starttime="20211201 10:04:27.774" endtime="20211201 10:04:33.470"/>
 </test>
 <test id="s1-t4" name="Profil-CT4">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211201 09:40:26.669" endtime="20211201 09:40:26.674"/>
+<status status="PASS" starttime="20211201 10:04:33.475" endtime="20211201 10:04:33.484"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:26.668" endtime="20211201 09:40:26.675"/>
+<status status="PASS" starttime="20211201 10:04:33.474" endtime="20211201 10:04:33.484"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:29.968" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348029771.png'/&gt;</msg>
-<msg timestamp="20211201 09:40:29.969" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211201 09:40:26.676" endtime="20211201 09:40:29.969"/>
+<msg timestamp="20211201 10:04:36.044" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349475184.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (531 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:33.485" endtime="20211201 10:04:36.044"/>
 </kw>
-<status status="FAIL" starttime="20211201 09:40:26.675" endtime="20211201 09:40:29.970"/>
+<status status="PASS" starttime="20211201 10:04:33.485" endtime="20211201 10:04:36.044"/>
 </kw>
 <kw name="ecrirePseudoLong">
-<status status="NOT RUN" starttime="20211201 09:40:29.970" endtime="20211201 09:40:29.970"/>
+<kw name="Input Text" library="sk">
+<arg>cadrePsedo.PNG</arg>
+<arg>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</arg>
+<doc>Input text.
+ Image could be empty</doc>
+<msg timestamp="20211201 10:04:39.972" level="INFO">Input Text:
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
+<msg timestamp="20211201 10:04:39.973" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349476632.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (538 msec)
+[log]  TYPE "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"</msg>
+<status status="PASS" starttime="20211201 10:04:36.046" endtime="20211201 10:04:39.973"/>
+</kw>
+<status status="PASS" starttime="20211201 10:04:36.045" endtime="20211201 10:04:39.973"/>
 </kw>
 <kw name="confirmer">
-<status status="NOT RUN" starttime="20211201 09:40:29.971" endtime="20211201 09:40:29.971"/>
+<kw name="Click" library="sk">
+<arg>enregistrerPseudo</arg>
+<doc>Click</doc>
+<msg timestamp="20211201 10:04:41.005" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349480240.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (537 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:39.975" endtime="20211201 10:04:41.005"/>
 </kw>
-<status status="FAIL" starttime="20211201 09:40:26.667" endtime="20211201 09:40:29.971">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="PASS" starttime="20211201 10:04:39.974" endtime="20211201 10:04:41.005"/>
+</kw>
+<kw name="deconnexion">
+<kw name="Click" library="sk">
+<arg>deconnexion.png</arg>
+<doc>Click</doc>
+<msg timestamp="20211201 10:04:43.155" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349482308.png'/&gt;
+[log] CLICK on L[1600,824]@S(0) (535 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:41.006" endtime="20211201 10:04:43.155"/>
+</kw>
+<status status="PASS" starttime="20211201 10:04:41.006" endtime="20211201 10:04:43.156"/>
+</kw>
+<status status="PASS" starttime="20211201 10:04:33.473" endtime="20211201 10:04:43.157"/>
 </test>
 <test id="s1-t5" name="Profil-CT5">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211201 09:40:29.974" endtime="20211201 09:40:29.982"/>
+<status status="PASS" starttime="20211201 10:04:43.159" endtime="20211201 10:04:43.165"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:29.973" endtime="20211201 09:40:29.982"/>
+<status status="PASS" starttime="20211201 10:04:43.159" endtime="20211201 10:04:43.165"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:33.248" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348033049.png'/&gt;</msg>
-<msg timestamp="20211201 09:40:33.248" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211201 09:40:29.983" endtime="20211201 09:40:33.248"/>
+<msg timestamp="20211201 10:04:45.606" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349484790.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (543 msec)</msg>
+<status status="PASS" starttime="20211201 10:04:43.166" endtime="20211201 10:04:45.606"/>
 </kw>
-<status status="FAIL" starttime="20211201 09:40:29.982" endtime="20211201 09:40:33.249"/>
+<status status="PASS" starttime="20211201 10:04:43.166" endtime="20211201 10:04:45.607"/>
 </kw>
 <kw name="choixCouleur">
-<status status="NOT RUN" starttime="20211201 09:40:33.250" endtime="20211201 09:40:33.250"/>
+<kw name="Create List" library="BuiltIn">
+<var>${reg}</var>
+<arg>${830}</arg>
+<arg>${450}</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211201 10:04:45.610" level="INFO">${reg} = [830, 450]</msg>
+<status status="PASS" starttime="20211201 10:04:45.608" endtime="20211201 10:04:45.610"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${ligne}</var>
+<value>2</value>
+<iter>
+<var name="${ligne}">0</var>
+<for flavor="IN RANGE">
+<var>${colonne}</var>
+<value>4</value>
+<iter>
+<var name="${colonne}">0</var>
+<kw name="Click" library="sk">
+<arg>Region</arg>
+<arg>${reg}</arg>
+<doc>Click</doc>
+<msg timestamp="20211201 10:04:45.623" level="FAIL">java.lang.NumberFormatException: For input string: "[830, 450]"</msg>
+<status status="FAIL" starttime="20211201 10:04:45.612" endtime="20211201 10:04:45.624"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211201 10:04:45.624" endtime="20211201 10:04:45.624"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buff}</var>
+<arg>${reg}[0]+${90}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20211201 10:04:45.624" endtime="20211201 10:04:45.624"/>
+</kw>
+<kw name="Set List Value">
+<arg>${reg}</arg>
+<arg>1</arg>
+<arg>${buff}</arg>
+<status status="NOT RUN" starttime="20211201 10:04:45.629" endtime="20211201 10:04:45.629"/>
+</kw>
+<status status="FAIL" starttime="20211201 10:04:45.611" endtime="20211201 10:04:45.630"/>
+</iter>
+<status status="FAIL" starttime="20211201 10:04:45.611" endtime="20211201 10:04:45.630"/>
+</for>
+<kw name="Evaluate" library="BuiltIn">
+<var>${buffy}</var>
+<arg>${reg} [1]+${90}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20211201 10:04:45.630" endtime="20211201 10:04:45.630"/>
+</kw>
+<kw name="Set List Value">
+<arg>${reg}</arg>
+<arg>1</arg>
+<arg>${buffy}</arg>
+<status status="NOT RUN" starttime="20211201 10:04:45.634" endtime="20211201 10:04:45.634"/>
+</kw>
+<kw name="Set List Value">
+<arg>${reg}</arg>
+<arg>0</arg>
+<arg>${coordsx}</arg>
+<status status="NOT RUN" starttime="20211201 10:04:45.638" endtime="20211201 10:04:45.638"/>
+</kw>
+<status status="FAIL" starttime="20211201 10:04:45.611" endtime="20211201 10:04:45.639"/>
+</iter>
+<status status="FAIL" starttime="20211201 10:04:45.610" endtime="20211201 10:04:45.639"/>
+</for>
+<status status="FAIL" starttime="20211201 10:04:45.607" endtime="20211201 10:04:45.640"/>
 </kw>
 <kw name="annuler">
-<status status="NOT RUN" starttime="20211201 09:40:33.250" endtime="20211201 09:40:33.250"/>
+<status status="NOT RUN" starttime="20211201 10:04:45.641" endtime="20211201 10:04:45.642"/>
 </kw>
-<status status="FAIL" starttime="20211201 09:40:29.972" endtime="20211201 09:40:33.251">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="FAIL" starttime="20211201 10:04:43.158" endtime="20211201 10:04:45.643">java.lang.NumberFormatException: For input string: "[830, 450]"</status>
 </test>
 <test id="s1-t6" name="Profil-CT6">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211201 09:40:33.254" endtime="20211201 09:40:33.259"/>
+<status status="PASS" starttime="20211201 10:04:45.647" endtime="20211201 10:04:45.656"/>
 </kw>
-<status status="PASS" starttime="20211201 09:40:33.253" endtime="20211201 09:40:33.259"/>
+<status status="PASS" starttime="20211201 10:04:45.646" endtime="20211201 10:04:45.656"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211201 09:40:36.537" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638348036332.png'/&gt;</msg>
-<msg timestamp="20211201 09:40:36.537" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211201 09:40:33.260" endtime="20211201 09:40:36.537"/>
+<msg timestamp="20211201 10:04:49.589" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349485999.png'/&gt;</msg>
+<msg timestamp="20211201 10:04:49.589" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638349489405.png'/&gt;</msg>
+<msg timestamp="20211201 10:04:49.589" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Click creerUnProfil.PNG failedcreerUnProfil.PNG: (236x237) seen at (393, 308) with 1,00 in R[0,0 1920x1080]@S(0)</msg>
+<status status="FAIL" starttime="20211201 10:04:45.658" endtime="20211201 10:04:49.589"/>
 </kw>
-<status status="FAIL" starttime="20211201 09:40:33.260" endtime="20211201 09:40:36.538"/>
-</kw>
-<kw name="ecrirePseudo">
-<status status="NOT RUN" starttime="20211201 09:40:36.539" endtime="20211201 09:40:36.539"/>
-</kw>
-<kw name="confirmer">
-<status status="NOT RUN" starttime="20211201 09:40:36.539" endtime="20211201 09:40:36.539"/>
+<status status="FAIL" starttime="20211201 10:04:45.657" endtime="20211201 10:04:49.590"/>
 </kw>
 <kw name="ecrirePseudo">
-<status status="NOT RUN" starttime="20211201 09:40:36.539" endtime="20211201 09:40:36.539"/>
+<status status="NOT RUN" starttime="20211201 10:04:49.591" endtime="20211201 10:04:49.591"/>
 </kw>
 <kw name="confirmer">
-<status status="NOT RUN" starttime="20211201 09:40:36.540" endtime="20211201 09:40:36.540"/>
+<status status="NOT RUN" starttime="20211201 10:04:49.591" endtime="20211201 10:04:49.591"/>
+</kw>
+<kw name="ecrirePseudo">
+<status status="NOT RUN" starttime="20211201 10:04:49.591" endtime="20211201 10:04:49.591"/>
+</kw>
+<kw name="confirmer">
+<status status="NOT RUN" starttime="20211201 10:04:49.591" endtime="20211201 10:04:49.591"/>
 </kw>
 <kw name="arretServeur">
-<status status="NOT RUN" starttime="20211201 09:40:36.540" endtime="20211201 09:40:36.540"/>
+<status status="NOT RUN" starttime="20211201 10:04:49.592" endtime="20211201 10:04:49.592"/>
 </kw>
-<status status="FAIL" starttime="20211201 09:40:33.252" endtime="20211201 09:40:36.540">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="FAIL" starttime="20211201 10:04:45.645" endtime="20211201 10:04:49.592">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Click creerUnProfil.PNG failedcreerUnProfil.PNG: (236x237) seen at (393, 308) with 1,00 in R[0,0 1920x1080]@S(0)</status>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211201 09:40:36.548" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211201 09:40:36.543" endtime="20211201 09:40:36.548"/>
+<msg timestamp="20211201 10:04:49.598" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211201 10:04:49.594" endtime="20211201 10:04:49.598"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20211201 09:40:11.614" endtime="20211201 09:40:36.548"/>
+<status status="FAIL" starttime="20211201 10:04:16.906" endtime="20211201 10:04:49.598"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="3" skip="0">All Tests</stat>
+<stat pass="4" fail="2" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="3" skip="0" id="s1" name="Profil-CT1">Profil-CT1</stat>
+<stat pass="4" fail="2" skip="0" id="s1" name="Profil-CT1">Profil-CT1</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211201 09:40:11.614" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 17: Setting variable '${colonne} ${4}' failed: Invalid variable name '${colonne} ${4}'.</msg>
-<msg timestamp="20211201 09:40:14.597" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 6: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
+<msg timestamp="20211201 10:04:19.919" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 6: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:

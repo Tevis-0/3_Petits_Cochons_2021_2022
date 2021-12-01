@@ -10,11 +10,11 @@ Suite Teardown    Stop Remote Server
 
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}
-${coordsx}  ${890}
-${coordsy}  ${465}
+${coordsx}  ${830}
+${coordsy}  ${450}
 
 ${ligne}    ${2}
-${colonne} ${4}
+${colonne}  ${4}
 
 *** Test Cases ***
 Profil-CT1
@@ -34,6 +34,7 @@ Profil-CT4
     ouvrirMenu
     ecrirePseudoLong
     confirmer
+    deconnexion
 Profil-CT5
     ouvrirMenu
     choixCouleur
@@ -56,19 +57,19 @@ ecrirePseudoVideEspaces
 ecrirePseudoLong
     Input Text      cadrePsedo.PNG      eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 choixCouleur
-    ${reg}          Create List     ${890}  ${465}  ${95}   ${80}
+    ${reg}          Create List     ${830}  ${450}
 
-    FOR     ${ligne}    IN RANGE    2
+    FOR     ${ligne}        IN RANGE    2
         FOR     ${colonne}  IN RANGE    4
             
-            sk.click    Region  ${reg}
+            sk.click Region  ${reg}
             Sleep   1
 
-            ${buff}=    Evaluate    ${reg}[0]+${95}
+            ${buff}=    Evaluate    ${reg}[0]+${90}
             Set List Value  ${reg}      1   ${buff}
         END
 
-         ${buffy}=   Evaluate    ${reg} [1]+${80}
+         ${buffy}=   Evaluate    ${reg} [1]+${90}
          Set List Value  ${reg}      1   ${buffy}
          Set List Value  ${reg}      0   ${coordsx}
     END    
