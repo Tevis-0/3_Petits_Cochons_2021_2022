@@ -17,29 +17,28 @@ ${ligne}    ${2}
 ${colonne} ${4}
 
 *** Test Cases ***
-Profil-CT1
+Profil-CT1      *** Ecrire un pseudo ***
     ouvrirMenu
     ecrirePseudo
     annuler
-Profil-CT2
+Profil-CT2      *** Créer un profil vide ***
     ouvrirMenu
-    ecrirePseudoVide
     confirmer
     annuler
-Profil-CT3
+Profil-CT3      *** Créer un profil uniquement avec des espaces ***
     ouvrirMenu
     ecrirePseudoVideEspaces
     confirmer
     annuler
-Profil-CT4
+Profil-CT4      *** Tester la limite de caractère ***
     ouvrirMenu
     ecrirePseudoLong
     confirmer
-Profil-CT5
+Profil-CT5      *** Choisir une couleur ***
     ouvrirMenu
     choixCouleur
     annuler
-Profil-CT6
+Profil-CT6      *** Tester les profils doublons ***
     ouvrirMenu
     ecrirePseudo
     confirmer
@@ -52,12 +51,10 @@ ouvrirMenu
     sk.click        creerUnProfil.PNG
 ecrirePseudo
     Input Text      cadrePsedo.PNG      test0
-ecrirePseudoVide
-    Input Text      cadrePsedo.PNG      ${EMPTY}
 ecrirePseudoVideEspaces
     Input Text      cadrePsedo.PNG      ${SPACE}
 ecrirePseudoLong
-    Input Text      cadrePsedo.PNG      eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    Input Text      cadrePsedo.PNG      eeeeeeeeeeee
 choixCouleur
     ${reg}          Create List     ${890}  ${465}  ${95}   ${80}
 

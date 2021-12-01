@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211130 16:47:13.144" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211201 09:18:18.917" rpa="false" schemaversion="2">
 <suite id="s1" name="Profil-CT1" source="D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20211130 16:47:16.354" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20211130 16:47:16.351" endtime="20211130 16:47:16.366"/>
+<msg timestamp="20211201 09:18:22.101" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20211201 09:18:22.097" endtime="20211201 09:18:22.110"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:16.351" endtime="20211130 16:47:16.366"/>
+<status status="PASS" starttime="20211201 09:18:22.096" endtime="20211201 09:18:22.111"/>
 </kw>
 <test id="s1-t1" name="Profil-CT1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211130 16:47:16.367" endtime="20211130 16:47:16.386"/>
+<status status="PASS" starttime="20211201 09:18:22.112" endtime="20211201 09:18:22.135"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:16.367" endtime="20211130 16:47:16.386"/>
+<status status="PASS" starttime="20211201 09:18:22.111" endtime="20211201 09:18:22.136"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:17.931" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287237011.png'/&gt;
-[log] CLICK on L[566,444]@S(0) (543 msec)</msg>
-<status status="PASS" starttime="20211130 16:47:16.387" endtime="20211130 16:47:17.931"/>
+<msg timestamp="20211201 09:18:23.643" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346702773.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (554 msec)</msg>
+<status status="PASS" starttime="20211201 09:18:22.137" endtime="20211201 09:18:23.643"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:16.387" endtime="20211130 16:47:17.931"/>
+<status status="PASS" starttime="20211201 09:18:22.136" endtime="20211201 09:18:23.643"/>
 </kw>
 <kw name="ecrirePseudo">
 <kw name="Input Text" library="sk">
@@ -35,191 +35,195 @@
 <arg>test0</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211130 16:47:19.470" level="INFO">Input Text:
+<msg timestamp="20211201 09:18:25.508" level="INFO">Input Text:
 test0</msg>
-<msg timestamp="20211130 16:47:19.470" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287238266.png'/&gt;
-[log] CLICK on L[1070,375]@S(0) (529 msec)
+<msg timestamp="20211201 09:18:25.509" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346704319.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (550 msec)
 [log]  TYPE "test0"</msg>
-<status status="PASS" starttime="20211130 16:47:17.933" endtime="20211130 16:47:19.471"/>
+<status status="PASS" starttime="20211201 09:18:23.645" endtime="20211201 09:18:25.509"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:17.932" endtime="20211130 16:47:19.471"/>
+<status status="PASS" starttime="20211201 09:18:23.644" endtime="20211201 09:18:25.509"/>
 </kw>
 <kw name="annuler">
 <kw name="Click" library="sk">
 <arg>annuler.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:20.541" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287239739.png'/&gt;
-[log] CLICK on L[1265,262]@S(0) (543 msec)</msg>
-<status status="PASS" starttime="20211130 16:47:19.473" endtime="20211130 16:47:20.541"/>
+<msg timestamp="20211201 09:18:26.541" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346705760.png'/&gt;
+[log] CLICK on L[1210,244]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20211201 09:18:25.510" endtime="20211201 09:18:26.541"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:19.472" endtime="20211130 16:47:20.542"/>
+<status status="PASS" starttime="20211201 09:18:25.509" endtime="20211201 09:18:26.541"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:16.366" endtime="20211130 16:47:20.543"/>
+<status status="PASS" starttime="20211201 09:18:22.111" endtime="20211201 09:18:26.542"/>
 </test>
 <test id="s1-t2" name="Profil-CT2">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211130 16:47:20.547" endtime="20211130 16:47:20.556"/>
+<status status="PASS" starttime="20211201 09:18:26.544" endtime="20211201 09:18:26.550"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:20.546" endtime="20211130 16:47:20.556"/>
+<status status="PASS" starttime="20211201 09:18:26.544" endtime="20211201 09:18:26.550"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:21.728" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287240864.png'/&gt;
-[log] CLICK on L[566,444]@S(0) (552 msec)</msg>
-<status status="PASS" starttime="20211130 16:47:20.558" endtime="20211130 16:47:21.728"/>
+<msg timestamp="20211201 09:18:27.664" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346706841.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (541 msec)</msg>
+<status status="PASS" starttime="20211201 09:18:26.551" endtime="20211201 09:18:27.665"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:20.557" endtime="20211130 16:47:21.728"/>
+<status status="PASS" starttime="20211201 09:18:26.551" endtime="20211201 09:18:27.665"/>
 </kw>
 <kw name="ecrirePseudoVide">
 <kw name="Input Text" library="sk">
 <arg>cadrePsedo.PNG</arg>
+<arg>${EMPTY}</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211130 16:47:21.731" level="FAIL">Keyword 'SikuliLibrary.Input Text' expected 2 arguments, got 1.</msg>
-<status status="FAIL" starttime="20211130 16:47:21.731" endtime="20211130 16:47:21.731"/>
+<msg timestamp="20211201 09:18:29.084" level="INFO">Input Text:</msg>
+<msg timestamp="20211201 09:18:29.085" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346708281.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (537 msec)</msg>
+<msg timestamp="20211201 09:18:29.085" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Input text failed</msg>
+<status status="FAIL" starttime="20211201 09:18:27.667" endtime="20211201 09:18:29.085"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:21.730" endtime="20211130 16:47:21.732"/>
+<status status="FAIL" starttime="20211201 09:18:27.666" endtime="20211201 09:18:29.086"/>
 </kw>
 <kw name="confirmer">
-<status status="NOT RUN" starttime="20211130 16:47:21.732" endtime="20211130 16:47:21.732"/>
+<status status="NOT RUN" starttime="20211201 09:18:29.087" endtime="20211201 09:18:29.087"/>
 </kw>
 <kw name="annuler">
-<status status="NOT RUN" starttime="20211130 16:47:21.733" endtime="20211130 16:47:21.733"/>
+<status status="NOT RUN" starttime="20211201 09:18:29.087" endtime="20211201 09:18:29.087"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:20.545" endtime="20211130 16:47:21.734">Keyword 'SikuliLibrary.Input Text' expected 2 arguments, got 1.</status>
+<status status="FAIL" starttime="20211201 09:18:26.543" endtime="20211201 09:18:29.087">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Input text failed</status>
 </test>
 <test id="s1-t3" name="Profil-CT3">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211130 16:47:21.738" endtime="20211130 16:47:21.747"/>
+<status status="PASS" starttime="20211201 09:18:29.089" endtime="20211201 09:18:29.094"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:21.737" endtime="20211130 16:47:21.747"/>
+<status status="PASS" starttime="20211201 09:18:29.089" endtime="20211201 09:18:29.095"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:25.099" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287244870.png'/&gt;</msg>
-<msg timestamp="20211130 16:47:25.101" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211130 16:47:21.748" endtime="20211130 16:47:25.101"/>
+<msg timestamp="20211201 09:18:32.671" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346712493.png'/&gt;</msg>
+<msg timestamp="20211201 09:18:32.671" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
+<status status="FAIL" starttime="20211201 09:18:29.096" endtime="20211201 09:18:32.671"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:21.748" endtime="20211130 16:47:25.103"/>
+<status status="FAIL" starttime="20211201 09:18:29.095" endtime="20211201 09:18:32.672"/>
 </kw>
 <kw name="ecrirePseudoVideEspaces">
-<status status="NOT RUN" starttime="20211130 16:47:25.104" endtime="20211130 16:47:25.104"/>
+<status status="NOT RUN" starttime="20211201 09:18:32.673" endtime="20211201 09:18:32.673"/>
 </kw>
 <kw name="confirmer">
-<status status="NOT RUN" starttime="20211130 16:47:25.104" endtime="20211130 16:47:25.104"/>
+<status status="NOT RUN" starttime="20211201 09:18:32.673" endtime="20211201 09:18:32.673"/>
 </kw>
 <kw name="annuler">
-<status status="NOT RUN" starttime="20211130 16:47:25.105" endtime="20211130 16:47:25.105"/>
+<status status="NOT RUN" starttime="20211201 09:18:32.674" endtime="20211201 09:18:32.674"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:21.736" endtime="20211130 16:47:25.105">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="FAIL" starttime="20211201 09:18:29.088" endtime="20211201 09:18:32.674">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
 </test>
 <test id="s1-t4" name="Profil-CT4">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211130 16:47:25.109" endtime="20211130 16:47:25.115"/>
+<status status="PASS" starttime="20211201 09:18:32.676" endtime="20211201 09:18:32.690"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:25.108" endtime="20211130 16:47:25.115"/>
+<status status="PASS" starttime="20211201 09:18:32.676" endtime="20211201 09:18:32.690"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:28.453" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287248201.png'/&gt;</msg>
-<msg timestamp="20211130 16:47:28.454" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211130 16:47:25.116" endtime="20211130 16:47:28.454"/>
+<msg timestamp="20211201 09:18:36.264" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346716093.png'/&gt;</msg>
+<msg timestamp="20211201 09:18:36.265" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
+<status status="FAIL" starttime="20211201 09:18:32.692" endtime="20211201 09:18:36.265"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:25.116" endtime="20211130 16:47:28.455"/>
+<status status="FAIL" starttime="20211201 09:18:32.691" endtime="20211201 09:18:36.265"/>
 </kw>
 <kw name="ecrirePseudoLong">
-<status status="NOT RUN" starttime="20211130 16:47:28.455" endtime="20211130 16:47:28.455"/>
+<status status="NOT RUN" starttime="20211201 09:18:36.266" endtime="20211201 09:18:36.266"/>
 </kw>
 <kw name="confirmer">
-<status status="NOT RUN" starttime="20211130 16:47:28.456" endtime="20211130 16:47:28.456"/>
+<status status="NOT RUN" starttime="20211201 09:18:36.266" endtime="20211201 09:18:36.266"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:25.107" endtime="20211130 16:47:28.457">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="FAIL" starttime="20211201 09:18:32.675" endtime="20211201 09:18:36.266">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
 </test>
 <test id="s1-t5" name="Profil-CT5">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211130 16:47:28.460" endtime="20211130 16:47:28.467"/>
+<status status="PASS" starttime="20211201 09:18:36.269" endtime="20211201 09:18:36.274"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:28.460" endtime="20211130 16:47:28.467"/>
+<status status="PASS" starttime="20211201 09:18:36.268" endtime="20211201 09:18:36.274"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:31.776" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287251570.png'/&gt;</msg>
-<msg timestamp="20211130 16:47:31.776" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211130 16:47:28.469" endtime="20211130 16:47:31.776"/>
+<msg timestamp="20211201 09:18:39.840" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346719673.png'/&gt;</msg>
+<msg timestamp="20211201 09:18:39.841" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
+<status status="FAIL" starttime="20211201 09:18:36.275" endtime="20211201 09:18:39.841"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:28.468" endtime="20211130 16:47:31.777"/>
+<status status="FAIL" starttime="20211201 09:18:36.275" endtime="20211201 09:18:39.842"/>
 </kw>
 <kw name="choixCouleur">
-<status status="NOT RUN" starttime="20211130 16:47:31.777" endtime="20211130 16:47:31.777"/>
+<status status="NOT RUN" starttime="20211201 09:18:39.842" endtime="20211201 09:18:39.843"/>
 </kw>
 <kw name="annuler">
-<status status="NOT RUN" starttime="20211130 16:47:31.777" endtime="20211130 16:47:31.777"/>
+<status status="NOT RUN" starttime="20211201 09:18:39.843" endtime="20211201 09:18:39.843"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:28.459" endtime="20211130 16:47:31.778">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="FAIL" starttime="20211201 09:18:36.268" endtime="20211201 09:18:39.843">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
 </test>
 <test id="s1-t6" name="Profil-CT6">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211130 16:47:31.780" endtime="20211130 16:47:31.785"/>
+<status status="PASS" starttime="20211201 09:18:39.846" endtime="20211201 09:18:39.851"/>
 </kw>
-<status status="PASS" starttime="20211130 16:47:31.780" endtime="20211130 16:47:31.785"/>
+<status status="PASS" starttime="20211201 09:18:39.845" endtime="20211201 09:18:39.851"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 16:47:35.086" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638287254870.png'/&gt;</msg>
-<msg timestamp="20211130 16:47:35.087" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
-<status status="FAIL" starttime="20211130 16:47:31.786" endtime="20211130 16:47:35.087"/>
+<msg timestamp="20211201 09:18:43.417" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638346723246.png'/&gt;</msg>
+<msg timestamp="20211201 09:18:43.417" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</msg>
+<status status="FAIL" starttime="20211201 09:18:39.852" endtime="20211201 09:18:43.417"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:31.785" endtime="20211130 16:47:35.087"/>
-</kw>
-<kw name="ecrirePseudo">
-<status status="NOT RUN" starttime="20211130 16:47:35.088" endtime="20211130 16:47:35.088"/>
-</kw>
-<kw name="confirmer">
-<status status="NOT RUN" starttime="20211130 16:47:35.088" endtime="20211130 16:47:35.088"/>
+<status status="FAIL" starttime="20211201 09:18:39.851" endtime="20211201 09:18:43.418"/>
 </kw>
 <kw name="ecrirePseudo">
-<status status="NOT RUN" starttime="20211130 16:47:35.088" endtime="20211130 16:47:35.088"/>
+<status status="NOT RUN" starttime="20211201 09:18:43.419" endtime="20211201 09:18:43.419"/>
 </kw>
 <kw name="confirmer">
-<status status="NOT RUN" starttime="20211130 16:47:35.089" endtime="20211130 16:47:35.089"/>
+<status status="NOT RUN" starttime="20211201 09:18:43.419" endtime="20211201 09:18:43.419"/>
+</kw>
+<kw name="ecrirePseudo">
+<status status="NOT RUN" starttime="20211201 09:18:43.419" endtime="20211201 09:18:43.419"/>
+</kw>
+<kw name="confirmer">
+<status status="NOT RUN" starttime="20211201 09:18:43.419" endtime="20211201 09:18:43.420"/>
 </kw>
 <kw name="arretServeur">
-<status status="NOT RUN" starttime="20211130 16:47:35.089" endtime="20211130 16:47:35.089"/>
+<status status="NOT RUN" starttime="20211201 09:18:43.420" endtime="20211201 09:18:43.420"/>
 </kw>
-<status status="FAIL" starttime="20211130 16:47:31.779" endtime="20211130 16:47:35.089">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
+<status status="FAIL" starttime="20211201 09:18:39.844" endtime="20211201 09:18:43.420">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(creerUnProfil.PNG) S: 0.7</status>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211130 16:47:35.095" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211130 16:47:35.091" endtime="20211130 16:47:35.095"/>
+<msg timestamp="20211201 09:18:43.427" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211201 09:18:43.422" endtime="20211201 09:18:43.427"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20211130 16:47:13.147" endtime="20211130 16:47:35.096"/>
+<status status="FAIL" starttime="20211201 09:18:18.919" endtime="20211201 09:18:43.427"/>
 </suite>
 <statistics>
 <total>
@@ -232,8 +236,8 @@ test0</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211130 16:47:13.147" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 17: Setting variable '${colonne} ${4}' failed: Invalid variable name '${colonne} ${4}'.</msg>
-<msg timestamp="20211130 16:47:16.336" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 6: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
+<msg timestamp="20211201 09:18:18.920" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 17: Setting variable '${colonne} ${4}' failed: Invalid variable name '${colonne} ${4}'.</msg>
+<msg timestamp="20211201 09:18:22.081" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 6: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
