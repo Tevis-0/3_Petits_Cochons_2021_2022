@@ -46,14 +46,14 @@ Profil-CT6
     ecrirePseudo
     confirmer
     arretServeur
-    
+
 *** Keywords ***
 ouvrirMenu
     sk.click        creerUnProfil.PNG
 ecrirePseudo
     Input Text      cadrePsedo.PNG      test0
 ecrirePseudoVide
-    Input Text      cadrePsedo.PNG 
+    Input Text      cadrePsedo.PNG      
 ecrirePseudoVideEspaces
     Input Text      cadrePsedo.PNG      ${SPACE}
 ecrirePseudoLong
