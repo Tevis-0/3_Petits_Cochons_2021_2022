@@ -17,28 +17,28 @@ ${ligne}    ${2}
 ${colonne} ${4}
 
 *** Test Cases ***
-Profil-CT1      *** Ecrire un pseudo ***
+Profil-CT1
     ouvrirMenu
     ecrirePseudo
     annuler
-Profil-CT2      *** Créer un profil vide ***
+Profil-CT2
     ouvrirMenu
     confirmer
     annuler
-Profil-CT3      *** Créer un profil uniquement avec des espaces ***
+Profil-CT3
     ouvrirMenu
     ecrirePseudoVideEspaces
     confirmer
-    annuler
-Profil-CT4      *** Tester la limite de caractère ***
+    deconnexion
+Profil-CT4
     ouvrirMenu
     ecrirePseudoLong
     confirmer
-Profil-CT5      *** Choisir une couleur ***
+Profil-CT5
     ouvrirMenu
     choixCouleur
     annuler
-Profil-CT6      *** Tester les profils doublons ***
+Profil-CT6
     ouvrirMenu
     ecrirePseudo
     confirmer
@@ -54,7 +54,7 @@ ecrirePseudo
 ecrirePseudoVideEspaces
     Input Text      cadrePsedo.PNG      ${SPACE}
 ecrirePseudoLong
-    Input Text      cadrePsedo.PNG      eeeeeeeeeeee
+    Input Text      cadrePsedo.PNG      eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 choixCouleur
     ${reg}          Create List     ${890}  ${465}  ${95}   ${80}
 
@@ -78,9 +78,10 @@ annuler
     sk.click        annuler.PNG
 confirmer
     sk.click        enregistrerPseudo
+deconnexion
+    sk.click        deconnexion.png
 arretServeur
     Stop Remote Server
-
 ViderLogs
     Run     .\\clear_logs.bat  
 Add Needed Image Path
