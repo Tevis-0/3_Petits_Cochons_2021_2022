@@ -53,7 +53,7 @@ ouvrirMenu
 ecrirePseudo
     Input Text      cadrePsedo.PNG      test0
 ecrirePseudoVide
-    Input Text      cadrePsedo.PNG      
+    Input Text      cadrePsedo.PNG      ${EMPTY}
 ecrirePseudoVideEspaces
     Input Text      cadrePsedo.PNG      ${SPACE}
 ecrirePseudoLong
