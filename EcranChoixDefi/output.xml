@@ -1,74 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211130 15:00:02.091" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20211201 09:33:36.586" rpa="false" schemaversion="2">
 <suite id="s1" name="ChoixDefi-CT3.1" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT3.1.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20211130 15:00:09.978" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20211130 15:00:09.966" endtime="20211130 15:00:10.046"/>
+<msg timestamp="20211201 09:33:39.753" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20211201 09:33:39.744" endtime="20211201 09:33:39.785"/>
 </kw>
-<status status="PASS" starttime="20211130 15:00:09.965" endtime="20211130 15:00:10.046"/>
+<status status="PASS" starttime="20211201 09:33:39.743" endtime="20211201 09:33:39.785"/>
 </kw>
 <test id="s1-t1" name="ChoixDefi-CT3.1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20211130 15:00:10.098" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20211130 15:00:10.049" endtime="20211130 15:00:10.099"/>
+<msg timestamp="20211201 09:33:39.798" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
+<status status="PASS" starttime="20211201 09:33:39.786" endtime="20211201 09:33:39.798"/>
 </kw>
-<status status="PASS" starttime="20211130 15:00:10.048" endtime="20211130 15:00:10.100"/>
+<status status="PASS" starttime="20211201 09:33:39.785" endtime="20211201 09:33:39.798"/>
 </kw>
 <kw name="initalisationSurDiurne">
+<kw name="Input Text" library="sk">
+<arg>\\Choix Defi - CT3\\rechercher.png=0.80</arg>
+<arg>explorateur de fichiers</arg>
+<doc>Input text
+ Image could be empty</doc>
+<msg timestamp="20211201 09:33:42.607" level="INFO">Params: [\Choix Defi - CT3\rechercher.png=0.80, explorateur de fichiers]
+Input Text:
+explorateur de fichiers</msg>
+<msg timestamp="20211201 09:33:42.607" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638347620293.png'/&gt;
+[log] CLICK on L[54,1065]@S(0) (543 msec)
+[log]  TYPE "explorateur de fichiers"</msg>
+<status status="PASS" starttime="20211201 09:33:39.799" endtime="20211201 09:33:42.607"/>
+</kw>
 <kw name="Click" library="sk">
-<arg>jeu.png</arg>
+<arg>\\Choix Defi - CT3\\explorateur.png=0.80</arg>
 <doc>Click</doc>
-<msg timestamp="20211130 15:00:12.246" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20211130 15:00:12.246" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638280811203.png'/&gt;
-[log] CLICK on L[314,1064]@S(0) (550 msec)</msg>
-<status status="PASS" starttime="20211130 15:00:10.102" endtime="20211130 15:00:12.247"/>
+<msg timestamp="20211201 09:33:43.623" level="INFO">Params: [\Choix Defi - CT3\explorateur.png=0.80]</msg>
+<msg timestamp="20211201 09:33:43.623" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638347622868.png'/&gt;
+[log] CLICK on L[206,527]@S(0) (541 msec)</msg>
+<status status="PASS" starttime="20211201 09:33:42.608" endtime="20211201 09:33:43.624"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Choix Defi - CT3\\cheminDacces.png=0.60</arg>
+<doc>Click</doc>
+<msg timestamp="20211201 09:33:45.332" level="INFO">Params: [\Choix Defi - CT3\cheminDacces.png=0.60]</msg>
+<msg timestamp="20211201 09:33:45.332" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638347624575.png'/&gt;
+[log] CLICK on L[954,314]@S(0) (542 msec)</msg>
+<status status="PASS" starttime="20211201 09:33:43.624" endtime="20211201 09:33:45.333"/>
+</kw>
+<kw name="Press Special Key" library="sk">
+<arg>BACKSPACE</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20211201 09:33:45.411" level="INFO">Params: [BACKSPACE]
+[log]  TYPE "#BACK."</msg>
+<status status="PASS" starttime="20211201 09:33:45.333" endtime="20211201 09:33:45.411"/>
+</kw>
+<kw name="Input Text" library="sk">
+<arg>\\Choix Defi - CT3\\cheminDaccesVide.png=0.80</arg>
+<arg>C:\\Users\\Nico</arg>
+<doc>Input text
+ Image could be empty</doc>
+<msg timestamp="20211201 09:33:47.436" level="INFO">Params: [\Choix Defi - CT3\cheminDaccesVide.png=0.80, C:\Users\Nico]
+Input Text:
+C:\Users\Nico</msg>
+<msg timestamp="20211201 09:33:47.436" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638347625657.png'/&gt;
+[log] CLICK on L[910,315]@S(0) (551 msec)
+[log]  TYPE "C:\Users\Nico"</msg>
+<status status="PASS" starttime="20211201 09:33:45.411" endtime="20211201 09:33:47.436"/>
+</kw>
+<kw name="Press Special Key" library="sk">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20211201 09:33:47.499" level="INFO">Params: [ENTER]
+[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20211201 09:33:47.436" endtime="20211201 09:33:47.500"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211130 15:00:14.262" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211130 15:00:12.247" endtime="20211130 15:00:14.262"/>
+<msg timestamp="20211201 09:33:48.502" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211201 09:33:47.500" endtime="20211201 09:33:48.502"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Choix Defi - CT3\\barreRecherche.png=0.80</arg>
+<doc>Click</doc>
+<msg timestamp="20211201 09:33:49.610" level="INFO">Params: [\Choix Defi - CT3\barreRecherche.png=0.80]</msg>
+<msg timestamp="20211201 09:33:49.610" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638347628765.png'/&gt;
+[log] CLICK on L[1706,315]@S(0) (536 msec)</msg>
+<status status="PASS" starttime="20211201 09:33:48.502" endtime="20211201 09:33:49.610"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211201 09:33:50.610" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211201 09:33:49.610" endtime="20211201 09:33:50.610"/>
+</kw>
+<kw name="Input Text" library="sk">
+<arg>${EMPTY}</arg>
+<arg>test.mv.db</arg>
+<doc>Input text
+ Image could be empty</doc>
+<msg timestamp="20211201 09:33:51.314" level="INFO">Params: [, test.mv.db]
+Input Text:
+test.mv.db
+[log]  TYPE "test.mv.db"</msg>
+<status status="PASS" starttime="20211201 09:33:50.610" endtime="20211201 09:33:51.314"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211201 09:33:52.326" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211201 09:33:51.314" endtime="20211201 09:33:52.326"/>
+</kw>
+<kw name="Press Special Key" library="sk">
+<arg>ENTER</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<msg timestamp="20211201 09:33:52.391" level="INFO">Params: [ENTER]
+[log]  TYPE "#ENTER."</msg>
+<status status="PASS" starttime="20211201 09:33:52.326" endtime="20211201 09:33:52.391"/>
+</kw>
+<if>
+<branch type="IF" condition="sk.Screen Should Contain">
+<msg timestamp="20211201 09:33:52.391" level="FAIL">Evaluating expression 'sk.Screen Should Contain' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</msg>
+<status status="FAIL" starttime="20211201 09:33:52.391" endtime="20211201 09:33:52.391"/>
+</branch>
+<status status="FAIL" starttime="20211201 09:33:52.391" endtime="20211201 09:33:52.391"/>
+</if>
+<kw name="Press Special Key" library="sk">
+<arg>DELETE</arg>
+<doc>Press special key
+ Presses a special keyboard key.</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.391" endtime="20211201 09:33:52.391"/>
+</kw>
+<kw name="Input Text" library="sk">
+<arg>\\Choix Defi - CT3\\cheminDaccesVide.png=0.60</arg>
+<arg>C:\\Users\\Nico\\Desktop\\projet\\LES TROIS PETITS COCHONS</arg>
+<doc>Input text
+ Image could be empty</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.392" endtime="20211201 09:33:52.392"/>
+</kw>
+<kw name="ImageHorizonLibrary.Double Click">
+<arg>\\Choix Defi - CT3\\jouerPointBAT.png=0.80</arg>
+<status status="NOT RUN" starttime="20211201 09:33:52.395" endtime="20211201 09:33:52.395"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Choix Defi - CT3\\fermeFenetre.png=0.80</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.395" endtime="20211201 09:33:52.395"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>creerUnProfil.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.395" endtime="20211201 09:33:52.395"/>
+</kw>
+<kw name="Input Text" library="sk">
+<arg>cadrePsedo.png</arg>
+<arg>Psedo0</arg>
+<doc>Input text
+ Image could be empty</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.395" endtime="20211201 09:33:52.395"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>choixCouleur.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.395" endtime="20211201 09:33:52.395"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>eregistrePsedo.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.396" endtime="20211201 09:33:52.396"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>boutonJouer.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.396" endtime="20211201 09:33:52.396"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>Progression.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211201 09:33:52.396" endtime="20211201 09:33:52.396"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
-<arg>\\Choix Defi - CT2\\ecranJeuInital.png=0.70</arg>
+<arg>\\Choix Defi - CT3\\ecranJeuInital.png=0.70</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20211130 15:00:15.385" level="INFO">Params: [\Choix Defi - CT2\ecranJeuInital.png=0.70, 2]</msg>
-<msg timestamp="20211130 15:00:15.385" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638280814984.png'/&gt;</msg>
-<status status="PASS" starttime="20211130 15:00:14.262" endtime="20211130 15:00:15.386"/>
+<status status="NOT RUN" starttime="20211201 09:33:52.396" endtime="20211201 09:33:52.396"/>
 </kw>
-<status status="PASS" starttime="20211130 15:00:10.100" endtime="20211130 15:00:15.386"/>
+<status status="FAIL" starttime="20211201 09:33:39.799" endtime="20211201 09:33:52.396"/>
 </kw>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211130 15:00:15.397" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211130 15:00:15.388" endtime="20211130 15:00:15.397"/>
+<msg timestamp="20211201 09:33:52.401" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211201 09:33:52.397" endtime="20211201 09:33:52.401"/>
 </kw>
-<status status="PASS" starttime="20211130 15:00:10.046" endtime="20211130 15:00:15.398"/>
+<status status="FAIL" starttime="20211201 09:33:39.785" endtime="20211201 09:33:52.401">Evaluating expression 'sk.Screen Should Contain' failed: SyntaxError: invalid syntax (&lt;string&gt;, line 1)</status>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211130 15:00:15.410" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211130 15:00:15.402" endtime="20211130 15:00:15.410"/>
+<msg timestamp="20211201 09:33:52.405" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211201 09:33:52.403" endtime="20211201 09:33:52.406"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="PASS" starttime="20211130 15:00:02.095" endtime="20211130 15:00:15.410"/>
+<status status="FAIL" starttime="20211201 09:33:36.588" endtime="20211201 09:33:52.406"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="ChoixDefi-CT3.1">ChoixDefi-CT3.1</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="ChoixDefi-CT3.1">ChoixDefi-CT3.1</stat>
 </suite>
 </statistics>
 <errors>
