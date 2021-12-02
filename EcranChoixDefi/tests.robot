@@ -17,7 +17,11 @@ test
 
 *** Keywords ***
 lancementScriptDansScript
-    ${
+    IF  jeu.png
+        ${test}=    ${1}
+    END
+    Log To Console  ${test}
+    Sleep   5 
 
 ViderLogs
     Run     .\\clear_logs.bat

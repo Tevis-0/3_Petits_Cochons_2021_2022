@@ -21,27 +21,26 @@ initalisationSurDiurne
     sk.Click        \\Choix Defi - CT3\\explorateur.png=0.80
     sk.Click        \\Choix Defi - CT3\\cheminDacces.png=0.60
     Press Special Key   BACKSPACE
-    ##sk.Click        \\Choix Defi - CT3\\YAller.png=0.80
     
     Input Text      \\Choix Defi - CT3\\cheminDaccesVide.png=0.80    C:\\Users\\Nico
     Press Special Key   ENTER
     Sleep   1
     sk.Click    \\Choix Defi - CT3\\barreRecherche.png=0.80
     Sleep   1
-    Input Text   ${EMPTY}    test.mv.db
-    ##IHL.Type    test.mv.db  Key.ENTER 
+    Input Text   ${EMPTY}    test.mv.db 
     Sleep   1
     Press Special Key   ENTER
 
-    IF  sk.Screen Should Contain    \\Choix Defi - CT3\\fichierDBSuppr.png=0.80
-        sk.Click        \\Choix Defi - CT3\\fichierDBSuppr.png=0.80
-    END
-    
+    sk.Click        \\Choix Defi - CT3\\fichierDBSuppr.png=0.80
     Press Special Key   DELETE
+    
+    
     Input Text      \\Choix Defi - CT3\\cheminDaccesVide.png=0.60    C:\\Users\\Nico\\Desktop\\projet\\LES TROIS PETITS COCHONS
-    ImageHorizonLibrary.Double Click        \\Choix Defi - CT3\\jouerPointBAT.png=0.80
-    sk.Click        \\Choix Defi - CT3\\fermeFenetre.png=0.80
+    Press Special Key   ENTER
+    sk.Mouse Move     \\Choix Defi - CT3\\jouerPointBAT.png=0.70
+    IHL.Double Click    left    0.1
 
+    Sleep   6
     sk.Click     creerUnProfil.png
     Input Text   cadrePsedo.png      Psedo0
     sk.Click     choixCouleur.png
