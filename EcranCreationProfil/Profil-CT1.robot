@@ -5,13 +5,15 @@ Test Setup        Add Needed Image Path
 Library           SikuliLibrary     WITH NAME       sk
 Library           ImageHorizonLibrary
 Library           OperatingSystem
+Library           BuildIn
+Library           Collections
 Suite Setup       ViderLogs
 Suite Teardown    Stop Remote Server
 
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}
-${coordsx}  ${830}
-${coordsy}  ${450}
+${coordsx}  ${790}
+${coordsy}  ${420}
 
 ${ligne}    ${2}
 ${colonne}  ${4}
@@ -43,6 +45,8 @@ Profil-CT6
     ouvrirMenu
     ecrirePseudo
     confirmer
+    deconnexion
+    ouvrirMenu
     ecrirePseudo
     confirmer
     arretServeur
@@ -54,10 +58,10 @@ ecrirePseudo
     Input Text      cadrePsedo.PNG      test0
 ecrirePseudoVideEspaces
     Input Text      cadrePsedo.PNG      ${SPACE}
-ecrirePseudoLong
+ecrirePseudoLong  
     Input Text      cadrePsedo.PNG      eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 choixCouleur
-    ${reg}          Create List     ${830}  ${450}  ${70}     ${65}
+    ${reg}          Create List     ${790}  ${420}  ${70}   ${65}
 
     FOR     ${ligne}        IN RANGE    2
         FOR     ${colonne}  IN RANGE    4
@@ -66,20 +70,19 @@ choixCouleur
             sk.click Region  ${reg}
             Sleep   1
 
-            ${buff}=    Evaluate    ${reg}[0]+${90}
-            Set List Value  ${reg}      1   ${buff}
+            ${buff}=    Evaluate    ${reg}[0]+${95}
+            Set List Value  ${reg}      0   ${buff}
         END
 
          ${buffy}=   Evaluate    ${reg} [1]+${90}
          Set List Value  ${reg}      1   ${buffy}
          Set List Value  ${reg}      0   ${coordsx}
     END    
-    
 
 annuler
     sk.click        annuler.PNG
 confirmer
-    sk.click        enregistrerPseudo
+    sk.click        enregistrerPseudo.png=0.70
 deconnexion
     sk.click        deconnexion.png
 arretServeur
