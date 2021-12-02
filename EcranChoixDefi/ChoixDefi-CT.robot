@@ -63,7 +63,7 @@ ChoixDefi-CT2.1
     jeuBreak
     verificationDefisRealisables6
     jeuBreak
-    arretServeur
+    
 
 ChoixDefi-CT2.2
     verificationBoutonsBloque
