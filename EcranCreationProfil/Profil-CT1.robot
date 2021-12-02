@@ -57,11 +57,12 @@ ecrirePseudoVideEspaces
 ecrirePseudoLong
     Input Text      cadrePsedo.PNG      eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 choixCouleur
-    ${reg}          Create List     ${830}  ${450}
+    ${reg}          Create List     ${830}  ${450}  ${70}     ${65}
 
     FOR     ${ligne}        IN RANGE    2
         FOR     ${colonne}  IN RANGE    4
             
+            sk.highlight Region     ${reg}      2
             sk.click Region  ${reg}
             Sleep   1
 
