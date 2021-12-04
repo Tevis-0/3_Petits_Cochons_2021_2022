@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211202 10:15:45.364" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211202 10:27:47.358" rpa="false" schemaversion="2">
 <suite id="s1" name="Profil-CT1" source="D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20211202 10:15:50.152" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20211202 10:15:50.147" endtime="20211202 10:15:50.166"/>
+<msg timestamp="20211202 10:27:52.889" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20211202 10:27:52.880" endtime="20211202 10:27:52.904"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:50.147" endtime="20211202 10:15:50.166"/>
+<status status="PASS" starttime="20211202 10:27:52.879" endtime="20211202 10:27:52.904"/>
 </kw>
 <test id="s1-t1" name="Profil-CT1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211202 10:15:50.167" endtime="20211202 10:15:50.205"/>
+<status status="PASS" starttime="20211202 10:27:52.907" endtime="20211202 10:27:52.951"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:50.167" endtime="20211202 10:15:50.205"/>
+<status status="PASS" starttime="20211202 10:27:52.906" endtime="20211202 10:27:52.951"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:15:52.085" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436551031.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (554 msec)</msg>
-<status status="PASS" starttime="20211202 10:15:50.206" endtime="20211202 10:15:52.085"/>
+<msg timestamp="20211202 10:27:54.959" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437273896.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (548 msec)</msg>
+<status status="PASS" starttime="20211202 10:27:52.953" endtime="20211202 10:27:54.959"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:50.206" endtime="20211202 10:15:52.086"/>
+<status status="PASS" starttime="20211202 10:27:52.952" endtime="20211202 10:27:54.960"/>
 </kw>
 <kw name="ecrirePseudo">
 <kw name="Input Text" library="sk">
@@ -35,86 +35,86 @@
 <arg>test0</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211202 10:15:54.399" level="INFO">Input Text:
+<msg timestamp="20211202 10:27:57.714" level="INFO">Input Text:
 test0</msg>
-<msg timestamp="20211202 10:15:54.399" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436553051.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (531 msec)
+<msg timestamp="20211202 10:27:57.714" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437276221.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (541 msec)
 [log]  TYPE "test0"</msg>
-<status status="PASS" starttime="20211202 10:15:52.088" endtime="20211202 10:15:54.400"/>
+<status status="PASS" starttime="20211202 10:27:54.962" endtime="20211202 10:27:57.714"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:52.087" endtime="20211202 10:15:54.400"/>
+<status status="PASS" starttime="20211202 10:27:54.961" endtime="20211202 10:27:57.715"/>
 </kw>
 <kw name="annuler">
 <kw name="Click" library="sk">
 <arg>annuler.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:15:55.702" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436554809.png'/&gt;
-[log] CLICK on L[1210,244]@S(0) (537 msec)</msg>
-<status status="PASS" starttime="20211202 10:15:54.402" endtime="20211202 10:15:55.702"/>
+<msg timestamp="20211202 10:27:59.240" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437278261.png'/&gt;
+[log] CLICK on L[1210,244]@S(0) (546 msec)</msg>
+<status status="PASS" starttime="20211202 10:27:57.717" endtime="20211202 10:27:59.240"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:54.401" endtime="20211202 10:15:55.702"/>
+<status status="PASS" starttime="20211202 10:27:57.716" endtime="20211202 10:27:59.240"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:50.166" endtime="20211202 10:15:55.704"/>
+<status status="PASS" starttime="20211202 10:27:52.904" endtime="20211202 10:27:59.242"/>
 </test>
 <test id="s1-t2" name="Profil-CT2">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211202 10:15:55.708" endtime="20211202 10:15:55.719"/>
+<status status="PASS" starttime="20211202 10:27:59.247" endtime="20211202 10:27:59.258"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:55.707" endtime="20211202 10:15:55.719"/>
+<status status="PASS" starttime="20211202 10:27:59.246" endtime="20211202 10:27:59.258"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:15:57.130" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436556173.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (549 msec)</msg>
-<status status="PASS" starttime="20211202 10:15:55.721" endtime="20211202 10:15:57.131"/>
+<msg timestamp="20211202 10:28:00.974" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437279850.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (550 msec)</msg>
+<status status="PASS" starttime="20211202 10:27:59.261" endtime="20211202 10:28:00.974"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:55.720" endtime="20211202 10:15:57.132"/>
+<status status="PASS" starttime="20211202 10:27:59.260" endtime="20211202 10:28:00.974"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo.png=0.70</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:15:58.466" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436557539.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (543 msec)</msg>
-<status status="PASS" starttime="20211202 10:15:57.134" endtime="20211202 10:15:58.466"/>
+<msg timestamp="20211202 10:28:02.982" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437281933.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (548 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:00.978" endtime="20211202 10:28:02.983"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:57.133" endtime="20211202 10:15:58.466"/>
+<status status="PASS" starttime="20211202 10:28:00.975" endtime="20211202 10:28:02.983"/>
 </kw>
 <kw name="annuler">
 <kw name="Click" library="sk">
 <arg>annuler.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:15:59.817" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436558844.png'/&gt;
-[log] CLICK on L[1210,244]@S(0) (542 msec)</msg>
-<status status="PASS" starttime="20211202 10:15:58.469" endtime="20211202 10:15:59.817"/>
+<msg timestamp="20211202 10:28:04.431" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437283415.png'/&gt;
+[log] CLICK on L[1210,244]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:02.986" endtime="20211202 10:28:04.431"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:58.467" endtime="20211202 10:15:59.818"/>
+<status status="PASS" starttime="20211202 10:28:02.985" endtime="20211202 10:28:04.432"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:55.706" endtime="20211202 10:15:59.819"/>
+<status status="PASS" starttime="20211202 10:27:59.245" endtime="20211202 10:28:04.433"/>
 </test>
 <test id="s1-t3" name="Profil-CT3">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211202 10:15:59.822" endtime="20211202 10:15:59.830"/>
+<status status="PASS" starttime="20211202 10:28:04.437" endtime="20211202 10:28:04.445"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:59.821" endtime="20211202 10:15:59.831"/>
+<status status="PASS" starttime="20211202 10:28:04.436" endtime="20211202 10:28:04.446"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:01.238" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436560259.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (535 msec)</msg>
-<status status="PASS" starttime="20211202 10:15:59.833" endtime="20211202 10:16:01.238"/>
+<msg timestamp="20211202 10:28:06.170" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437285027.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (543 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:04.448" endtime="20211202 10:28:06.171"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:59.831" endtime="20211202 10:16:01.238"/>
+<status status="PASS" starttime="20211202 10:28:04.447" endtime="20211202 10:28:06.171"/>
 </kw>
 <kw name="ecrirePseudoVideEspaces">
 <kw name="Input Text" library="sk">
@@ -122,54 +122,54 @@ test0</msg>
 <arg>${SPACE}</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211202 10:16:03.044" level="INFO">Input Text:</msg>
-<msg timestamp="20211202 10:16:03.045" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436562027.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (537 msec)
+<msg timestamp="20211202 10:28:08.352" level="INFO">Input Text:</msg>
+<msg timestamp="20211202 10:28:08.352" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437287206.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (541 msec)
 [log]  TYPE " "</msg>
-<status status="PASS" starttime="20211202 10:16:01.241" endtime="20211202 10:16:03.045"/>
+<status status="PASS" starttime="20211202 10:28:06.175" endtime="20211202 10:28:08.352"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:01.240" endtime="20211202 10:16:03.045"/>
+<status status="PASS" starttime="20211202 10:28:06.174" endtime="20211202 10:28:08.354"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo.png=0.70</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:04.382" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436563456.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (528 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:03.047" endtime="20211202 10:16:04.382"/>
+<msg timestamp="20211202 10:28:09.975" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437288880.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:08.356" endtime="20211202 10:28:09.975"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:03.046" endtime="20211202 10:16:04.382"/>
+<status status="PASS" starttime="20211202 10:28:08.355" endtime="20211202 10:28:09.976"/>
 </kw>
 <kw name="deconnexion">
 <kw name="Click" library="sk">
 <arg>deconnexion.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:07.219" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436566312.png'/&gt;
-[log] CLICK on L[1600,824]@S(0) (555 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:04.384" endtime="20211202 10:16:07.220"/>
+<msg timestamp="20211202 10:28:12.992" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437292013.png'/&gt;
+[log] CLICK on L[1600,824]@S(0) (541 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:09.988" endtime="20211202 10:28:12.992"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:04.383" endtime="20211202 10:16:07.220"/>
+<status status="PASS" starttime="20211202 10:28:09.978" endtime="20211202 10:28:12.993"/>
 </kw>
-<status status="PASS" starttime="20211202 10:15:59.820" endtime="20211202 10:16:07.222"/>
+<status status="PASS" starttime="20211202 10:28:04.435" endtime="20211202 10:28:12.993"/>
 </test>
 <test id="s1-t4" name="Profil-CT4">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211202 10:16:07.228" endtime="20211202 10:16:07.240"/>
+<status status="PASS" starttime="20211202 10:28:12.997" endtime="20211202 10:28:13.006"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:07.226" endtime="20211202 10:16:07.241"/>
+<status status="PASS" starttime="20211202 10:28:12.996" endtime="20211202 10:28:13.007"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:10.269" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436569302.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (542 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:07.243" endtime="20211202 10:16:10.269"/>
+<msg timestamp="20211202 10:28:16.297" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437295186.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:13.009" endtime="20211202 10:28:16.298"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:07.242" endtime="20211202 10:16:10.271"/>
+<status status="PASS" starttime="20211202 10:28:13.008" endtime="20211202 10:28:16.299"/>
 </kw>
 <kw name="ecrirePseudoLong">
 <kw name="Input Text" library="sk">
@@ -177,55 +177,55 @@ test0</msg>
 <arg>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211202 10:16:14.720" level="INFO">Input Text:
+<msg timestamp="20211202 10:28:21.012" level="INFO">Input Text:
 eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
-<msg timestamp="20211202 10:16:14.720" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436571118.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (531 msec)
+<msg timestamp="20211202 10:28:21.012" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437297317.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (555 msec)
 [log]  TYPE "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"</msg>
-<status status="PASS" starttime="20211202 10:16:10.272" endtime="20211202 10:16:14.721"/>
+<status status="PASS" starttime="20211202 10:28:16.302" endtime="20211202 10:28:21.013"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:10.271" endtime="20211202 10:16:14.721"/>
+<status status="PASS" starttime="20211202 10:28:16.300" endtime="20211202 10:28:21.013"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo.png=0.70</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:16.036" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436575096.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (552 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:14.723" endtime="20211202 10:16:16.036"/>
+<msg timestamp="20211202 10:28:22.498" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437301545.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (538 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:21.016" endtime="20211202 10:28:22.498"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:14.722" endtime="20211202 10:16:16.036"/>
+<status status="PASS" starttime="20211202 10:28:21.015" endtime="20211202 10:28:22.498"/>
 </kw>
 <kw name="deconnexion">
 <kw name="Click" library="sk">
 <arg>deconnexion.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:18.609" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436577683.png'/&gt;
-[log] CLICK on L[1600,824]@S(0) (533 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:16.038" endtime="20211202 10:16:18.609"/>
+<msg timestamp="20211202 10:28:25.394" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437304401.png'/&gt;
+[log] CLICK on L[1600,824]@S(0) (559 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:22.500" endtime="20211202 10:28:25.394"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:16.037" endtime="20211202 10:16:18.610"/>
+<status status="PASS" starttime="20211202 10:28:22.499" endtime="20211202 10:28:25.395"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:07.225" endtime="20211202 10:16:18.611"/>
+<status status="PASS" starttime="20211202 10:28:12.995" endtime="20211202 10:28:25.396"/>
 </test>
 <test id="s1-t5" name="Profil-CT5">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211202 10:16:18.616" endtime="20211202 10:16:18.629"/>
+<status status="PASS" starttime="20211202 10:28:25.401" endtime="20211202 10:28:25.412"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:18.615" endtime="20211202 10:16:18.630"/>
+<status status="PASS" starttime="20211202 10:28:25.400" endtime="20211202 10:28:25.412"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:21.743" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436580731.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (535 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:18.632" endtime="20211202 10:16:21.744"/>
+<msg timestamp="20211202 10:28:28.586" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437307551.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (546 msec)</msg>
+<status status="PASS" starttime="20211202 10:28:25.416" endtime="20211202 10:28:28.586"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:18.631" endtime="20211202 10:16:21.745"/>
+<status status="PASS" starttime="20211202 10:28:25.413" endtime="20211202 10:28:28.587"/>
 </kw>
 <kw name="choixCouleur">
 <kw name="Create List" library="BuiltIn">
@@ -235,8 +235,8 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${70}</arg>
 <arg>${65}</arg>
 <doc>Returns a list containing given items.</doc>
-<msg timestamp="20211202 10:16:21.755" level="INFO">${reg} = [790, 420, 70, 65]</msg>
-<status status="PASS" starttime="20211202 10:16:21.748" endtime="20211202 10:16:21.755"/>
+<msg timestamp="20211202 10:28:28.594" level="INFO">${reg} = [790, 420, 70, 65]</msg>
+<status status="PASS" starttime="20211202 10:28:28.590" endtime="20211202 10:28:28.594"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${ligne}</var>
@@ -252,39 +252,39 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:24.231" level="INFO">[log] highlight R[790,420 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:24.231" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436584222.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:21.756" endtime="20211202 10:16:24.232"/>
+<msg timestamp="20211202 10:28:31.145" level="INFO">[log] highlight R[790,420 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:31.145" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437311132.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:28.597" endtime="20211202 10:28:31.146"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:24.912" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436584270.png'/&gt;
-[log] CLICK on L[825,452]@S(0) (553 msec)</msg>
-<msg timestamp="20211202 10:16:24.912" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436584906.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:24.232" endtime="20211202 10:16:24.912"/>
+<msg timestamp="20211202 10:28:31.851" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437311195.png'/&gt;
+[log] CLICK on L[825,452]@S(0) (549 msec)</msg>
+<msg timestamp="20211202 10:28:31.851" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437311844.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:31.146" endtime="20211202 10:28:31.851"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:25.920" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:24.913" endtime="20211202 10:16:25.920"/>
+<msg timestamp="20211202 10:28:32.877" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:31.851" endtime="20211202 10:28:32.878"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:25.923" level="INFO">${buff} = 885</msg>
-<status status="PASS" starttime="20211202 10:16:25.921" endtime="20211202 10:16:25.923"/>
+<msg timestamp="20211202 10:28:32.881" level="INFO">${buff} = 885</msg>
+<status status="PASS" starttime="20211202 10:28:32.878" endtime="20211202 10:28:32.881"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:25.923" endtime="20211202 10:16:25.924"/>
+<status status="PASS" starttime="20211202 10:28:32.882" endtime="20211202 10:28:32.883"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:21.756" endtime="20211202 10:16:25.924"/>
+<status status="PASS" starttime="20211202 10:28:28.596" endtime="20211202 10:28:32.883"/>
 </iter>
 <iter>
 <var name="${colonne}">1</var>
@@ -292,39 +292,39 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:28.292" level="INFO">[log] highlight R[885,420 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:28.292" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436588275.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:25.924" endtime="20211202 10:16:28.293"/>
+<msg timestamp="20211202 10:28:35.270" level="INFO">[log] highlight R[885,420 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:35.270" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437315247.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:32.884" endtime="20211202 10:28:35.271"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:29.313" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436588338.png'/&gt;
-[log] CLICK on L[920,452]@S(0) (539 msec)</msg>
-<msg timestamp="20211202 10:16:29.313" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436589295.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:28.293" endtime="20211202 10:16:29.314"/>
+<msg timestamp="20211202 10:28:36.277" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437315309.png'/&gt;
+[log] CLICK on L[920,452]@S(0) (546 msec)</msg>
+<msg timestamp="20211202 10:28:36.278" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437316268.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:35.271" endtime="20211202 10:28:36.278"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:30.325" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:29.314" endtime="20211202 10:16:30.325"/>
+<msg timestamp="20211202 10:28:37.291" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:36.278" endtime="20211202 10:28:37.291"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:30.327" level="INFO">${buff} = 980</msg>
-<status status="PASS" starttime="20211202 10:16:30.325" endtime="20211202 10:16:30.327"/>
+<msg timestamp="20211202 10:28:37.294" level="INFO">${buff} = 980</msg>
+<status status="PASS" starttime="20211202 10:28:37.292" endtime="20211202 10:28:37.294"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:30.327" endtime="20211202 10:16:30.328"/>
+<status status="PASS" starttime="20211202 10:28:37.294" endtime="20211202 10:28:37.295"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:25.924" endtime="20211202 10:16:30.328"/>
+<status status="PASS" starttime="20211202 10:28:32.883" endtime="20211202 10:28:37.295"/>
 </iter>
 <iter>
 <var name="${colonne}">2</var>
@@ -332,39 +332,39 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:32.693" level="INFO">[log] highlight R[980,420 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:32.693" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436592674.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:30.329" endtime="20211202 10:16:32.694"/>
+<msg timestamp="20211202 10:28:39.680" level="INFO">[log] highlight R[980,420 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:39.681" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437319659.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:37.295" endtime="20211202 10:28:39.681"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:33.362" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436592736.png'/&gt;
-[log] CLICK on L[1015,452]@S(0) (552 msec)</msg>
-<msg timestamp="20211202 10:16:33.362" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436593355.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:32.694" endtime="20211202 10:16:33.362"/>
+<msg timestamp="20211202 10:28:40.374" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437319721.png'/&gt;
+[log] CLICK on L[1015,452]@S(0) (564 msec)</msg>
+<msg timestamp="20211202 10:28:40.374" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437320366.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:39.682" endtime="20211202 10:28:40.375"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:34.367" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:33.362" endtime="20211202 10:16:34.368"/>
+<msg timestamp="20211202 10:28:41.387" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:40.376" endtime="20211202 10:28:41.388"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:34.370" level="INFO">${buff} = 1075</msg>
-<status status="PASS" starttime="20211202 10:16:34.368" endtime="20211202 10:16:34.370"/>
+<msg timestamp="20211202 10:28:41.390" level="INFO">${buff} = 1075</msg>
+<status status="PASS" starttime="20211202 10:28:41.388" endtime="20211202 10:28:41.390"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:34.370" endtime="20211202 10:16:34.371"/>
+<status status="PASS" starttime="20211202 10:28:41.390" endtime="20211202 10:28:41.391"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:30.328" endtime="20211202 10:16:34.371"/>
+<status status="PASS" starttime="20211202 10:28:37.295" endtime="20211202 10:28:41.391"/>
 </iter>
 <iter>
 <var name="${colonne}">3</var>
@@ -372,64 +372,64 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:36.742" level="INFO">[log] highlight R[1075,420 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:36.742" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436596723.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:34.371" endtime="20211202 10:16:36.742"/>
+<msg timestamp="20211202 10:28:43.769" level="INFO">[log] highlight R[1075,420 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:43.769" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437323748.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:41.391" endtime="20211202 10:28:43.770"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:37.428" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436596786.png'/&gt;
-[log] CLICK on L[1110,452]@S(0) (554 msec)</msg>
-<msg timestamp="20211202 10:16:37.428" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436597421.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:36.743" endtime="20211202 10:16:37.428"/>
+<msg timestamp="20211202 10:28:44.447" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437323812.png'/&gt;
+[log] CLICK on L[1110,452]@S(0) (547 msec)</msg>
+<msg timestamp="20211202 10:28:44.447" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437324441.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:43.770" endtime="20211202 10:28:44.447"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:38.434" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:37.428" endtime="20211202 10:16:38.434"/>
+<msg timestamp="20211202 10:28:45.457" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:44.448" endtime="20211202 10:28:45.457"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:38.436" level="INFO">${buff} = 1170</msg>
-<status status="PASS" starttime="20211202 10:16:38.434" endtime="20211202 10:16:38.436"/>
+<msg timestamp="20211202 10:28:45.459" level="INFO">${buff} = 1170</msg>
+<status status="PASS" starttime="20211202 10:28:45.457" endtime="20211202 10:28:45.460"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:38.437" endtime="20211202 10:16:38.437"/>
+<status status="PASS" starttime="20211202 10:28:45.460" endtime="20211202 10:28:45.461"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:34.371" endtime="20211202 10:16:38.437"/>
+<status status="PASS" starttime="20211202 10:28:41.391" endtime="20211202 10:28:45.461"/>
 </iter>
-<status status="PASS" starttime="20211202 10:16:21.756" endtime="20211202 10:16:38.437"/>
+<status status="PASS" starttime="20211202 10:28:28.595" endtime="20211202 10:28:45.461"/>
 </for>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buffy}</var>
 <arg>${reg} [1]+${90}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:38.439" level="INFO">${buffy} = 510</msg>
-<status status="PASS" starttime="20211202 10:16:38.438" endtime="20211202 10:16:38.439"/>
+<msg timestamp="20211202 10:28:45.464" level="INFO">${buffy} = 510</msg>
+<status status="PASS" starttime="20211202 10:28:45.461" endtime="20211202 10:28:45.465"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>1</arg>
 <arg>${buffy}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:38.439" endtime="20211202 10:16:38.440"/>
+<status status="PASS" starttime="20211202 10:28:45.465" endtime="20211202 10:28:45.466"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${coordsx}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:38.440" endtime="20211202 10:16:38.441"/>
+<status status="PASS" starttime="20211202 10:28:45.466" endtime="20211202 10:28:45.467"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:21.756" endtime="20211202 10:16:38.441"/>
+<status status="PASS" starttime="20211202 10:28:28.595" endtime="20211202 10:28:45.467"/>
 </iter>
 <iter>
 <var name="${ligne}">1</var>
@@ -442,39 +442,39 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:40.807" level="INFO">[log] highlight R[790,510 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:40.807" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436600787.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:38.442" endtime="20211202 10:16:40.808"/>
+<msg timestamp="20211202 10:28:47.857" level="INFO">[log] highlight R[790,510 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:47.857" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437327836.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:45.469" endtime="20211202 10:28:47.857"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:41.490" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436600848.png'/&gt;
-[log] CLICK on L[825,542]@S(0) (551 msec)</msg>
-<msg timestamp="20211202 10:16:41.490" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436601482.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:40.808" endtime="20211202 10:16:41.490"/>
+<msg timestamp="20211202 10:28:48.537" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437327899.png'/&gt;
+[log] CLICK on L[825,542]@S(0) (563 msec)</msg>
+<msg timestamp="20211202 10:28:48.537" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437328530.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:47.858" endtime="20211202 10:28:48.537"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:42.495" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:41.491" endtime="20211202 10:16:42.495"/>
+<msg timestamp="20211202 10:28:49.545" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:48.537" endtime="20211202 10:28:49.545"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:42.497" level="INFO">${buff} = 885</msg>
-<status status="PASS" starttime="20211202 10:16:42.496" endtime="20211202 10:16:42.497"/>
+<msg timestamp="20211202 10:28:49.549" level="INFO">${buff} = 885</msg>
+<status status="PASS" starttime="20211202 10:28:49.546" endtime="20211202 10:28:49.549"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:42.498" endtime="20211202 10:16:42.499"/>
+<status status="PASS" starttime="20211202 10:28:49.550" endtime="20211202 10:28:49.551"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:38.441" endtime="20211202 10:16:42.499"/>
+<status status="PASS" starttime="20211202 10:28:45.468" endtime="20211202 10:28:49.551"/>
 </iter>
 <iter>
 <var name="${colonne}">1</var>
@@ -482,39 +482,39 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:44.880" level="INFO">[log] highlight R[885,510 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:44.880" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436604861.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:42.499" endtime="20211202 10:16:44.881"/>
+<msg timestamp="20211202 10:28:51.916" level="INFO">[log] highlight R[885,510 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:51.916" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437331894.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:49.551" endtime="20211202 10:28:51.916"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:45.554" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436604925.png'/&gt;
-[log] CLICK on L[920,542]@S(0) (557 msec)</msg>
-<msg timestamp="20211202 10:16:45.554" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436605548.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:44.881" endtime="20211202 10:16:45.554"/>
+<msg timestamp="20211202 10:28:52.617" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437331974.png'/&gt;
+[log] CLICK on L[920,542]@S(0) (551 msec)</msg>
+<msg timestamp="20211202 10:28:52.617" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437332609.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:51.917" endtime="20211202 10:28:52.617"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:46.555" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:45.554" endtime="20211202 10:16:46.555"/>
+<msg timestamp="20211202 10:28:53.619" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:52.617" endtime="20211202 10:28:53.619"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:46.557" level="INFO">${buff} = 980</msg>
-<status status="PASS" starttime="20211202 10:16:46.556" endtime="20211202 10:16:46.557"/>
+<msg timestamp="20211202 10:28:53.621" level="INFO">${buff} = 980</msg>
+<status status="PASS" starttime="20211202 10:28:53.619" endtime="20211202 10:28:53.621"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:46.558" endtime="20211202 10:16:46.558"/>
+<status status="PASS" starttime="20211202 10:28:53.621" endtime="20211202 10:28:53.623"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:42.499" endtime="20211202 10:16:46.558"/>
+<status status="PASS" starttime="20211202 10:28:49.551" endtime="20211202 10:28:53.624"/>
 </iter>
 <iter>
 <var name="${colonne}">2</var>
@@ -522,39 +522,39 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:48.930" level="INFO">[log] highlight R[980,510 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:48.930" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436608912.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:46.559" endtime="20211202 10:16:48.930"/>
+<msg timestamp="20211202 10:28:56.001" level="INFO">[log] highlight R[980,510 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:28:56.001" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437335983.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:53.624" endtime="20211202 10:28:56.001"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:49.606" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436608975.png'/&gt;
-[log] CLICK on L[1015,542]@S(0) (556 msec)</msg>
-<msg timestamp="20211202 10:16:49.606" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436609598.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:48.931" endtime="20211202 10:16:49.607"/>
+<msg timestamp="20211202 10:28:56.673" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437336046.png'/&gt;
+[log] CLICK on L[1015,542]@S(0) (536 msec)</msg>
+<msg timestamp="20211202 10:28:56.673" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437336664.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:56.002" endtime="20211202 10:28:56.674"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:50.610" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:49.607" endtime="20211202 10:16:50.610"/>
+<msg timestamp="20211202 10:28:57.688" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:28:56.674" endtime="20211202 10:28:57.689"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:50.612" level="INFO">${buff} = 1075</msg>
-<status status="PASS" starttime="20211202 10:16:50.611" endtime="20211202 10:16:50.612"/>
+<msg timestamp="20211202 10:28:57.692" level="INFO">${buff} = 1075</msg>
+<status status="PASS" starttime="20211202 10:28:57.689" endtime="20211202 10:28:57.692"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:50.613" endtime="20211202 10:16:50.614"/>
+<status status="PASS" starttime="20211202 10:28:57.693" endtime="20211202 10:28:57.694"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:46.559" endtime="20211202 10:16:50.614"/>
+<status status="PASS" starttime="20211202 10:28:53.624" endtime="20211202 10:28:57.694"/>
 </iter>
 <iter>
 <var name="${colonne}">3</var>
@@ -562,99 +562,99 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>${reg}</arg>
 <arg>2</arg>
 <doc>Highlight region</doc>
-<msg timestamp="20211202 10:16:52.973" level="INFO">[log] highlight R[1075,510 70x65]@S(0) for 2.0 secs</msg>
-<msg timestamp="20211202 10:16:52.973" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436612954.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:50.614" endtime="20211202 10:16:52.973"/>
+<msg timestamp="20211202 10:29:00.063" level="INFO">[log] highlight R[1075,510 70x65]@S(0) for 2.0 secs</msg>
+<msg timestamp="20211202 10:29:00.063" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437340045.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:28:57.695" endtime="20211202 10:29:00.063"/>
 </kw>
 <kw name="Click Region" library="sk">
 <arg>${reg}</arg>
 <doc>Click region</doc>
-<msg timestamp="20211202 10:16:53.645" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436613018.png'/&gt;
-[log] CLICK on L[1110,542]@S(0) (536 msec)</msg>
-<msg timestamp="20211202 10:16:53.645" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436613638.png'/&gt;</msg>
-<status status="PASS" starttime="20211202 10:16:52.974" endtime="20211202 10:16:53.646"/>
+<msg timestamp="20211202 10:29:00.748" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437340108.png'/&gt;
+[log] CLICK on L[1110,542]@S(0) (547 msec)</msg>
+<msg timestamp="20211202 10:29:00.748" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437340741.png'/&gt;</msg>
+<status status="PASS" starttime="20211202 10:29:00.064" endtime="20211202 10:29:00.748"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211202 10:16:54.655" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211202 10:16:53.646" endtime="20211202 10:16:54.655"/>
+<msg timestamp="20211202 10:29:01.762" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211202 10:29:00.749" endtime="20211202 10:29:01.762"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buff}</var>
 <arg>${reg}[0]+${95}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:54.657" level="INFO">${buff} = 1170</msg>
-<status status="PASS" starttime="20211202 10:16:54.656" endtime="20211202 10:16:54.657"/>
+<msg timestamp="20211202 10:29:01.764" level="INFO">${buff} = 1170</msg>
+<status status="PASS" starttime="20211202 10:29:01.762" endtime="20211202 10:29:01.764"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${buff}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:54.658" endtime="20211202 10:16:54.658"/>
+<status status="PASS" starttime="20211202 10:29:01.764" endtime="20211202 10:29:01.765"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:50.614" endtime="20211202 10:16:54.658"/>
+<status status="PASS" starttime="20211202 10:28:57.694" endtime="20211202 10:29:01.765"/>
 </iter>
-<status status="PASS" starttime="20211202 10:16:38.441" endtime="20211202 10:16:54.658"/>
+<status status="PASS" starttime="20211202 10:28:45.468" endtime="20211202 10:29:01.765"/>
 </for>
 <kw name="Evaluate" library="BuiltIn">
 <var>${buffy}</var>
 <arg>${reg} [1]+${90}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20211202 10:16:54.660" level="INFO">${buffy} = 600</msg>
-<status status="PASS" starttime="20211202 10:16:54.659" endtime="20211202 10:16:54.660"/>
+<msg timestamp="20211202 10:29:01.767" level="INFO">${buffy} = 600</msg>
+<status status="PASS" starttime="20211202 10:29:01.765" endtime="20211202 10:29:01.767"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>1</arg>
 <arg>${buffy}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:54.660" endtime="20211202 10:16:54.661"/>
+<status status="PASS" starttime="20211202 10:29:01.767" endtime="20211202 10:29:01.768"/>
 </kw>
 <kw name="Set List Value" library="Collections">
 <arg>${reg}</arg>
 <arg>0</arg>
 <arg>${coordsx}</arg>
 <doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
-<status status="PASS" starttime="20211202 10:16:54.661" endtime="20211202 10:16:54.662"/>
+<status status="PASS" starttime="20211202 10:29:01.768" endtime="20211202 10:29:01.769"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:38.441" endtime="20211202 10:16:54.662"/>
+<status status="PASS" starttime="20211202 10:28:45.468" endtime="20211202 10:29:01.769"/>
 </iter>
-<status status="PASS" starttime="20211202 10:16:21.755" endtime="20211202 10:16:54.662"/>
+<status status="PASS" starttime="20211202 10:28:28.594" endtime="20211202 10:29:01.770"/>
 </for>
-<status status="PASS" starttime="20211202 10:16:21.747" endtime="20211202 10:16:54.663"/>
+<status status="PASS" starttime="20211202 10:28:28.588" endtime="20211202 10:29:01.771"/>
 </kw>
 <kw name="annuler">
 <kw name="Click" library="sk">
 <arg>annuler.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:55.984" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436615067.png'/&gt;
-[log] CLICK on L[1210,244]@S(0) (551 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:54.666" endtime="20211202 10:16:55.984"/>
+<msg timestamp="20211202 10:29:03.241" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437342220.png'/&gt;
+[log] CLICK on L[1210,244]@S(0) (539 msec)</msg>
+<status status="PASS" starttime="20211202 10:29:01.774" endtime="20211202 10:29:03.241"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:54.664" endtime="20211202 10:16:55.984"/>
+<status status="PASS" starttime="20211202 10:29:01.773" endtime="20211202 10:29:03.242"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:18.614" endtime="20211202 10:16:55.985"/>
+<status status="PASS" starttime="20211202 10:28:25.399" endtime="20211202 10:29:03.244"/>
 </test>
 <test id="s1-t6" name="Profil-CT6">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20211202 10:16:55.990" endtime="20211202 10:16:55.998"/>
+<status status="PASS" starttime="20211202 10:29:03.249" endtime="20211202 10:29:03.258"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:55.989" endtime="20211202 10:16:55.998"/>
+<status status="PASS" starttime="20211202 10:29:03.248" endtime="20211202 10:29:03.259"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:16:57.409" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436616403.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (531 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:56.000" endtime="20211202 10:16:57.409"/>
+<msg timestamp="20211202 10:29:04.877" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437343787.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (543 msec)</msg>
+<status status="PASS" starttime="20211202 10:29:03.260" endtime="20211202 10:29:04.877"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:55.999" endtime="20211202 10:16:57.409"/>
+<status status="PASS" starttime="20211202 10:29:03.259" endtime="20211202 10:29:04.878"/>
 </kw>
 <kw name="ecrirePseudo">
 <kw name="Input Text" library="sk">
@@ -662,44 +662,44 @@ eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</msg>
 <arg>test0</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211202 10:16:59.169" level="INFO">Input Text:
+<msg timestamp="20211202 10:29:07.474" level="INFO">Input Text:
 test0</msg>
-<msg timestamp="20211202 10:16:59.170" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436617896.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (532 msec)
+<msg timestamp="20211202 10:29:07.474" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437345973.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (553 msec)
 [log]  TYPE "test0"</msg>
-<status status="PASS" starttime="20211202 10:16:57.411" endtime="20211202 10:16:59.170"/>
+<status status="PASS" starttime="20211202 10:29:04.881" endtime="20211202 10:29:07.475"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:57.410" endtime="20211202 10:16:59.171"/>
+<status status="PASS" starttime="20211202 10:29:04.879" endtime="20211202 10:29:07.475"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo.png=0.70</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:17:00.474" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436619581.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (540 msec)</msg>
-<status status="PASS" starttime="20211202 10:16:59.175" endtime="20211202 10:17:00.474"/>
+<msg timestamp="20211202 10:29:09.011" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437347979.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (544 msec)</msg>
+<status status="PASS" starttime="20211202 10:29:07.479" endtime="20211202 10:29:09.011"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:59.174" endtime="20211202 10:17:00.475"/>
+<status status="PASS" starttime="20211202 10:29:07.477" endtime="20211202 10:29:09.012"/>
 </kw>
 <kw name="deconnexion">
 <kw name="Click" library="sk">
 <arg>deconnexion.png</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:17:03.070" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436622157.png'/&gt;
-[log] CLICK on L[1600,824]@S(0) (538 msec)</msg>
-<status status="PASS" starttime="20211202 10:17:00.477" endtime="20211202 10:17:03.070"/>
+<msg timestamp="20211202 10:29:12.042" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437350981.png'/&gt;
+[log] CLICK on L[1600,824]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20211202 10:29:09.017" endtime="20211202 10:29:12.043"/>
 </kw>
-<status status="PASS" starttime="20211202 10:17:00.476" endtime="20211202 10:17:03.071"/>
+<status status="PASS" starttime="20211202 10:29:09.015" endtime="20211202 10:29:12.043"/>
 </kw>
 <kw name="ouvrirMenu">
 <kw name="Click" library="sk">
 <arg>creerUnProfil.PNG</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:17:06.239" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436625200.png'/&gt;
-[log] CLICK on L[511,426]@S(0) (538 msec)</msg>
-<status status="PASS" starttime="20211202 10:17:03.072" endtime="20211202 10:17:06.239"/>
+<msg timestamp="20211202 10:29:15.449" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437354338.png'/&gt;
+[log] CLICK on L[511,426]@S(0) (557 msec)</msg>
+<status status="PASS" starttime="20211202 10:29:12.046" endtime="20211202 10:29:15.449"/>
 </kw>
-<status status="PASS" starttime="20211202 10:17:03.071" endtime="20211202 10:17:06.240"/>
+<status status="PASS" starttime="20211202 10:29:12.045" endtime="20211202 10:29:15.449"/>
 </kw>
 <kw name="ecrirePseudo">
 <kw name="Input Text" library="sk">
@@ -707,42 +707,42 @@ test0</msg>
 <arg>test0</arg>
 <doc>Input text.
  Image could be empty</doc>
-<msg timestamp="20211202 10:17:08.346" level="INFO">Input Text:
+<msg timestamp="20211202 10:29:18.037" level="INFO">Input Text:
 test0</msg>
-<msg timestamp="20211202 10:17:08.346" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436627064.png'/&gt;
-[log] CLICK on L[1015,357]@S(0) (541 msec)
+<msg timestamp="20211202 10:29:18.038" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437356601.png'/&gt;
+[log] CLICK on L[1015,357]@S(0) (558 msec)
 [log]  TYPE "test0"</msg>
-<status status="PASS" starttime="20211202 10:17:06.243" endtime="20211202 10:17:08.347"/>
+<status status="PASS" starttime="20211202 10:29:15.452" endtime="20211202 10:29:18.038"/>
 </kw>
-<status status="PASS" starttime="20211202 10:17:06.242" endtime="20211202 10:17:08.347"/>
+<status status="PASS" starttime="20211202 10:29:15.451" endtime="20211202 10:29:18.038"/>
 </kw>
 <kw name="confirmer">
 <kw name="Click" library="sk">
 <arg>enregistrerPseudo.png=0.70</arg>
 <doc>Click</doc>
-<msg timestamp="20211202 10:17:09.568" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638436628678.png'/&gt;
-[log] CLICK on L[963,653]@S(0) (542 msec)</msg>
-<status status="PASS" starttime="20211202 10:17:08.349" endtime="20211202 10:17:09.568"/>
+<msg timestamp="20211202 10:29:19.493" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1638437358539.png'/&gt;
+[log] CLICK on L[963,653]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20211202 10:29:18.041" endtime="20211202 10:29:19.493"/>
 </kw>
-<status status="PASS" starttime="20211202 10:17:08.348" endtime="20211202 10:17:09.569"/>
+<status status="PASS" starttime="20211202 10:29:18.039" endtime="20211202 10:29:19.494"/>
 </kw>
 <kw name="arretServeur">
 <kw name="Stop Remote Server" library="sk">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211202 10:17:09.580" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211202 10:17:09.571" endtime="20211202 10:17:09.580"/>
+<msg timestamp="20211202 10:29:19.505" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211202 10:29:19.495" endtime="20211202 10:29:19.506"/>
 </kw>
-<status status="PASS" starttime="20211202 10:17:09.570" endtime="20211202 10:17:09.581"/>
+<status status="PASS" starttime="20211202 10:29:19.494" endtime="20211202 10:29:19.507"/>
 </kw>
-<status status="PASS" starttime="20211202 10:16:55.988" endtime="20211202 10:17:09.583"/>
+<status status="PASS" starttime="20211202 10:29:03.246" endtime="20211202 10:29:19.509"/>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20211202 10:17:09.598" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20211202 10:17:09.588" endtime="20211202 10:17:09.599"/>
+<msg timestamp="20211202 10:29:19.520" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20211202 10:29:19.512" endtime="20211202 10:29:19.521"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="PASS" starttime="20211202 10:15:45.370" endtime="20211202 10:17:09.599"/>
+<status status="PASS" starttime="20211202 10:27:47.363" endtime="20211202 10:29:19.521"/>
 </suite>
 <statistics>
 <total>
@@ -755,7 +755,7 @@ test0</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20211202 10:15:50.109" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 6: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
+<msg timestamp="20211202 10:27:52.806" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 6: Importing library 'ImageHorizonLibrary' failed: ModuleNotFoundError: No module named 'ImageHorizonLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -765,7 +765,7 @@ PYTHONPATH:
   C:\Users\Dross\AppData\Local\Programs\Python\Python310\lib
   C:\Users\Dross\AppData\Local\Programs\Python\Python310
   C:\Users\Dross\AppData\Local\Programs\Python\Python310\lib\site-packages</msg>
-<msg timestamp="20211202 10:15:50.129" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 8: Importing library 'BuildIn' failed: ModuleNotFoundError: No module named 'BuildIn'
+<msg timestamp="20211202 10:27:52.846" level="ERROR">Error in file 'D:\Ersnt gemeint\LP_TQL_2021-2022\Projet3PetitCochon2021-2022\Les 3 petits Cochons\gITHUB\3_Petits_Cochons_2021_2022\3_Petits_Cochons_2021_2022\EcranCreationProfil\Profil-CT1.robot' on line 8: Importing library 'BuildIn' failed: ModuleNotFoundError: No module named 'BuildIn'
 Traceback (most recent call last):
   None
 PYTHONPATH:
