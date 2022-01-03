@@ -13,10 +13,10 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 ChoixDefi-CT5.1
-    recordDefisNonTermines
+    selectionTypeCosmetique
 
 *** Keywords ***
-recordDefisNonTermines
+selectionTypeCosmetique
     sk.Click        jeu.png
     Sleep           2
 
