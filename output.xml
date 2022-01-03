@@ -1,73 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220103 11:15:21.823" rpa="false" schemaversion="2">
-<suite id="s1" name="ChoixDefi-CT5.2" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT5.2.robot">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220103 15:02:41.708" rpa="false" schemaversion="2">
+<suite id="s1" name="Magasin-CT2.1" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\Magasin-CT2.1.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20220103 11:15:24.871" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20220103 11:15:24.864" endtime="20220103 11:15:24.885"/>
+<msg timestamp="20220103 15:02:45.050" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20220103 15:02:45.045" endtime="20220103 15:02:45.065"/>
 </kw>
-<status status="PASS" starttime="20220103 11:15:24.864" endtime="20220103 11:15:24.885"/>
+<status status="PASS" starttime="20220103 15:02:45.045" endtime="20220103 15:02:45.065"/>
 </kw>
 <test id="s1-t1" name="ChoixDefi-CT5.1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220103 11:15:24.898" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
-<status status="PASS" starttime="20220103 11:15:24.886" endtime="20220103 11:15:24.898"/>
+<msg timestamp="20220103 15:02:45.079" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220103 15:02:45.066" endtime="20220103 15:02:45.079"/>
 </kw>
-<status status="PASS" starttime="20220103 11:15:24.886" endtime="20220103 11:15:24.899"/>
+<status status="PASS" starttime="20220103 15:02:45.065" endtime="20220103 15:02:45.079"/>
 </kw>
-<kw name="recordDefisNonTermines">
+<kw name="selectionTypeCosmetique">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220103 11:15:26.156" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20220103 11:15:26.156" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641204925396.png'/&gt;
-[log] CLICK on L[429,1056]@S(0) (541 msec)</msg>
-<status status="PASS" starttime="20220103 11:15:24.899" endtime="20220103 11:15:26.156"/>
+<msg timestamp="20220103 15:02:46.462" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20220103 15:02:46.462" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641218565676.png'/&gt;
+[log] CLICK on L[517,1056]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20220103 15:02:45.080" endtime="20220103 15:02:46.462"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220103 11:15:28.161" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220103 11:15:26.157" endtime="20220103 11:15:28.161"/>
-</kw>
-<kw name="Mouse Move" library="sk">
-<arg>\\Choix Defi-CT5\\defiNonRealise.png=0.70</arg>
-<doc>Mouse moveMove the mouse pointer to the target</doc>
-<msg timestamp="20220103 11:15:28.913" level="INFO">Params: [\Choix Defi-CT5\defiNonRealise.png=0.70]</msg>
-<msg timestamp="20220103 11:15:28.913" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641204928396.png'/&gt;</msg>
-<status status="PASS" starttime="20220103 11:15:28.161" endtime="20220103 11:15:28.913"/>
+<msg timestamp="20220103 15:02:48.468" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220103 15:02:46.463" endtime="20220103 15:02:48.468"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
-<arg>\\Choix Defi-CT5\\recordDefiRealise.png=0.99</arg>
+<arg>\\banqueImage\\cochon1=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220103 11:15:31.230" level="INFO">Params: [\Choix Defi-CT5\recordDefiRealise.png=0.99, 2]</msg>
-<msg timestamp="20220103 11:15:31.231" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641204931007.png'/&gt;</msg>
-<msg timestamp="20220103 11:15:31.232" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\ChoixDefi-CT5\recordDefiRealise.png) S: 0.9900000095367432</msg>
-<status status="FAIL" starttime="20220103 11:15:28.913" endtime="20220103 11:15:31.232"/>
+<msg timestamp="20220103 15:02:50.791" level="INFO">Params: [\banqueImage\cochon1=0.99, 2]
+[error] ImagePath: find: not there: \banqueImage\cochon1=0.99.png</msg>
+<msg timestamp="20220103 15:02:50.791" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641218570548.png'/&gt;
+[error] ImagePath: find: not there: \banqueImage\cochon1=0.99.png</msg>
+<msg timestamp="20220103 15:02:50.791" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\banqueImage\cochon1=0.99.png -- not valid!) S: 0.7</msg>
+<status status="FAIL" starttime="20220103 15:02:48.468" endtime="20220103 15:02:50.791"/>
 </kw>
-<status status="FAIL" starttime="20220103 11:15:24.899" endtime="20220103 11:15:31.232"/>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\banqueImage\\loup1=0.99</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" starttime="20220103 15:02:50.791" endtime="20220103 15:02:50.791"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\Magasin-CT2\\loup1=0.99</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<status status="NOT RUN" starttime="20220103 15:02:50.791" endtime="20220103 15:02:50.791"/>
+</kw>
+<status status="FAIL" starttime="20220103 15:02:45.079" endtime="20220103 15:02:50.791"/>
 </kw>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220103 11:15:31.237" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220103 11:15:31.233" endtime="20220103 11:15:31.237"/>
+<msg timestamp="20220103 15:02:50.797" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220103 15:02:50.791" endtime="20220103 15:02:50.797"/>
 </kw>
-<status status="FAIL" starttime="20220103 11:15:24.886" endtime="20220103 11:15:31.237">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\ChoixDefi-CT5\recordDefiRealise.png) S: 0.9900000095367432</status>
+<status status="FAIL" starttime="20220103 15:02:45.065" endtime="20220103 15:02:50.797">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\banqueImage\cochon1=0.99.png -- not valid!) S: 0.7</status>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220103 11:15:31.242" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220103 11:15:31.239" endtime="20220103 11:15:31.242"/>
+<msg timestamp="20220103 15:02:50.802" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220103 15:02:50.799" endtime="20220103 15:02:50.802"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20220103 11:15:21.823" endtime="20220103 11:15:31.242"/>
+<status status="FAIL" starttime="20220103 15:02:41.718" endtime="20220103 15:02:50.802"/>
 </suite>
 <statistics>
 <total>
@@ -76,7 +85,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="ChoixDefi-CT5.2">ChoixDefi-CT5.2</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Magasin-CT2.1">Magasin-CT2.1</stat>
 </suite>
 </statistics>
 <errors>
