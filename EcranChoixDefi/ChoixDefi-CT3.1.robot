@@ -49,6 +49,7 @@ initalisationSurDiurne
     sk.Click     Progression.png
   
     sk.Wait Until Screen Contain    \\Choix Defi - CT3\\ecranJeuInital.png=0.70      2
+    hello coucou
 
 ViderLogs
     Run     .\\clear_logs.bat
