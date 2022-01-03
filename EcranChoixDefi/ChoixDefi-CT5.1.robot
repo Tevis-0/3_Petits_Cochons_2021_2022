@@ -17,4 +17,7 @@ ChoixDefi-CT5.1
 
 *** Keywords ***
 recordDefisNonTermines
-    
+    sk.Click        jeu.png
+    Sleep           2
+
+    sk.Hover        \\Choix Defi-CT5\\defi1.png
