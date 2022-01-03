@@ -9,7 +9,7 @@ Library           BuildIn
 Library           Collections
 Suite Setup       ViderLogs
 Suite Teardown    Stop Remote Server
-
+!
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}
 ${coordsx}  ${790}
