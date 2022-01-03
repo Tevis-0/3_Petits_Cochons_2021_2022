@@ -20,4 +20,11 @@ recordDefisNonTermines
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Hover        \\Choix Defi-CT5\\defi1.png
+    sk.Mouse Move        \\Choix Defi-CT5\\defiRealise.png=0.70
+    sk.Wait Until Screen Contain    \\Choix Defi-CT5\\recordDefiRealise.png=0.99     2
+
+ViderLogs
+    Run     .\\clear_logs.bat
+
+Add Needed Image Path
+    Add Image Path      ${IMAGE_DIR}

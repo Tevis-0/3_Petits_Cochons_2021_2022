@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220103 11:10:07.267" rpa="false" schemaversion="2">
+<suite id="s1" name="ChoixDefi-CT5.1" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\ChoixDefi-CT5.1.robot">
+<kw name="ViderLogs" type="SETUP">
+<kw name="Run" library="OperatingSystem">
+<arg>.\\clear_logs.bat</arg>
+<doc>Runs the given command in the system and returns the output.</doc>
+<msg timestamp="20220103 11:10:10.166" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20220103 11:10:10.162" endtime="20220103 11:10:10.197"/>
+</kw>
+<status status="PASS" starttime="20220103 11:10:10.147" endtime="20220103 11:10:10.197"/>
+</kw>
+<test id="s1-t1" name="ChoixDefi-CT5.1">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220103 11:10:10.211" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranChoixDefi\imgProjet\]</msg>
+<status status="PASS" starttime="20220103 11:10:10.198" endtime="20220103 11:10:10.211"/>
+</kw>
+<status status="PASS" starttime="20220103 11:10:10.198" endtime="20220103 11:10:10.211"/>
+</kw>
+<kw name="recordDefisNonTermines">
+<kw name="Click" library="sk">
+<arg>jeu.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220103 11:10:11.475" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20220103 11:10:11.475" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641204610683.png'/&gt;
+[log] CLICK on L[429,1056]@S(0) (556 msec)</msg>
+<status status="PASS" starttime="20220103 11:10:10.212" endtime="20220103 11:10:11.475"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220103 11:10:13.484" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220103 11:10:11.475" endtime="20220103 11:10:13.484"/>
+</kw>
+<kw name="Mouse Move" library="sk">
+<arg>\\Choix Defi-CT5\\defiRealise.png=0.70</arg>
+<doc>Mouse moveMove the mouse pointer to the target</doc>
+<msg timestamp="20220103 11:10:14.254" level="INFO">Params: [\Choix Defi-CT5\defiRealise.png=0.70]</msg>
+<msg timestamp="20220103 11:10:14.254" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641204613737.png'/&gt;</msg>
+<status status="PASS" starttime="20220103 11:10:13.484" endtime="20220103 11:10:14.254"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\Choix Defi-CT5\\recordDefiRealise.png=0.99</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220103 11:10:14.568" level="INFO">Params: [\Choix Defi-CT5\recordDefiRealise.png=0.99, 2]</msg>
+<msg timestamp="20220103 11:10:14.568" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641204614558.png'/&gt;</msg>
+<status status="PASS" starttime="20220103 11:10:14.254" endtime="20220103 11:10:14.568"/>
+</kw>
+<status status="PASS" starttime="20220103 11:10:10.211" endtime="20220103 11:10:14.568"/>
+</kw>
+<kw name="Stop Remote Server" library="sk" type="TEARDOWN">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220103 11:10:14.572" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220103 11:10:14.569" endtime="20220103 11:10:14.572"/>
+</kw>
+<status status="PASS" starttime="20220103 11:10:10.197" endtime="20220103 11:10:14.573"/>
+</test>
+<kw name="Stop Remote Server" library="sk" type="TEARDOWN">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220103 11:10:14.577" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220103 11:10:14.574" endtime="20220103 11:10:14.578"/>
+</kw>
+<doc>Sikuli Library Demo</doc>
+<status status="PASS" starttime="20220103 11:10:07.267" endtime="20220103 11:10:14.578"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ChoixDefi-CT5.1">ChoixDefi-CT5.1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
