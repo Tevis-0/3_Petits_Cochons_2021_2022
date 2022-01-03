@@ -20,8 +20,8 @@ selectionTypeCosmetique
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Wait Until Screen Contain    \\banqueImage\\cochon1=0.99     2
-    sk.Wait Until Screen Contain    \\banqueImage\\loup1=0.99     2
+    sk.Wait Until Screen Contain    \\banqueImage\\cochon1.png=0.99     2
+    sk.Wait Until Screen Contain    \\banqueImage\\loup1.png=0.99     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\themes.png=0.99     2
 
 ViderLogs
