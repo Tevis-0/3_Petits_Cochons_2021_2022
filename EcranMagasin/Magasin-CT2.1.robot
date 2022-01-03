@@ -22,7 +22,7 @@ selectionTypeCosmetique
 
     sk.Wait Until Screen Contain    \\banqueImage\\cochon1=0.99     2
     sk.Wait Until Screen Contain    \\banqueImage\\loup1=0.99     2
-    sk.Wait Until Screen Contain    \\Magasin-CT2\\loup1=0.99     2
+    sk.Wait Until Screen Contain    \\Magasin-CT2\\themes.png=0.99     2
 
 ViderLogs
     Run     .\\clear_logs.bat
