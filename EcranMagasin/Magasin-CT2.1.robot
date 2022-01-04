@@ -12,7 +12,7 @@ Suite Teardown    Stop Remote Server
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-ChoixDefi-CT5.1
+Magasin-CT2.1
     selectionTypeCosmetique
 
 *** Keywords ***

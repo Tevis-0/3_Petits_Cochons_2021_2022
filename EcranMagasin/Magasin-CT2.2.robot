@@ -12,11 +12,11 @@ Suite Teardown    Stop Remote Server
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-ChoixDefi-CT5.1
-    selectionTypeCosmetique
+Magasin-CT2.2
+    nomsCosmetiques
 
 *** Keywords ***
-selectionTypeCosmetique
+nomsCosmetiques
     sk.Click        jeu.png
     Sleep           2
 
