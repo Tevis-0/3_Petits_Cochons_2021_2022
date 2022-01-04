@@ -51,7 +51,9 @@ Magasin-CT3.6
 
 Magasin-CT5
     verificationRetour
+
 *** Keywords ***
+
 selectionTypeCosmetique
     sk.Click        jeu.png
     Sleep           2
@@ -61,8 +63,6 @@ selectionTypeCosmetique
     sk.Wait Until Screen Contain    \\Magasin-CT2\\themes.png=0.99     2
 
 nomsCosmetiques
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\classique.png=0.99     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\boueux.png=0.99     2
@@ -71,32 +71,26 @@ nomsCosmetiques
     sk.Wait Until Screen Contain    \\Magasin-CT2\\or.png=0.99     2
 
 prixCosmetique
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\prixCosmetiquePiece.png=0.99     2
     
 cadenasCosmetique
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cadenas.png=0.99     2
 
 selectionCosmetique
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\marqueUtilisation.png=0.99     2
 
 presentationCosmetiquesCochons
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom1.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom2.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom3.png=0.31     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom4.png=0.27     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom5.png=0.51     2
+    
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 presentationCosmetiquesLoups
 
@@ -108,6 +102,8 @@ presentationCosmetiquesLoups
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom4.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom5.png=0.9     2
 
+    sk.Click    \\Magasin-CT3\\btnRetour.png
+
 presentationCosmetiquesTerrins
 
     sk.Click        \\Magasin-CT2\\themes.png
@@ -117,69 +113,69 @@ presentationCosmetiquesTerrins
     sk.Wait Until Screen Contain    \\Magasin-CT2\\pailleZoom3.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\pailleZoom4.png=0.9     2
 
+    sk.Click    \\Magasin-CT3\\btnRetour.png
+
 achatCochonAvecJetons
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton2.png   2
+    sk.Click    \\Magasin-CT3\\cochonZoom1.png
     sk.Click    \\Magasin-CT3\\pasCochonAchete.png
     sk.Click    \\Magasin-CT3\\accepterAchat.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\cosmetiqueCochonAchete.png     2
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 achatLoupAvecJetons
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton2.png   2
+    sk.Click    \\Magasin-CT3\\loupZoom1.png
     sk.Click    \\Magasin-CT3\\pasLoupAchete.png
     sk.Click    \\Magasin-CT3\\accepterAchat.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\cosmetiqueLoupAchete.png     2
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 achatTerrinAvecJetons
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton2.png   2
+    sk.Click    \\Magasin-CT3\\terrinZoom1.png
     sk.Click    \\Magasin-CT3\\pasTerrinAchete.png
     sk.Click    \\Magasin-CT3\\accepterAchat.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\cosmetiqueTerrinAchete.png     2
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 achatCochonSansJetons
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton0.png   2
+    sk.Click    \\Magasin-CT3\\cochonZoom1.png
     sk.Click    \\Magasin-CT3\\pasCochonAchete.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\messageErreur.png    2
     sk.Click    \\Magasin-CT3\\btnOk.png
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 annulationAchat
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton2.png       2
+    sk.Click    \\Magasin-CT3\\cochonZoom1.png
     sk.Click    \\Magasin-CT3\\pasCochonAchete.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\boiteDeDialogueAchat.png     2
     sk.Click    \\Magasin-CT3\\btnAnnuler.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\pasCochonAchete.png      2
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 verifPaiment
-    sk.Click        jeu.png
-    Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton2.png       2
+    sk.Click    \\Magasin-CT3\\cochonZoom1.png
     sk.Click    \\Magasin-CT3\\pasCochonAchete.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\boiteDeDialogueAchat.png     2
     sk.Click    \\Magasin-CT3\\accepterAchat.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton0.png      2
+    sk.Click    \\Magasin-CT3\\btnRetour.png
 
 verificationRetour
-    sk.Click                    jeu.png
-    Sleep                       2
 
     sk.Click    \\Magasin-CT5\\btnRetour.png
-    sk.Wait Until Screen Contain   \\Magasin-CT5\\ecranAcceuil.png
-    
+    sk.Wait Until Screen Contain   \\Magasin-CT5\\ecranAcceuil.png      2
+
 ViderLogs
     Run     .\\clear_logs.bat
 
