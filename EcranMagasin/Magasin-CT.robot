@@ -58,8 +58,8 @@ selectionTypeCosmetique
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Wait Until Screen Contain    \\banqueImage\\cochon1.png=0.99     2
-    sk.Wait Until Screen Contain    \\banqueImage\\loup1.png=0.99     2
+    sk.Wait Until Screen Contain    \\Magasin-CT2\\cochon.png=0.99     2
+    sk.Wait Until Screen Contain    \\Magasin-CT2\\loup.png=0.99     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\themes.png=0.99     2
 
 nomsCosmetiques
@@ -94,7 +94,7 @@ presentationCosmetiquesCochons
 
 presentationCosmetiquesLoups
 
-    sk.Click       \\banqueImage\\loup1.png
+    sk.Click       \\Magasin-CT2\\loup.png
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom1.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom2.png=0.9     2

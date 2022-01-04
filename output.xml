@@ -1,79 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220104 16:20:28.486" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220104 16:32:32.301" rpa="false" schemaversion="2">
 <suite id="s1" name="Magasin-CT" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\Magasin-CT.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20220104 16:20:31.833" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20220104 16:20:31.827" endtime="20220104 16:20:31.926"/>
+<msg timestamp="20220104 16:32:35.700" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20220104 16:32:35.695" endtime="20220104 16:32:35.791"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:31.827" endtime="20220104 16:20:31.926"/>
+<status status="PASS" starttime="20220104 16:32:35.695" endtime="20220104 16:32:35.791"/>
 </kw>
 <test id="s1-t1" name="Magasin-CT2.1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:31.939" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:31.926" endtime="20220104 16:20:31.939"/>
+<msg timestamp="20220104 16:32:35.810" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:35.792" endtime="20220104 16:32:35.810"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:31.926" endtime="20220104 16:20:31.940"/>
+<status status="PASS" starttime="20220104 16:32:35.791" endtime="20220104 16:32:35.810"/>
 </kw>
 <kw name="selectionTypeCosmetique">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220104 16:20:33.174" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20220104 16:20:33.174" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309632426.png'/&gt;
-[log] CLICK on L[429,1056]@S(0) (536 msec)</msg>
-<status status="PASS" starttime="20220104 16:20:31.940" endtime="20220104 16:20:33.174"/>
+<msg timestamp="20220104 16:32:37.065" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20220104 16:32:37.065" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310356316.png'/&gt;
+[log] CLICK on L[429,1056]@S(0) (540 msec)</msg>
+<status status="PASS" starttime="20220104 16:32:35.811" endtime="20220104 16:32:37.065"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220104 16:20:35.187" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220104 16:20:33.174" endtime="20220104 16:20:35.187"/>
+<msg timestamp="20220104 16:32:39.075" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220104 16:32:37.065" endtime="20220104 16:32:39.075"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
-<arg>\\banqueImage\\cochon1.png=0.99</arg>
+<arg>\\Magasin-CT2\\cochon.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:37.493" level="INFO">Params: [\banqueImage\cochon1.png=0.99, 2]
-[error] ImagePath: find: not there: \banqueImage\cochon1.png</msg>
-<msg timestamp="20220104 16:20:37.493" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309637256.png'/&gt;
-[error] ImagePath: find: not there: \banqueImage\cochon1.png</msg>
-<msg timestamp="20220104 16:20:37.496" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\banqueImage\cochon1.png -- not valid!) S: 0.9900000095367432</msg>
-<status status="FAIL" starttime="20220104 16:20:35.187" endtime="20220104 16:20:37.496"/>
+<msg timestamp="20220104 16:32:39.385" level="INFO">Params: [\Magasin-CT2\cochon.png=0.99, 2]</msg>
+<msg timestamp="20220104 16:32:39.385" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310359374.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:39.075" endtime="20220104 16:32:39.385"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
-<arg>\\banqueImage\\loup1.png=0.99</arg>
+<arg>\\Magasin-CT2\\loup.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:37.496" endtime="20220104 16:20:37.496"/>
+<msg timestamp="20220104 16:32:41.684" level="INFO">Params: [\Magasin-CT2\loup.png=0.99, 2]
+[error] ImagePath: find: not there: \Magasin-CT2\loup.png</msg>
+<msg timestamp="20220104 16:32:41.684" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310361465.png'/&gt;
+[error] ImagePath: find: not there: \Magasin-CT2\loup.png</msg>
+<msg timestamp="20220104 16:32:41.684" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\loup.png -- not valid!) S: 0.9900000095367432</msg>
+<status status="FAIL" starttime="20220104 16:32:39.385" endtime="20220104 16:32:41.684"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\themes.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:37.496" endtime="20220104 16:20:37.496"/>
+<status status="NOT RUN" starttime="20220104 16:32:41.684" endtime="20220104 16:32:41.684"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:31.940" endtime="20220104 16:20:37.496"/>
+<status status="FAIL" starttime="20220104 16:32:35.811" endtime="20220104 16:32:41.684"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:31.926" endtime="20220104 16:20:37.496">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\banqueImage\cochon1.png -- not valid!) S: 0.9900000095367432</status>
+<status status="FAIL" starttime="20220104 16:32:35.791" endtime="20220104 16:32:41.684">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\loup.png -- not valid!) S: 0.9900000095367432</status>
 </test>
 <test id="s1-t2" name="Magasin-CT2.2">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:37.504" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:37.500" endtime="20220104 16:20:37.504"/>
+<msg timestamp="20220104 16:32:41.694" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:41.690" endtime="20220104 16:32:41.694"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:37.500" endtime="20220104 16:20:37.505"/>
+<status status="PASS" starttime="20220104 16:32:41.690" endtime="20220104 16:32:41.694"/>
 </kw>
 <kw name="nomsCosmetiques">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -81,52 +83,52 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:39.785" level="INFO">Params: [\Magasin-CT2\classique.png=0.99, 2]</msg>
-<msg timestamp="20220104 16:20:39.785" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309639571.png'/&gt;</msg>
-<msg timestamp="20220104 16:20:39.786" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\classique.png) S: 0.9900000095367432</msg>
-<status status="FAIL" starttime="20220104 16:20:37.505" endtime="20220104 16:20:39.786"/>
+<msg timestamp="20220104 16:32:43.981" level="INFO">Params: [\Magasin-CT2\classique.png=0.99, 2]</msg>
+<msg timestamp="20220104 16:32:43.981" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310363775.png'/&gt;</msg>
+<msg timestamp="20220104 16:32:43.982" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\classique.png) S: 0.9900000095367432</msg>
+<status status="FAIL" starttime="20220104 16:32:41.695" endtime="20220104 16:32:43.982"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\boueux.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:39.786" endtime="20220104 16:20:39.786"/>
+<status status="NOT RUN" starttime="20220104 16:32:43.982" endtime="20220104 16:32:43.982"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\hiver.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:39.786" endtime="20220104 16:20:39.786"/>
+<status status="NOT RUN" starttime="20220104 16:32:43.982" endtime="20220104 16:32:43.982"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\halooween.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:39.786" endtime="20220104 16:20:39.786"/>
+<status status="NOT RUN" starttime="20220104 16:32:43.982" endtime="20220104 16:32:43.982"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\or.png=0.99</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:39.786" endtime="20220104 16:20:39.786"/>
+<status status="NOT RUN" starttime="20220104 16:32:43.982" endtime="20220104 16:32:43.983"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:37.505" endtime="20220104 16:20:39.787"/>
+<status status="FAIL" starttime="20220104 16:32:41.695" endtime="20220104 16:32:43.983"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:37.500" endtime="20220104 16:20:39.787">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\classique.png) S: 0.9900000095367432</status>
+<status status="FAIL" starttime="20220104 16:32:41.689" endtime="20220104 16:32:43.984">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\classique.png) S: 0.9900000095367432</status>
 </test>
 <test id="s1-t3" name="Magasin-CT2.3">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:39.795" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:39.789" endtime="20220104 16:20:39.795"/>
+<msg timestamp="20220104 16:32:43.991" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:43.986" endtime="20220104 16:32:43.992"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:39.789" endtime="20220104 16:20:39.795"/>
+<status status="PASS" starttime="20220104 16:32:43.986" endtime="20220104 16:32:43.992"/>
 </kw>
 <kw name="prixCosmetique">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -134,24 +136,24 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:42.133" level="INFO">Params: [\Magasin-CT2\prixCosmetiquePiece.png=0.99, 2]</msg>
-<msg timestamp="20220104 16:20:42.133" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309641897.png'/&gt;</msg>
-<msg timestamp="20220104 16:20:42.133" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\prixCosmetiquePiece.png) S: 0.9900000095367432</msg>
-<status status="FAIL" starttime="20220104 16:20:39.796" endtime="20220104 16:20:42.133"/>
+<msg timestamp="20220104 16:32:46.268" level="INFO">Params: [\Magasin-CT2\prixCosmetiquePiece.png=0.99, 2]</msg>
+<msg timestamp="20220104 16:32:46.268" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310366070.png'/&gt;</msg>
+<msg timestamp="20220104 16:32:46.268" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\prixCosmetiquePiece.png) S: 0.9900000095367432</msg>
+<status status="FAIL" starttime="20220104 16:32:43.993" endtime="20220104 16:32:46.269"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:39.796" endtime="20220104 16:20:42.134"/>
+<status status="FAIL" starttime="20220104 16:32:43.992" endtime="20220104 16:32:46.269"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:39.788" endtime="20220104 16:20:42.135">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\prixCosmetiquePiece.png) S: 0.9900000095367432</status>
+<status status="FAIL" starttime="20220104 16:32:43.985" endtime="20220104 16:32:46.270">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\prixCosmetiquePiece.png) S: 0.9900000095367432</status>
 </test>
 <test id="s1-t4" name="Magasin-CT2.5">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:42.142" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:42.137" endtime="20220104 16:20:42.142"/>
+<msg timestamp="20220104 16:32:46.277" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:46.272" endtime="20220104 16:32:46.277"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.137" endtime="20220104 16:20:42.142"/>
+<status status="PASS" starttime="20220104 16:32:46.272" endtime="20220104 16:32:46.277"/>
 </kw>
 <kw name="cadenasCosmetique">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -159,23 +161,23 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:42.373" level="INFO">Params: [\Magasin-CT2\cadenas.png=0.99, 2]</msg>
-<msg timestamp="20220104 16:20:42.373" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309642370.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:42.143" endtime="20220104 16:20:42.373"/>
+<msg timestamp="20220104 16:32:46.504" level="INFO">Params: [\Magasin-CT2\cadenas.png=0.99, 2]</msg>
+<msg timestamp="20220104 16:32:46.504" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310366498.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:46.278" endtime="20220104 16:32:46.504"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.143" endtime="20220104 16:20:42.374"/>
+<status status="PASS" starttime="20220104 16:32:46.278" endtime="20220104 16:32:46.504"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.136" endtime="20220104 16:20:42.374"/>
+<status status="PASS" starttime="20220104 16:32:46.272" endtime="20220104 16:32:46.505"/>
 </test>
 <test id="s1-t5" name="Magasin-CT2.6">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:42.380" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:42.376" endtime="20220104 16:20:42.380"/>
+<msg timestamp="20220104 16:32:46.511" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:46.507" endtime="20220104 16:32:46.511"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.376" endtime="20220104 16:20:42.380"/>
+<status status="PASS" starttime="20220104 16:32:46.507" endtime="20220104 16:32:46.511"/>
 </kw>
 <kw name="selectionCosmetique">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -183,23 +185,23 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:42.597" level="INFO">Params: [\Magasin-CT2\marqueUtilisation.png=0.99, 2]</msg>
-<msg timestamp="20220104 16:20:42.597" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309642591.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:42.381" endtime="20220104 16:20:42.597"/>
+<msg timestamp="20220104 16:32:46.759" level="INFO">Params: [\Magasin-CT2\marqueUtilisation.png=0.99, 2]</msg>
+<msg timestamp="20220104 16:32:46.759" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310366747.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:46.512" endtime="20220104 16:32:46.760"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.381" endtime="20220104 16:20:42.597"/>
+<status status="PASS" starttime="20220104 16:32:46.512" endtime="20220104 16:32:46.760"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.375" endtime="20220104 16:20:42.598"/>
+<status status="PASS" starttime="20220104 16:32:46.506" endtime="20220104 16:32:46.761"/>
 </test>
 <test id="s1-t6" name="Magasin-CT2.7">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:42.603" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:42.600" endtime="20220104 16:20:42.603"/>
+<msg timestamp="20220104 16:32:46.773" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:46.766" endtime="20220104 16:32:46.773"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.599" endtime="20220104 16:20:42.603"/>
+<status status="PASS" starttime="20220104 16:32:46.765" endtime="20220104 16:32:46.773"/>
 </kw>
 <kw name="presentationCosmetiquesCochons">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -207,123 +209,123 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:42.868" level="INFO">Params: [\Magasin-CT2\cochonZoom1.png=0.9, 2]</msg>
-<msg timestamp="20220104 16:20:42.868" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309642856.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:42.604" endtime="20220104 16:20:42.869"/>
+<msg timestamp="20220104 16:32:47.022" level="INFO">Params: [\Magasin-CT2\cochonZoom1.png=0.9, 2]</msg>
+<msg timestamp="20220104 16:32:47.022" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310367014.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:46.774" endtime="20220104 16:32:47.023"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\cochonZoom2.png=0.9</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:43.130" level="INFO">Params: [\Magasin-CT2\cochonZoom2.png=0.9, 2]</msg>
-<msg timestamp="20220104 16:20:43.130" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309643120.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:42.869" endtime="20220104 16:20:43.130"/>
+<msg timestamp="20220104 16:32:47.256" level="INFO">Params: [\Magasin-CT2\cochonZoom2.png=0.9, 2]</msg>
+<msg timestamp="20220104 16:32:47.256" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310367249.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:47.023" endtime="20220104 16:32:47.256"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\cochonZoom3.png=0.31</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:43.392" level="INFO">Params: [\Magasin-CT2\cochonZoom3.png=0.31, 2]</msg>
-<msg timestamp="20220104 16:20:43.392" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309643371.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:43.130" endtime="20220104 16:20:43.392"/>
+<msg timestamp="20220104 16:32:47.489" level="INFO">Params: [\Magasin-CT2\cochonZoom3.png=0.31, 2]</msg>
+<msg timestamp="20220104 16:32:47.489" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310367468.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:47.257" endtime="20220104 16:32:47.489"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\cochonZoom4.png=0.27</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:43.656" level="INFO">Params: [\Magasin-CT2\cochonZoom4.png=0.27, 2]</msg>
-<msg timestamp="20220104 16:20:43.656" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309643621.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:43.392" endtime="20220104 16:20:43.656"/>
+<msg timestamp="20220104 16:32:47.768" level="INFO">Params: [\Magasin-CT2\cochonZoom4.png=0.27, 2]</msg>
+<msg timestamp="20220104 16:32:47.768" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310367737.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:47.489" endtime="20220104 16:32:47.768"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\cochonZoom5.png=0.51</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:43.949" level="INFO">Params: [\Magasin-CT2\cochonZoom5.png=0.51, 2]</msg>
-<msg timestamp="20220104 16:20:43.949" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309643918.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:20:43.657" endtime="20220104 16:20:43.949"/>
+<msg timestamp="20220104 16:32:48.013" level="INFO">Params: [\Magasin-CT2\cochonZoom5.png=0.51, 2]</msg>
+<msg timestamp="20220104 16:32:48.013" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310368006.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:32:47.768" endtime="20220104 16:32:48.013"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220104 16:20:45.014" level="INFO">Params: [\Magasin-CT3\btnRetour.png]</msg>
-<msg timestamp="20220104 16:20:45.014" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309644215.png'/&gt;
-[log] CLICK on L[332,323]@S(0) (548 msec)</msg>
-<status status="PASS" starttime="20220104 16:20:43.949" endtime="20220104 16:20:45.014"/>
+<msg timestamp="20220104 16:32:49.060" level="INFO">Params: [\Magasin-CT3\btnRetour.png]</msg>
+<msg timestamp="20220104 16:32:49.060" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310368288.png'/&gt;
+[log] CLICK on L[332,323]@S(0) (544 msec)</msg>
+<status status="PASS" starttime="20220104 16:32:48.014" endtime="20220104 16:32:49.060"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:42.603" endtime="20220104 16:20:45.014"/>
+<status status="PASS" starttime="20220104 16:32:46.774" endtime="20220104 16:32:49.060"/>
 </kw>
 <kw name="presentationCosmetiquesLoups">
 <kw name="Click" library="sk">
-<arg>\\banqueImage\\loup1.png</arg>
+<arg>\\Magasin-CT2\\loup.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220104 16:20:48.628" level="INFO">Params: [\banqueImage\loup1.png]
-[error] ImagePath: find: not there: \banqueImage\loup1.png</msg>
-<msg timestamp="20220104 16:20:48.628" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309648410.png'/&gt;
-[error] ImagePath: find: not there: \banqueImage\loup1.png</msg>
-<msg timestamp="20220104 16:20:48.629" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\banqueImage\loup1.png -- not valid!) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:20:45.016" endtime="20220104 16:20:48.629"/>
+<msg timestamp="20220104 16:32:52.341" level="INFO">Params: [\Magasin-CT2\loup.png]
+[error] ImagePath: find: not there: \Magasin-CT2\loup.png</msg>
+<msg timestamp="20220104 16:32:52.341" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310372137.png'/&gt;
+[error] ImagePath: find: not there: \Magasin-CT2\loup.png</msg>
+<msg timestamp="20220104 16:32:52.341" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\loup.png -- not valid!) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:32:49.061" endtime="20220104 16:32:52.341"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\loupZoom1.png=0.9</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:48.629" endtime="20220104 16:20:48.629"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.341" endtime="20220104 16:32:52.341"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\loupZoom2.png=0.9</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:48.630" endtime="20220104 16:20:48.630"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.342" endtime="20220104 16:32:52.342"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\loupZoom3.png=0.9</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:48.630" endtime="20220104 16:20:48.630"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.342" endtime="20220104 16:32:52.342"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\loupZoom4.png=0.9</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:48.630" endtime="20220104 16:20:48.630"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.342" endtime="20220104 16:32:52.342"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT2\\loupZoom5.png=0.9</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:48.631" endtime="20220104 16:20:48.631"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.342" endtime="20220104 16:32:52.342"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:48.631" endtime="20220104 16:20:48.631"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.342" endtime="20220104 16:32:52.342"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:45.015" endtime="20220104 16:20:48.632"/>
+<status status="FAIL" starttime="20220104 16:32:49.061" endtime="20220104 16:32:52.342"/>
 </kw>
 <kw name="presentationCosmetiquesTerrins">
-<status status="NOT RUN" starttime="20220104 16:20:48.632" endtime="20220104 16:20:48.632"/>
+<status status="NOT RUN" starttime="20220104 16:32:52.343" endtime="20220104 16:32:52.343"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:42.599" endtime="20220104 16:20:48.633">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\banqueImage\loup1.png -- not valid!) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:32:46.764" endtime="20220104 16:32:52.344">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT2\loup.png -- not valid!) S: 0.699999988079071</status>
 </test>
 <test id="s1-t7" name="Magasin-CT3.1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:48.639" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:48.635" endtime="20220104 16:20:48.639"/>
+<msg timestamp="20220104 16:32:52.349" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:52.346" endtime="20220104 16:32:52.349"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:48.634" endtime="20220104 16:20:48.639"/>
+<status status="PASS" starttime="20220104 16:32:52.346" endtime="20220104 16:32:52.350"/>
 </kw>
 <kw name="achatCochonAvecJetons">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -331,51 +333,51 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:50.919" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
-<msg timestamp="20220104 16:20:50.919" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309650721.png'/&gt;</msg>
-<msg timestamp="20220104 16:20:50.919" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:20:48.640" endtime="20220104 16:20:50.919"/>
+<msg timestamp="20220104 16:32:54.614" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
+<msg timestamp="20220104 16:32:54.614" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310374422.png'/&gt;</msg>
+<msg timestamp="20220104 16:32:54.615" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:32:52.351" endtime="20220104 16:32:54.615"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\cochonZoom1.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:50.920" endtime="20220104 16:20:50.920"/>
+<status status="NOT RUN" starttime="20220104 16:32:54.615" endtime="20220104 16:32:54.615"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\pasCochonAchete.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:50.920" endtime="20220104 16:20:50.920"/>
+<status status="NOT RUN" starttime="20220104 16:32:54.615" endtime="20220104 16:32:54.615"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\accepterAchat.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:50.920" endtime="20220104 16:20:50.920"/>
+<status status="NOT RUN" starttime="20220104 16:32:54.615" endtime="20220104 16:32:54.615"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\cosmetiqueCochonAchete.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:50.920" endtime="20220104 16:20:50.920"/>
+<status status="NOT RUN" starttime="20220104 16:32:54.615" endtime="20220104 16:32:54.615"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:50.920" endtime="20220104 16:20:50.920"/>
+<status status="NOT RUN" starttime="20220104 16:32:54.615" endtime="20220104 16:32:54.615"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:48.639" endtime="20220104 16:20:50.920"/>
+<status status="FAIL" starttime="20220104 16:32:52.351" endtime="20220104 16:32:54.616"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:48.634" endtime="20220104 16:20:50.921">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:32:52.345" endtime="20220104 16:32:54.616">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
 </test>
 <test id="s1-t8" name="Magasin-CT3.2">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:50.927" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:50.923" endtime="20220104 16:20:50.927"/>
+<msg timestamp="20220104 16:32:54.621" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:54.618" endtime="20220104 16:32:54.621"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:50.922" endtime="20220104 16:20:50.927"/>
+<status status="PASS" starttime="20220104 16:32:54.618" endtime="20220104 16:32:54.621"/>
 </kw>
 <kw name="achatLoupAvecJetons">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -383,51 +385,51 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:53.231" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
-<msg timestamp="20220104 16:20:53.231" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309653031.png'/&gt;</msg>
-<msg timestamp="20220104 16:20:53.232" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:20:50.928" endtime="20220104 16:20:53.232"/>
+<msg timestamp="20220104 16:32:56.935" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
+<msg timestamp="20220104 16:32:56.935" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310376718.png'/&gt;</msg>
+<msg timestamp="20220104 16:32:56.935" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:32:54.622" endtime="20220104 16:32:56.935"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\loupZoom1.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:53.232" endtime="20220104 16:20:53.232"/>
+<status status="NOT RUN" starttime="20220104 16:32:56.936" endtime="20220104 16:32:56.936"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\pasLoupAchete.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:53.232" endtime="20220104 16:20:53.232"/>
+<status status="NOT RUN" starttime="20220104 16:32:56.936" endtime="20220104 16:32:56.936"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\accepterAchat.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:53.232" endtime="20220104 16:20:53.232"/>
+<status status="NOT RUN" starttime="20220104 16:32:56.936" endtime="20220104 16:32:56.936"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\cosmetiqueLoupAchete.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:53.232" endtime="20220104 16:20:53.232"/>
+<status status="NOT RUN" starttime="20220104 16:32:56.936" endtime="20220104 16:32:56.936"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:53.232" endtime="20220104 16:20:53.232"/>
+<status status="NOT RUN" starttime="20220104 16:32:56.936" endtime="20220104 16:32:56.936"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:50.927" endtime="20220104 16:20:53.232"/>
+<status status="FAIL" starttime="20220104 16:32:54.621" endtime="20220104 16:32:56.936"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:50.922" endtime="20220104 16:20:53.233">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:32:54.617" endtime="20220104 16:32:56.937">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
 </test>
 <test id="s1-t9" name="Magasin-CT3.3">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:53.239" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:53.235" endtime="20220104 16:20:53.240"/>
+<msg timestamp="20220104 16:32:56.942" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:56.938" endtime="20220104 16:32:56.942"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:53.235" endtime="20220104 16:20:53.240"/>
+<status status="PASS" starttime="20220104 16:32:56.938" endtime="20220104 16:32:56.942"/>
 </kw>
 <kw name="achatTerrinAvecJetons">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -435,51 +437,51 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:55.495" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
-<msg timestamp="20220104 16:20:55.495" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309655296.png'/&gt;</msg>
-<msg timestamp="20220104 16:20:55.495" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:20:53.241" endtime="20220104 16:20:55.495"/>
+<msg timestamp="20220104 16:32:59.210" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
+<msg timestamp="20220104 16:32:59.210" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310379014.png'/&gt;</msg>
+<msg timestamp="20220104 16:32:59.210" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:32:56.943" endtime="20220104 16:32:59.210"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\terrinZoom1.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:55.495" endtime="20220104 16:20:55.495"/>
+<status status="NOT RUN" starttime="20220104 16:32:59.211" endtime="20220104 16:32:59.211"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\pasTerrinAchete.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:55.495" endtime="20220104 16:20:55.496"/>
+<status status="NOT RUN" starttime="20220104 16:32:59.211" endtime="20220104 16:32:59.211"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\accepterAchat.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:55.496" endtime="20220104 16:20:55.496"/>
+<status status="NOT RUN" starttime="20220104 16:32:59.211" endtime="20220104 16:32:59.211"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\cosmetiqueTerrinAchete.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:55.496" endtime="20220104 16:20:55.496"/>
+<status status="NOT RUN" starttime="20220104 16:32:59.211" endtime="20220104 16:32:59.211"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:55.496" endtime="20220104 16:20:55.496"/>
+<status status="NOT RUN" starttime="20220104 16:32:59.211" endtime="20220104 16:32:59.211"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:53.240" endtime="20220104 16:20:55.496"/>
+<status status="FAIL" starttime="20220104 16:32:56.942" endtime="20220104 16:32:59.212"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:53.234" endtime="20220104 16:20:55.497">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:32:56.938" endtime="20220104 16:32:59.213">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
 </test>
 <test id="s1-t10" name="Magasin-CT3.4">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:55.503" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:55.500" endtime="20220104 16:20:55.504"/>
+<msg timestamp="20220104 16:32:59.219" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:32:59.215" endtime="20220104 16:32:59.219"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:55.500" endtime="20220104 16:20:55.504"/>
+<status status="PASS" starttime="20220104 16:32:59.215" endtime="20220104 16:32:59.220"/>
 </kw>
 <kw name="achatCochonSansJetons">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -487,51 +489,51 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:20:57.798" level="INFO">Params: [\Magasin-CT3\jeton0.png, 2]</msg>
-<msg timestamp="20220104 16:20:57.798" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309657587.png'/&gt;</msg>
-<msg timestamp="20220104 16:20:57.798" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton0.png) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:20:55.504" endtime="20220104 16:20:57.799"/>
+<msg timestamp="20220104 16:33:01.488" level="INFO">Params: [\Magasin-CT3\jeton0.png, 2]</msg>
+<msg timestamp="20220104 16:33:01.488" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310381292.png'/&gt;</msg>
+<msg timestamp="20220104 16:33:01.489" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton0.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:32:59.220" endtime="20220104 16:33:01.489"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\cochonZoom1.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:57.799" endtime="20220104 16:20:57.799"/>
+<status status="NOT RUN" starttime="20220104 16:33:01.489" endtime="20220104 16:33:01.489"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\pasCochonAchete.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:57.799" endtime="20220104 16:20:57.799"/>
+<status status="NOT RUN" starttime="20220104 16:33:01.489" endtime="20220104 16:33:01.489"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\messageErreur.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:20:57.799" endtime="20220104 16:20:57.799"/>
+<status status="NOT RUN" starttime="20220104 16:33:01.489" endtime="20220104 16:33:01.489"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnOk.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:57.800" endtime="20220104 16:20:57.800"/>
+<status status="NOT RUN" starttime="20220104 16:33:01.489" endtime="20220104 16:33:01.489"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:20:57.800" endtime="20220104 16:20:57.800"/>
+<status status="NOT RUN" starttime="20220104 16:33:01.489" endtime="20220104 16:33:01.489"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:55.504" endtime="20220104 16:20:57.800"/>
+<status status="FAIL" starttime="20220104 16:32:59.220" endtime="20220104 16:33:01.489"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:55.499" endtime="20220104 16:20:57.801">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton0.png) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:32:59.214" endtime="20220104 16:33:01.490">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton0.png) S: 0.699999988079071</status>
 </test>
 <test id="s1-t11" name="Magasin-CT3.5">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:20:57.806" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:20:57.803" endtime="20220104 16:20:57.806"/>
+<msg timestamp="20220104 16:33:01.496" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:33:01.492" endtime="20220104 16:33:01.496"/>
 </kw>
-<status status="PASS" starttime="20220104 16:20:57.802" endtime="20220104 16:20:57.806"/>
+<status status="PASS" starttime="20220104 16:33:01.492" endtime="20220104 16:33:01.497"/>
 </kw>
 <kw name="annulationAchat">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -539,58 +541,58 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:21:00.101" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
-<msg timestamp="20220104 16:21:00.101" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309659892.png'/&gt;</msg>
-<msg timestamp="20220104 16:21:00.101" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:20:57.807" endtime="20220104 16:21:00.102"/>
+<msg timestamp="20220104 16:33:03.751" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
+<msg timestamp="20220104 16:33:03.751" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310383553.png'/&gt;</msg>
+<msg timestamp="20220104 16:33:03.752" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:33:01.497" endtime="20220104 16:33:03.752"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\cochonZoom1.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:00.102" endtime="20220104 16:21:00.102"/>
+<status status="NOT RUN" starttime="20220104 16:33:03.752" endtime="20220104 16:33:03.752"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\pasCochonAchete.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:00.102" endtime="20220104 16:21:00.102"/>
+<status status="NOT RUN" starttime="20220104 16:33:03.752" endtime="20220104 16:33:03.752"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\boiteDeDialogueAchat.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:21:00.102" endtime="20220104 16:21:00.102"/>
+<status status="NOT RUN" starttime="20220104 16:33:03.752" endtime="20220104 16:33:03.752"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnAnnuler.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:00.102" endtime="20220104 16:21:00.102"/>
+<status status="NOT RUN" starttime="20220104 16:33:03.752" endtime="20220104 16:33:03.752"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\pasCochonAchete.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:21:00.102" endtime="20220104 16:21:00.102"/>
+<status status="NOT RUN" starttime="20220104 16:33:03.752" endtime="20220104 16:33:03.752"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:00.102" endtime="20220104 16:21:00.102"/>
+<status status="NOT RUN" starttime="20220104 16:33:03.752" endtime="20220104 16:33:03.752"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:57.807" endtime="20220104 16:21:00.103"/>
+<status status="FAIL" starttime="20220104 16:33:01.497" endtime="20220104 16:33:03.753"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:20:57.802" endtime="20220104 16:21:00.103">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:33:01.492" endtime="20220104 16:33:03.753">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
 </test>
 <test id="s1-t12" name="Magasin-CT3.6">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:21:00.108" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:21:00.105" endtime="20220104 16:21:00.108"/>
+<msg timestamp="20220104 16:33:03.758" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:33:03.755" endtime="20220104 16:33:03.758"/>
 </kw>
-<status status="PASS" starttime="20220104 16:21:00.105" endtime="20220104 16:21:00.109"/>
+<status status="PASS" starttime="20220104 16:33:03.754" endtime="20220104 16:33:03.759"/>
 </kw>
 <kw name="verifPaiment">
 <kw name="Wait Until Screen Contain" library="sk">
@@ -598,88 +600,88 @@
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:21:02.389" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
-<msg timestamp="20220104 16:21:02.389" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309662190.png'/&gt;</msg>
-<msg timestamp="20220104 16:21:02.390" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
-<status status="FAIL" starttime="20220104 16:21:00.110" endtime="20220104 16:21:02.390"/>
+<msg timestamp="20220104 16:33:06.334" level="INFO">Params: [\Magasin-CT3\jeton2.png, 2]</msg>
+<msg timestamp="20220104 16:33:06.334" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310386133.png'/&gt;</msg>
+<msg timestamp="20220104 16:33:06.334" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20220104 16:33:03.759" endtime="20220104 16:33:06.335"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\cochonZoom1.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:02.390" endtime="20220104 16:21:02.390"/>
+<status status="NOT RUN" starttime="20220104 16:33:06.335" endtime="20220104 16:33:06.335"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\pasCochonAchete.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:02.390" endtime="20220104 16:21:02.390"/>
+<status status="NOT RUN" starttime="20220104 16:33:06.335" endtime="20220104 16:33:06.335"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\boiteDeDialogueAchat.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:21:02.391" endtime="20220104 16:21:02.391"/>
+<status status="NOT RUN" starttime="20220104 16:33:06.335" endtime="20220104 16:33:06.336"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\accepterAchat.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:02.391" endtime="20220104 16:21:02.391"/>
+<status status="NOT RUN" starttime="20220104 16:33:06.336" endtime="20220104 16:33:06.336"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT3\\jeton0.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<status status="NOT RUN" starttime="20220104 16:21:02.391" endtime="20220104 16:21:02.391"/>
+<status status="NOT RUN" starttime="20220104 16:33:06.336" endtime="20220104 16:33:06.336"/>
 </kw>
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT3\\btnRetour.png</arg>
 <doc>Click</doc>
-<status status="NOT RUN" starttime="20220104 16:21:02.391" endtime="20220104 16:21:02.391"/>
+<status status="NOT RUN" starttime="20220104 16:33:06.336" endtime="20220104 16:33:06.336"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:21:00.109" endtime="20220104 16:21:02.392"/>
+<status status="FAIL" starttime="20220104 16:33:03.759" endtime="20220104 16:33:06.337"/>
 </kw>
-<status status="FAIL" starttime="20220104 16:21:00.104" endtime="20220104 16:21:02.393">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
+<status status="FAIL" starttime="20220104 16:33:03.754" endtime="20220104 16:33:06.337">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\Magasin-CT3\jeton2.png) S: 0.699999988079071</status>
 </test>
 <test id="s1-t13" name="Magasin-CT5">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220104 16:21:02.399" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
-<status status="PASS" starttime="20220104 16:21:02.395" endtime="20220104 16:21:02.399"/>
+<msg timestamp="20220104 16:33:06.344" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMagasin\imgProjet\]</msg>
+<status status="PASS" starttime="20220104 16:33:06.340" endtime="20220104 16:33:06.345"/>
 </kw>
-<status status="PASS" starttime="20220104 16:21:02.395" endtime="20220104 16:21:02.400"/>
+<status status="PASS" starttime="20220104 16:33:06.340" endtime="20220104 16:33:06.345"/>
 </kw>
 <kw name="verificationRetour">
 <kw name="Click" library="sk">
 <arg>\\Magasin-CT5\\btnRetour.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220104 16:21:03.469" level="INFO">Params: [\Magasin-CT5\btnRetour.png]</msg>
-<msg timestamp="20220104 16:21:03.469" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309662646.png'/&gt;
-[log] CLICK on L[332,323]@S(0) (555 msec)</msg>
-<status status="PASS" starttime="20220104 16:21:02.400" endtime="20220104 16:21:03.469"/>
+<msg timestamp="20220104 16:33:07.347" level="INFO">Params: [\Magasin-CT5\btnRetour.png]</msg>
+<msg timestamp="20220104 16:33:07.347" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310386575.png'/&gt;
+[log] CLICK on L[332,323]@S(0) (535 msec)</msg>
+<status status="PASS" starttime="20220104 16:33:06.346" endtime="20220104 16:33:07.347"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\Magasin-CT5\\ecranAcceuil.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220104 16:21:04.200" level="INFO">Params: [\Magasin-CT5\ecranAcceuil.png, 2]</msg>
-<msg timestamp="20220104 16:21:04.200" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641309664083.png'/&gt;</msg>
-<status status="PASS" starttime="20220104 16:21:03.469" endtime="20220104 16:21:04.200"/>
+<msg timestamp="20220104 16:33:08.069" level="INFO">Params: [\Magasin-CT5\ecranAcceuil.png, 2]</msg>
+<msg timestamp="20220104 16:33:08.069" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641310387941.png'/&gt;</msg>
+<status status="PASS" starttime="20220104 16:33:07.347" endtime="20220104 16:33:08.069"/>
 </kw>
-<status status="PASS" starttime="20220104 16:21:02.400" endtime="20220104 16:21:04.201"/>
+<status status="PASS" starttime="20220104 16:33:06.345" endtime="20220104 16:33:08.070"/>
 </kw>
-<status status="PASS" starttime="20220104 16:21:02.394" endtime="20220104 16:21:04.201"/>
+<status status="PASS" starttime="20220104 16:33:06.339" endtime="20220104 16:33:08.071"/>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220104 16:21:04.205" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220104 16:21:04.203" endtime="20220104 16:21:04.206"/>
+<msg timestamp="20220104 16:33:08.077" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220104 16:33:08.073" endtime="20220104 16:33:08.077"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20220104 16:20:28.486" endtime="20220104 16:21:04.206"/>
+<status status="FAIL" starttime="20220104 16:32:32.303" endtime="20220104 16:33:08.077"/>
 </suite>
 <statistics>
 <total>
