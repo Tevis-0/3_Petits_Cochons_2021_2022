@@ -9,7 +9,7 @@ Library           ImageHorizonLibrary
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-ChoixDefi-CT1.6
+Magasin-CT5
     verificationRetour
     
 
