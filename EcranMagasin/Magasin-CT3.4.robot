@@ -19,10 +19,10 @@ Magasin-CT3.1
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton2.png   2
-    sk.Click    \\Magasin-CT3\\pasTerrinAchete.png
-    sk.Click    \\Magasin-CT3\\accepterAchat.png
-    sk.Wait Until Screen Contain    \\Magasin-CT3\\cosmetiqueTerrinAchete.png     2
+    sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton0.png   2
+    sk.Click    \\Magasin-CT3\\pasCochonAchete.png
+    sk.Wait Until Screen Contain    \\Magasin-CT3\\messageErreur.png    2
+    sk.Click    \\Magasin-CT3\\BtnOk.png
 
 ViderLogs
     Run     .\\clear_logs.bat
