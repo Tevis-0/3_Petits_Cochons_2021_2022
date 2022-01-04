@@ -12,10 +12,11 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 Magasin-CT3.2
-    achatCochonAvecJetons
+    achatLoupAvecJetons
     
 
 *** Keywords ***
+achatLoupAvecJetons
     sk.Click        jeu.png
     Sleep           2
 

@@ -12,10 +12,11 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 Magasin-CT3.5
-    achatCochonAvecJetons
+    annulationAchat
     
 
 *** Keywords ***
+annulationAchat
     sk.Click        jeu.png
     Sleep           2
 

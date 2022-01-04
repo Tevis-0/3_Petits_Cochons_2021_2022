@@ -16,6 +16,7 @@ Magasin-CT3.1
     
 
 *** Keywords ***
+achatCochonAvecJetons
     sk.Click        jeu.png
     Sleep           2
 

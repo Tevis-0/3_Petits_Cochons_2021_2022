@@ -12,17 +12,18 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 Magasin-CT3.4
-    achatCochonAvecJetons
+    achatCochonSansJetons
     
 
 *** Keywords ***
+achatCochonSansJetons
     sk.Click        jeu.png
     Sleep           2
 
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton0.png   2
     sk.Click    \\Magasin-CT3\\pasCochonAchete.png
     sk.Wait Until Screen Contain    \\Magasin-CT3\\messageErreur.png    2
-    sk.Click    \\Magasin-CT3\\BtnOk.png
+    sk.Click    \\Magasin-CT3\\btnOk.png
 
 ViderLogs
     Run     .\\clear_logs.bat
