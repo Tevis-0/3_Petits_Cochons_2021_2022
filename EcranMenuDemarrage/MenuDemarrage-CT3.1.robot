@@ -11,19 +11,19 @@ Suite Teardown    Stop Remote Server
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-Magasin-CT3.4
-    verifRetourVisuelParametres
+menuDemarrage-CT3.1
+    verifAccesChoixModeDeJeu
     
 
 *** Keywords ***
-verifRetourVisuelParametres
+verifAccesChoixModeDeJeu
     sk.Click        jeu.png
     Sleep           2
 
     sk.Click   \\menuDemarrage-CT2\\btnJouerNonHover.png
     sk.Wait Until Screen Contain    \\menuDemarrage-CT3\\ecranChoixModeDeJeu.png   2
     sk.Click    \\menuDemarrage-CT3\\btnRetour.png
-    
+
 ViderLogs
     Run     .\\clear_logs.bat
 

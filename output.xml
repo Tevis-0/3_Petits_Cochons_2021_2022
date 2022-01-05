@@ -1,91 +1,347 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220105 09:45:39.214" rpa="false" schemaversion="2">
-<suite id="s1" name="MenuDemarrage-CT3.4" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\MenuDemarrage-CT3.4.robot">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220105 10:10:15.518" rpa="false" schemaversion="2">
+<suite id="s1" name="MenuDemarrage-CT" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\MenuDemarrage-CT.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20220105 09:45:42.167" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20220105 09:45:42.162" endtime="20220105 09:45:42.199"/>
+<msg timestamp="20220105 10:10:18.500" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20220105 10:10:18.495" endtime="20220105 10:10:18.562"/>
 </kw>
-<status status="PASS" starttime="20220105 09:45:42.154" endtime="20220105 09:45:42.200"/>
+<status status="PASS" starttime="20220105 10:10:18.488" endtime="20220105 10:10:18.562"/>
 </kw>
-<test id="s1-t1" name="Magasin-CT3.4">
+<test id="s1-t1" name="menuDemarrage-CT2.1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220105 09:45:42.214" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
-<status status="PASS" starttime="20220105 09:45:42.200" endtime="20220105 09:45:42.214"/>
+<msg timestamp="20220105 10:10:18.576" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:18.563" endtime="20220105 10:10:18.576"/>
 </kw>
-<status status="PASS" starttime="20220105 09:45:42.200" endtime="20220105 09:45:42.214"/>
+<status status="PASS" starttime="20220105 10:10:18.563" endtime="20220105 10:10:18.577"/>
 </kw>
-<kw name="verifRetourVisuelParametres">
+<kw name="verifRetourVisuelJouer">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220105 09:45:43.436" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20220105 09:45:43.436" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641372342690.png'/&gt;
-[log] CLICK on L[429,1056]@S(0) (542 msec)</msg>
-<status status="PASS" starttime="20220105 09:45:42.215" endtime="20220105 09:45:43.436"/>
+<msg timestamp="20220105 10:10:19.781" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20220105 10:10:19.781" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373819018.png'/&gt;
+[log] CLICK on L[429,1056]@S(0) (543 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:18.577" endtime="20220105 10:10:19.782"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220105 09:45:45.444" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220105 09:45:43.437" endtime="20220105 09:45:45.444"/>
+<msg timestamp="20220105 10:10:21.789" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220105 10:10:19.782" endtime="20220105 10:10:21.789"/>
 </kw>
+<kw name="Mouse Move" library="sk">
+<arg>\\menuDemarrage-CT2\\btnJouerNonHover.png</arg>
+<doc>Mouse moveMove the mouse pointer to the target</doc>
+<msg timestamp="20220105 10:10:22.629" level="INFO">Params: [\menuDemarrage-CT2\btnJouerNonHover.png]</msg>
+<msg timestamp="20220105 10:10:22.629" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373822078.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:21.789" endtime="20220105 10:10:22.629"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT2\\btnJouerHover.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:22.897" level="INFO">Params: [\menuDemarrage-CT2\btnJouerHover.png, 2]</msg>
+<msg timestamp="20220105 10:10:22.897" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373822868.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:22.629" endtime="20220105 10:10:22.897"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:18.577" endtime="20220105 10:10:22.898"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:18.562" endtime="20220105 10:10:22.898"/>
+</test>
+<test id="s1-t2" name="menuDemarrage-CT2.2">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:22.904" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:22.900" endtime="20220105 10:10:22.904"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:22.900" endtime="20220105 10:10:22.904"/>
+</kw>
+<kw name="verifRetourVisuelMagasin">
+<kw name="Mouse Move" library="sk">
+<arg>\\menuDemarrage-CT2\\btnMagasinNonHover.png</arg>
+<doc>Mouse moveMove the mouse pointer to the target</doc>
+<msg timestamp="20220105 10:10:23.658" level="INFO">Params: [\menuDemarrage-CT2\btnMagasinNonHover.png]</msg>
+<msg timestamp="20220105 10:10:23.658" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373823128.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:22.905" endtime="20220105 10:10:23.658"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT2\\btnMagasinHover.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:23.999" level="INFO">Params: [\menuDemarrage-CT2\btnMagasinHover.png, 2]</msg>
+<msg timestamp="20220105 10:10:23.999" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373823968.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:23.658" endtime="20220105 10:10:23.999"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:22.905" endtime="20220105 10:10:23.999"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:22.899" endtime="20220105 10:10:23.999"/>
+</test>
+<test id="s1-t3" name="menuDemarrage-CT2.3">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:24.009" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:24.004" endtime="20220105 10:10:24.009"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:24.003" endtime="20220105 10:10:24.009"/>
+</kw>
+<kw name="verifRetourVisuelClassement">
+<kw name="Mouse Move" library="sk">
+<arg>\\menuDemarrage-CT2\\btnClassementNonHover.png</arg>
+<doc>Mouse moveMove the mouse pointer to the target</doc>
+<msg timestamp="20220105 10:10:24.848" level="INFO">Params: [\menuDemarrage-CT2\btnClassementNonHover.png]</msg>
+<msg timestamp="20220105 10:10:24.848" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373824268.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:24.010" endtime="20220105 10:10:24.849"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT2\\btnClassementHover.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:25.173" level="INFO">Params: [\menuDemarrage-CT2\btnClassementHover.png, 2]</msg>
+<msg timestamp="20220105 10:10:25.173" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373825121.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:24.849" endtime="20220105 10:10:25.173"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:24.009" endtime="20220105 10:10:25.173"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:24.002" endtime="20220105 10:10:25.173"/>
+</test>
+<test id="s1-t4" name="menuDemarrage-CT2.4">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:25.180" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:25.175" endtime="20220105 10:10:25.180"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:25.175" endtime="20220105 10:10:25.180"/>
+</kw>
+<kw name="verifRetourVisuelParametres">
+<kw name="Mouse Move" library="sk">
+<arg>\\menuDemarrage-CT2\\btnParametresNonHover.png</arg>
+<doc>Mouse moveMove the mouse pointer to the target</doc>
+<msg timestamp="20220105 10:10:26.087" level="INFO">Params: [\menuDemarrage-CT2\btnParametresNonHover.png]</msg>
+<msg timestamp="20220105 10:10:26.087" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373825560.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:25.181" endtime="20220105 10:10:26.088"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT2\\btnParametresHover.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:26.353" level="INFO">Params: [\menuDemarrage-CT2\btnParametresHover.png, 2]</msg>
+<msg timestamp="20220105 10:10:26.353" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373826331.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:26.088" endtime="20220105 10:10:26.354"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:25.180" endtime="20220105 10:10:26.354"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:25.174" endtime="20220105 10:10:26.354"/>
+</test>
+<test id="s1-t5" name="menuDemarrage-CT3.1">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:26.360" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:26.356" endtime="20220105 10:10:26.360"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:26.356" endtime="20220105 10:10:26.360"/>
+</kw>
+<kw name="verifAccesChoixModeDeJeu">
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT2\\btnJouerNonHover.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220105 10:10:27.388" level="INFO">Params: [\menuDemarrage-CT2\btnJouerNonHover.png]</msg>
+<msg timestamp="20220105 10:10:27.388" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373826582.png'/&gt;
+[log] CLICK on L[711,438]@S(0) (544 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:26.361" endtime="20220105 10:10:27.388"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT3\\ecranChoixModeDeJeu.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:28.143" level="INFO">Params: [\menuDemarrage-CT3\ecranChoixModeDeJeu.png, 2]</msg>
+<msg timestamp="20220105 10:10:28.143" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373828001.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:27.388" endtime="20220105 10:10:28.143"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT3\\btnRetour.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220105 10:10:29.134" level="INFO">Params: [\menuDemarrage-CT3\btnRetour.png]</msg>
+<msg timestamp="20220105 10:10:29.135" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373828363.png'/&gt;
+[log] CLICK on L[330,324]@S(0) (550 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:28.143" endtime="20220105 10:10:29.135"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:26.360" endtime="20220105 10:10:29.135"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:26.355" endtime="20220105 10:10:29.136"/>
+</test>
+<test id="s1-t6" name="menuDemarrage-CT3.2">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:29.142" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:29.138" endtime="20220105 10:10:29.143"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:29.138" endtime="20220105 10:10:29.143"/>
+</kw>
+<kw name="verifAccesMagasin">
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT2\\btnMagasinNonHover.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220105 10:10:30.536" level="INFO">Params: [\menuDemarrage-CT2\btnMagasinNonHover.png]</msg>
+<msg timestamp="20220105 10:10:30.536" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373829730.png'/&gt;
+[log] CLICK on L[1291,442]@S(0) (550 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:29.144" endtime="20220105 10:10:30.536"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT3\\ecranMagasin.png=1</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:32.883" level="INFO">Params: [\menuDemarrage-CT3\ecranMagasin.png=1, 2]</msg>
+<msg timestamp="20220105 10:10:32.883" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373832669.png'/&gt;</msg>
+<msg timestamp="20220105 10:10:32.883" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\menuDemarrage-CT3\ecranMagasin.png) S: 1.0</msg>
+<status status="FAIL" starttime="20220105 10:10:30.536" endtime="20220105 10:10:32.883"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT3\\btnRetour.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20220105 10:10:32.883" endtime="20220105 10:10:32.884"/>
+</kw>
+<status status="FAIL" starttime="20220105 10:10:29.143" endtime="20220105 10:10:32.884"/>
+</kw>
+<status status="FAIL" starttime="20220105 10:10:29.137" endtime="20220105 10:10:32.884">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\menuDemarrage-CT3\ecranMagasin.png) S: 1.0</status>
+</test>
+<test id="s1-t7" name="menuDemarrage-CT3.3">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:32.889" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:32.886" endtime="20220105 10:10:32.889"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:32.886" endtime="20220105 10:10:32.889"/>
+</kw>
+<kw name="verifAccesClassement">
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT3\\btnRetour.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220105 10:10:33.917" level="INFO">Params: [\menuDemarrage-CT3\btnRetour.png]</msg>
+<msg timestamp="20220105 10:10:33.917" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373833142.png'/&gt;
+[log] CLICK on L[330,324]@S(0) (544 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:32.890" endtime="20220105 10:10:33.917"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT2\\btnClassementNonHover.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220105 10:10:35.330" level="INFO">Params: [\menuDemarrage-CT2\btnClassementNonHover.png]</msg>
+<msg timestamp="20220105 10:10:35.330" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373834480.png'/&gt;
+[log] CLICK on L[958,656]@S(0) (552 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:33.918" endtime="20220105 10:10:35.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220105 10:10:37.338" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220105 10:10:35.330" endtime="20220105 10:10:37.338"/>
+</kw>
+<kw name="Wait Until Screen Contain" library="sk">
+<arg>\\menuDemarrage-CT3\\ecranClassement.png</arg>
+<arg>2</arg>
+<doc>Wait until screen contain
+ Wait until image shown in screen</doc>
+<msg timestamp="20220105 10:10:38.074" level="INFO">Params: [\menuDemarrage-CT3\ecranClassement.png, 2]</msg>
+<msg timestamp="20220105 10:10:38.074" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373837949.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:37.338" endtime="20220105 10:10:38.074"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\menuDemarrage-CT3\\btnRetour.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220105 10:10:39.118" level="INFO">Params: [\menuDemarrage-CT3\btnRetour.png]</msg>
+<msg timestamp="20220105 10:10:39.118" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373838307.png'/&gt;
+[log] CLICK on L[330,324]@S(0) (558 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:38.074" endtime="20220105 10:10:39.118"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:32.890" endtime="20220105 10:10:39.118"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:32.885" endtime="20220105 10:10:39.119"/>
+</test>
+<test id="s1-t8" name="menuDemarrage-CT3.4">
+<kw name="Add Needed Image Path" type="SETUP">
+<kw name="Add Image Path" library="sk">
+<arg>${IMAGE_DIR}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20220105 10:10:39.125" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
+<status status="PASS" starttime="20220105 10:10:39.121" endtime="20220105 10:10:39.126"/>
+</kw>
+<status status="PASS" starttime="20220105 10:10:39.121" endtime="20220105 10:10:39.126"/>
+</kw>
+<kw name="verifAccesParametres">
 <kw name="Click" library="sk">
 <arg>\\menuDemarrage-CT2\\btnParametresNonHover.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220105 09:45:46.727" level="INFO">Params: [\menuDemarrage-CT2\btnParametresNonHover.png]</msg>
-<msg timestamp="20220105 09:45:46.727" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641372345824.png'/&gt;
-[log] CLICK on L[477,838]@S(0) (548 msec)</msg>
-<status status="PASS" starttime="20220105 09:45:45.444" endtime="20220105 09:45:46.727"/>
+<msg timestamp="20220105 10:10:40.707" level="INFO">Params: [\menuDemarrage-CT2\btnParametresNonHover.png]</msg>
+<msg timestamp="20220105 10:10:40.707" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373839807.png'/&gt;
+[log] CLICK on L[477,838]@S(0) (544 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:39.127" endtime="20220105 10:10:40.707"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220105 09:45:48.733" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220105 09:45:46.727" endtime="20220105 09:45:48.733"/>
+<msg timestamp="20220105 10:10:42.721" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220105 10:10:40.707" endtime="20220105 10:10:42.721"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
 <arg>\\menuDemarrage-CT3\\ecranParametres.png</arg>
 <arg>2</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220105 09:45:49.146" level="INFO">Params: [\menuDemarrage-CT3\ecranParametres.png, 2]</msg>
-<msg timestamp="20220105 09:45:49.146" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641372349013.png'/&gt;</msg>
-<status status="PASS" starttime="20220105 09:45:48.734" endtime="20220105 09:45:49.147"/>
+<msg timestamp="20220105 10:10:43.105" level="INFO">Params: [\menuDemarrage-CT3\ecranParametres.png, 2]</msg>
+<msg timestamp="20220105 10:10:43.105" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373842989.png'/&gt;</msg>
+<status status="PASS" starttime="20220105 10:10:42.722" endtime="20220105 10:10:43.105"/>
 </kw>
 <kw name="Click" library="sk">
-<arg>\\menuDemarrage-CT3\\btnRetour.png=0.5</arg>
+<arg>\\menuDemarrage-CT3\\btnRetourParametres.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220105 09:45:52.472" level="INFO">Params: [\menuDemarrage-CT3\btnRetour.png=0.5]</msg>
-<msg timestamp="20220105 09:45:52.472" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641372352234.png'/&gt;</msg>
-<msg timestamp="20220105 09:45:52.473" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\menuDemarrage-CT3\btnRetour.png) S: 0.5</msg>
-<status status="FAIL" starttime="20220105 09:45:49.147" endtime="20220105 09:45:52.473"/>
+<msg timestamp="20220105 10:10:44.133" level="INFO">Params: [\menuDemarrage-CT3\btnRetourParametres.png]</msg>
+<msg timestamp="20220105 10:10:44.133" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641373843382.png'/&gt;
+[log] CLICK on L[307,150]@S(0) (540 msec)</msg>
+<status status="PASS" starttime="20220105 10:10:43.105" endtime="20220105 10:10:44.134"/>
 </kw>
-<status status="FAIL" starttime="20220105 09:45:42.215" endtime="20220105 09:45:52.474"/>
+<status status="PASS" starttime="20220105 10:10:39.126" endtime="20220105 10:10:44.134"/>
 </kw>
-<status status="FAIL" starttime="20220105 09:45:42.200" endtime="20220105 09:45:52.475">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(\menuDemarrage-CT3\btnRetour.png) S: 0.5</status>
+<status status="PASS" starttime="20220105 10:10:39.120" endtime="20220105 10:10:44.135"/>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220105 09:45:52.479" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220105 09:45:52.476" endtime="20220105 09:45:52.479"/>
+<msg timestamp="20220105 10:10:44.142" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220105 10:10:44.137" endtime="20220105 10:10:44.142"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="FAIL" starttime="20220105 09:45:39.214" endtime="20220105 09:45:52.480"/>
+<status status="FAIL" starttime="20220105 10:10:15.528" endtime="20220105 10:10:44.142"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="7" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="MenuDemarrage-CT3.4">MenuDemarrage-CT3.4</stat>
+<stat pass="7" fail="1" skip="0" id="s1" name="MenuDemarrage-CT">MenuDemarrage-CT</stat>
 </suite>
 </statistics>
 <errors>

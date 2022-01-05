@@ -11,12 +11,12 @@ Suite Teardown    Stop Remote Server
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-Magasin-CT3.4
-    verifRetourVisuelParametres
+menuDemarrage-CT3.4
+    verifAccesParametres
     
 
 *** Keywords ***
-verifRetourVisuelParametres
+verifAccesParametres
     sk.Click        jeu.png
     Sleep           2
 

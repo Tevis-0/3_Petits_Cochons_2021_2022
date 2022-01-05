@@ -11,7 +11,7 @@ Suite Teardown    Stop Remote Server
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-Magasin-CT3.4
+menuDemarrage-CT2.3
     verifRetourVisuelClassement
     
 
