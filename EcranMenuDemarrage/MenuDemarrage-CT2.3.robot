@@ -12,16 +12,16 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 Magasin-CT3.4
-    verifRetourVisuelJouer
+    verifRetourVisuelClassement
     
 
 *** Keywords ***
-verifRetourVisuelJouer
+verifRetourVisuelClassement
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Mouse Move   \\menuDemarrage-CT2\\btnJouerNonHover.png
-    sk.Wait Until Screen Contain    \\menuDemarrage-CT2\\btnJouerHover.png   2
+    sk.Mouse Move   \\menuDemarrage-CT2\\btnClassementNonHover.png
+    sk.Wait Until Screen Contain    \\menuDemarrage-CT2\\btnClassementHover.png   2
 
 ViderLogs
     Run     .\\clear_logs.bat

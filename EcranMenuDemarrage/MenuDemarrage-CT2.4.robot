@@ -12,16 +12,16 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 Magasin-CT3.4
-    verifRetourVisuelJouer
+    verifRetourVisuelParametres
     
 
 *** Keywords ***
-verifRetourVisuelJouer
+verifRetourVisuelParametres
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Mouse Move   \\menuDemarrage-CT2\\btnJouerNonHover.png
-    sk.Wait Until Screen Contain    \\menuDemarrage-CT2\\btnJouerHover.png   2
+    sk.Mouse Move   \\menuDemarrage-CT2\\btnParametresNonHover.png
+    sk.Wait Until Screen Contain    \\menuDemarrage-CT2\\btnParametresHover.png   2
 
 ViderLogs
     Run     .\\clear_logs.bat
