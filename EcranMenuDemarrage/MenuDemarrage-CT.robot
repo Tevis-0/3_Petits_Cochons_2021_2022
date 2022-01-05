@@ -82,7 +82,7 @@ verifAccesParametres
     Sleep     2
     sk.Wait Until Screen Contain    \\menuDemarrage-CT3\\ecranParametres.png   2
     sk.Click    \\menuDemarrage-CT3\\btnRetourParametres.png
-
+    
 ViderLogs
     Run     .\\clear_logs.bat
 
