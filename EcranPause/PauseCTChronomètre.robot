@@ -11,12 +11,12 @@ Suite Teardown    Stop Remote Server
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
-menuDemarrage-CT3.4
-    verifAccesParametres
+PauseChronometre
+    arretChrono
     
 
 *** Keywords ***
-verifAccesParametres
+arretChrono
     sk.Click        jeu.png
     Sleep           2
 

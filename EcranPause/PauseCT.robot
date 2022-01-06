@@ -11,10 +11,19 @@ Suite Setup       ViderLogs
 Suite Teardown    Stop Remote Server
 !
 *** Variables ***
-${IMAGE_DIR}      ${CURDIR}
+${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 
 *** Test Cases ***
+AffichageMenu
+
+FloutageArrierePlan
+
+AffichageBouton
+
+SurvolBoutons
+
+QuitterPartie
 
     arretServeur
 
@@ -22,8 +31,6 @@ ${IMAGE_DIR}      ${CURDIR}
 
 annuler
     sk.click        annuler.PNG
-confirmer
-    sk.click        enregistrerPseudo.png=0.70
 arretServeur
     Stop Remote Server
 ViderLogs
