@@ -1,97 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220105 15:30:21.623" rpa="false" schemaversion="2">
-<suite id="s1" name="testPause" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\testPause.robot">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on win32)" generated="20220106 09:57:02.856" rpa="false" schemaversion="2">
+<suite id="s1" name="Classement-CT1.4" source="C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranClassement\Classement-CT1.4.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>.\\clear_logs.bat</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20220105 15:30:24.699" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20220105 15:30:24.694" endtime="20220105 15:30:24.725"/>
+<msg timestamp="20220106 09:57:06.247" level="INFO">Running command '.\clear_logs.bat 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20220106 09:57:06.242" endtime="20220106 09:57:06.281"/>
 </kw>
-<status status="PASS" starttime="20220105 15:30:24.687" endtime="20220105 15:30:24.725"/>
+<status status="PASS" starttime="20220106 09:57:06.237" endtime="20220106 09:57:06.281"/>
 </kw>
-<test id="s1-t1" name="menuDemarrage-CT3.4">
+<test id="s1-t1" name="classement-CT1.1">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<msg timestamp="20220105 15:30:24.738" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranMenuDemarrage\imgProjet\]</msg>
-<status status="PASS" starttime="20220105 15:30:24.726" endtime="20220105 15:30:24.738"/>
+<msg timestamp="20220106 09:57:06.295" level="INFO">Params: [C:\Users\Nico\Desktop\projet\3_Petits_Cochons_2021_2022\EcranClassement\imgProjet\]</msg>
+<status status="PASS" starttime="20220106 09:57:06.282" endtime="20220106 09:57:06.296"/>
 </kw>
-<status status="PASS" starttime="20220105 15:30:24.726" endtime="20220105 15:30:24.738"/>
+<status status="PASS" starttime="20220106 09:57:06.282" endtime="20220106 09:57:06.296"/>
 </kw>
 <kw name="verifAccesParametres">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220105 15:30:25.979" level="INFO">Params: [jeu.png]</msg>
-<msg timestamp="20220105 15:30:25.979" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641393025220.png'/&gt;
-[log] CLICK on L[429,1056]@S(0) (545 msec)</msg>
-<status status="PASS" starttime="20220105 15:30:24.739" endtime="20220105 15:30:25.979"/>
+<msg timestamp="20220106 09:57:07.529" level="INFO">Params: [jeu.png]</msg>
+<msg timestamp="20220106 09:57:07.529" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459426798.png'/&gt;
+[log] CLICK on L[341,1056]@S(0) (530 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:06.296" endtime="20220106 09:57:07.529"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220105 15:30:27.988" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220105 15:30:25.979" endtime="20220105 15:30:27.988"/>
+<msg timestamp="20220106 09:57:09.540" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220106 09:57:07.529" endtime="20220106 09:57:09.540"/>
 </kw>
 <kw name="Click" library="sk">
-<arg>\\defi.png</arg>
+<arg>\\retour.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220105 15:30:28.970" level="INFO">Params: [\defi.png]</msg>
-<msg timestamp="20220105 15:30:28.970" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641393028202.png'/&gt;
-[log] CLICK on L[610,444]@S(0) (560 msec)</msg>
-<status status="PASS" starttime="20220105 15:30:27.988" endtime="20220105 15:30:28.971"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220105 15:30:30.973" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220105 15:30:28.971" endtime="20220105 15:30:30.973"/>
+<msg timestamp="20220106 09:57:10.536" level="INFO">Params: [\retour.png]</msg>
+<msg timestamp="20220106 09:57:10.537" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459429793.png'/&gt;
+[log] CLICK on L[332,326]@S(0) (551 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:09.540" endtime="20220106 09:57:10.537"/>
 </kw>
 <kw name="Click" library="sk">
-<arg>\\pause.png</arg>
+<arg>\\jouer.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220105 15:30:31.923" level="INFO">Params: [\pause.png]</msg>
-<msg timestamp="20220105 15:30:31.923" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641393031177.png'/&gt;
-[log] CLICK on L[1445,168]@S(0) (537 msec)</msg>
-<status status="PASS" starttime="20220105 15:30:30.973" endtime="20220105 15:30:31.924"/>
+<msg timestamp="20220106 09:57:11.924" level="INFO">Params: [\jouer.png]</msg>
+<msg timestamp="20220106 09:57:11.924" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459431135.png'/&gt;
+[log] CLICK on L[710,437]@S(0) (533 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:10.537" endtime="20220106 09:57:11.924"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
+<kw name="Click" library="sk">
+<arg>\\progression.png</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:13.284" level="INFO">Params: [\progression.png]</msg>
+<msg timestamp="20220106 09:57:13.284" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459432525.png'/&gt;
+[log] CLICK on L[961,525]@S(0) (534 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:11.924" endtime="20220106 09:57:13.284"/>
+</kw>
+<status status="PASS" starttime="20220106 09:57:06.296" endtime="20220106 09:57:13.285"/>
+</kw>
+<kw name="jeu1">
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\boutonDefi1.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:15.004" level="INFO">Params: [\Parties1,2,3\boutonDefi1.png=0.90]</msg>
+<msg timestamp="20220106 09:57:15.004" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459434228.png'/&gt;
+[log] CLICK on L[610,443]@S(0) (528 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:13.286" endtime="20220106 09:57:15.004"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\paille1.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:16.995" level="INFO">Params: [\Parties1,2,3\paille1.png=0.90]</msg>
+<msg timestamp="20220106 09:57:16.995" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459436234.png'/&gt;
+[log] CLICK on L[1341,316]@S(0) (538 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:15.005" endtime="20220106 09:57:16.996"/>
+</kw>
+<kw name="Wheel Up" library="sk">
+<arg>3</arg>
+<doc>Wheel up
+ Move mouse to the target, and wheel up with give steps</doc>
+<msg timestamp="20220106 09:57:17.195" level="INFO">Params: [3]</msg>
+<status status="PASS" starttime="20220106 09:57:16.996" endtime="20220106 09:57:17.196"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\enplacement1.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:18.260" level="INFO">Params: [\Parties1,2,3\enplacement1.png=0.90]</msg>
+<msg timestamp="20220106 09:57:18.260" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459437475.png'/&gt;
+[log] CLICK on L[555,339]@S(0) (541 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:17.196" endtime="20220106 09:57:18.260"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\bois1.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:19.314" level="INFO">Params: [\Parties1,2,3\bois1.png=0.90]</msg>
+<msg timestamp="20220106 09:57:19.314" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459438527.png'/&gt;
+[log] CLICK on L[1458,560]@S(0) (539 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:18.260" endtime="20220106 09:57:19.314"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\enplacement2.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:20.388" level="INFO">Params: [\Parties1,2,3\enplacement2.png=0.90]</msg>
+<msg timestamp="20220106 09:57:20.388" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459439582.png'/&gt;
+[log] CLICK on L[828,467]@S(0) (540 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:19.314" endtime="20220106 09:57:20.388"/>
+</kw>
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\brique1.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:21.347" level="INFO">Params: [\Parties1,2,3\brique1.png=0.90]</msg>
+<msg timestamp="20220106 09:57:21.347" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459440606.png'/&gt;
+[log] CLICK on L[1345,788]@S(0) (539 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:20.388" endtime="20220106 09:57:21.347"/>
+</kw>
+<kw name="Wheel Up" library="sk">
 <arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220105 15:30:33.926" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220105 15:30:31.924" endtime="20220105 15:30:33.926"/>
+<doc>Wheel up
+ Move mouse to the target, and wheel up with give steps</doc>
+<msg timestamp="20220106 09:57:21.472" level="INFO">Params: [2]</msg>
+<status status="PASS" starttime="20220106 09:57:21.347" endtime="20220106 09:57:21.472"/>
 </kw>
-<kw name="Wait Until Screen Contain" library="sk">
-<arg>\\temps.png=0.90</arg>
-<arg>2</arg>
-<doc>Wait until screen contain
- Wait until image shown in screen</doc>
-<msg timestamp="20220105 15:30:34.150" level="INFO">Params: [\temps.png=0.90, 2]</msg>
-<msg timestamp="20220105 15:30:34.151" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641393034146.png'/&gt;</msg>
-<status status="PASS" starttime="20220105 15:30:33.927" endtime="20220105 15:30:34.151"/>
+<kw name="Click" library="sk">
+<arg>\\Parties1,2,3\\enplacement3.png=0.90</arg>
+<doc>Click</doc>
+<msg timestamp="20220106 09:57:22.575" level="INFO">Params: [\Parties1,2,3\enplacement3.png=0.90]</msg>
+<msg timestamp="20220106 09:57:22.575" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1641459441754.png'/&gt;
+[log] CLICK on L[432,464]@S(0) (536 msec)</msg>
+<status status="PASS" starttime="20220106 09:57:21.472" endtime="20220106 09:57:22.575"/>
 </kw>
-<status status="PASS" starttime="20220105 15:30:24.739" endtime="20220105 15:30:34.151"/>
+<status status="PASS" starttime="20220106 09:57:13.285" endtime="20220106 09:57:22.575"/>
 </kw>
-<status status="PASS" starttime="20220105 15:30:24.725" endtime="20220105 15:30:34.152"/>
+<kw name="jeu2">
+<msg timestamp="20220106 09:57:22.579" level="FAIL">No keyword with name 'jeu2' found. Did you mean:
+    Jeu 1</msg>
+<status status="FAIL" starttime="20220106 09:57:22.579" endtime="20220106 09:57:22.580"/>
+</kw>
+<kw name="jeu3">
+<status status="NOT RUN" starttime="20220106 09:57:22.583" endtime="20220106 09:57:22.583"/>
+</kw>
+<kw name="verifClassementTempsCroissant">
+<status status="NOT RUN" starttime="20220106 09:57:22.586" endtime="20220106 09:57:22.586"/>
+</kw>
+<status status="FAIL" starttime="20220106 09:57:06.281" endtime="20220106 09:57:22.586">No keyword with name 'jeu2' found. Did you mean:
+    Jeu 1</status>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220105 15:30:34.158" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220105 15:30:34.154" endtime="20220105 15:30:34.158"/>
+<msg timestamp="20220106 09:57:22.590" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220106 09:57:22.587" endtime="20220106 09:57:22.590"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="PASS" starttime="20220105 15:30:21.624" endtime="20220105 15:30:34.158"/>
+<status status="FAIL" starttime="20220106 09:57:02.872" endtime="20220106 09:57:22.590"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="testPause">testPause</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Classement-CT1.4">Classement-CT1.4</stat>
 </suite>
 </statistics>
 <errors>
