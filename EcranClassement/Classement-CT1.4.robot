@@ -33,7 +33,7 @@ verifAccesParametres
         Log to Console  ${nbLignes}
         FOR     ${nbJeu}    IN RANGE    5
             Log to Console  ${nbJeu}
-            Sleep          1+${nbJeu}
+            Sleep           ${nbJeu+1}
             
             ${plateau}=     sk.Exists  \\12Parties\\plateau1.png=0.90   1
             IF  ${plateau}
@@ -123,7 +123,7 @@ verifAccesParametres
                 Sleep            2
             END
         END
-        sk.Click  sk.CLick    \\retour.png
+        sk.Click    \\retour.png
         sk.Click    \\jouer.png
         sk.Click    \\competition.png
         sk.Click    \\starter.png
