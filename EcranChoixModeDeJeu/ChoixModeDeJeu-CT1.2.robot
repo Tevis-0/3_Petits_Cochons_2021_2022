@@ -13,14 +13,14 @@ ${IMAGE_DIR}      ${CURDIR}/imgProjet/
 
 *** Test Cases ***
 ChoixmodeDeJeu-CT1.1
-    affichageModeEntrainement
+    affichageModeProgression
 
 *** Keywords ***
-affichageModeEntrainement
+affichageModeProgression
     sk.Click        jeu.png
     Sleep           2
 
-    sk.Wait Until Screen Contain    choixModeDeJeu-CT1/boutonEntrainement.png  1
+    sk.Wait Until Screen Contain   choixModeDeJeu-CT1/progression.png   1
 
 ViderLogs
     Run     ./clear_logs_linux.sh
