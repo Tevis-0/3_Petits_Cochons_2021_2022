@@ -12,7 +12,7 @@ ${IMAGE_DIR}      ${CURDIR}/imgProjet/
 
 
 *** Test Cases ***
-ChoixmodeDeJeu-CT1.1
+ChoixmodeDeJeu-CT1.3
     affichageModeCompetition
 
 *** Keywords ***

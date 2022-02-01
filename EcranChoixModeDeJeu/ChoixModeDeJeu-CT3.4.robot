@@ -12,7 +12,7 @@ ${IMAGE_DIR}      ${CURDIR}/imgProjet/
 
 
 *** Test Cases ***
-ChoixmodeDeJeu-CT3.2
+ChoixmodeDeJeu-CT3.4
     hoverParametres
 
 *** Keywords ***
