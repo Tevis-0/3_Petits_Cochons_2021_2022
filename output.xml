@@ -1,76 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220201 10:49:54.272" rpa="false" schemaversion="2">
-<suite id="s1" name="ChoixModeDeJeu-CT2.4" source="/Donee/IUT_laval/ProjetLesTroisPetitsCochons/3petitsCochonsTestsAutomatises/3_Petits_Cochons_2021_2022/EcranChoixModeDeJeu/ChoixModeDeJeu-CT2.4.robot">
+<robot generator="Robot 4.1.3 (Python 3.8.10 on linux)" generated="20220201 11:27:33.353" rpa="false" schemaversion="2">
+<suite id="s1" name="ChoixModeDeJeu-CT3.4" source="/Donee/IUT_laval/ProjetLesTroisPetitsCochons/3petitsCochonsTestsAutomatises/3_Petits_Cochons_2021_2022/EcranChoixModeDeJeu/ChoixModeDeJeu-CT3.4.robot">
 <kw name="ViderLogs" type="SETUP">
 <kw name="Run" library="OperatingSystem">
 <arg>./clear_logs_linux.sh</arg>
 <doc>Runs the given command in the system and returns the output.</doc>
-<msg timestamp="20220201 10:49:56.911" level="INFO">Running command './clear_logs_linux.sh 2&gt;&amp;1'.</msg>
-<status status="PASS" starttime="20220201 10:49:56.909" endtime="20220201 10:49:56.914"/>
+<msg timestamp="20220201 11:27:35.994" level="INFO">Running command './clear_logs_linux.sh 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20220201 11:27:35.993" endtime="20220201 11:27:35.999"/>
 </kw>
-<status status="PASS" starttime="20220201 10:49:56.909" endtime="20220201 10:49:56.915"/>
+<status status="PASS" starttime="20220201 11:27:35.993" endtime="20220201 11:27:35.999"/>
 </kw>
-<test id="s1-t1" name="ChoixmodeDeJeu-CT1.1">
+<test id="s1-t1" name="ChoixmodeDeJeu-CT3.2">
 <kw name="Add Needed Image Path" type="SETUP">
 <kw name="Add Image Path" library="sk">
 <arg>${IMAGE_DIR}</arg>
 <doc>Add image path</doc>
-<status status="PASS" starttime="20220201 10:49:56.916" endtime="20220201 10:49:56.930"/>
+<status status="PASS" starttime="20220201 11:27:36.001" endtime="20220201 11:27:36.014"/>
 </kw>
-<status status="PASS" starttime="20220201 10:49:56.916" endtime="20220201 10:49:56.930"/>
+<status status="PASS" starttime="20220201 11:27:36.000" endtime="20220201 11:27:36.014"/>
 </kw>
-<kw name="accesParametres">
+<kw name="hoverParametres">
 <kw name="Click" library="sk">
 <arg>jeu.png</arg>
 <doc>Click</doc>
-<msg timestamp="20220201 10:49:58.249" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643708997359.png'/&gt;
-[log] CLICK on L[386,1064]@S(0) (587 msec)</msg>
-<status status="PASS" starttime="20220201 10:49:56.931" endtime="20220201 10:49:58.249"/>
+<msg timestamp="20220201 11:27:37.333" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643711256444.png'/&gt;
+[log] CLICK on L[386,1064]@S(0) (568 msec)</msg>
+<status status="PASS" starttime="20220201 11:27:36.015" endtime="20220201 11:27:37.333"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220201 10:50:00.251" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220201 10:49:58.250" endtime="20220201 10:50:00.251"/>
+<msg timestamp="20220201 11:27:39.333" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220201 11:27:37.333" endtime="20220201 11:27:39.334"/>
 </kw>
-<kw name="Click" library="sk">
+<kw name="Mouse Move" library="sk">
 <arg>choixModeDeJeu-CT1/parametres.png</arg>
-<doc>Click</doc>
-<msg timestamp="20220201 10:50:02.173" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643709000981.png'/&gt;
-[log] CLICK on L[477,847]@S(0) (561 msec)</msg>
-<status status="PASS" starttime="20220201 10:50:00.252" endtime="20220201 10:50:02.173"/>
+<doc>Mouse moveMove the mouse pointer to the target</doc>
+<msg timestamp="20220201 11:27:40.560" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643711260028.png'/&gt;</msg>
+<status status="PASS" starttime="20220201 11:27:39.334" endtime="20220201 11:27:40.560"/>
 </kw>
 <kw name="Wait Until Screen Contain" library="sk">
-<arg>choixModeDeJeu-CT2/ecranParametres.png</arg>
+<arg>choixModeDeJeu-CT3/parametresHover.png</arg>
 <arg>1</arg>
 <doc>Wait until screen contain
  Wait until image shown in screen</doc>
-<msg timestamp="20220201 10:50:03.338" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643709003236.png'/&gt;</msg>
-<status status="PASS" starttime="20220201 10:50:02.173" endtime="20220201 10:50:03.338"/>
+<msg timestamp="20220201 11:27:40.911" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643711260901.png'/&gt;</msg>
+<status status="PASS" starttime="20220201 11:27:40.560" endtime="20220201 11:27:40.911"/>
 </kw>
-<kw name="Click" library="sk">
-<arg>retourPetit.png</arg>
-<doc>Click</doc>
-<msg timestamp="20220201 10:50:04.600" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1643709003668.png'/&gt;
-[log] CLICK on L[309,157]@S(0) (558 msec)</msg>
-<status status="PASS" starttime="20220201 10:50:03.338" endtime="20220201 10:50:04.600"/>
-</kw>
-<status status="PASS" starttime="20220201 10:49:56.931" endtime="20220201 10:50:04.600"/>
+<status status="PASS" starttime="20220201 11:27:36.014" endtime="20220201 11:27:40.912"/>
 </kw>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220201 10:50:04.603" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220201 10:50:04.601" endtime="20220201 10:50:04.603"/>
+<msg timestamp="20220201 11:27:40.916" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220201 11:27:40.912" endtime="20220201 11:27:40.916"/>
 </kw>
-<status status="PASS" starttime="20220201 10:49:56.915" endtime="20220201 10:50:04.603"/>
+<status status="PASS" starttime="20220201 11:27:36.000" endtime="20220201 11:27:40.916"/>
 </test>
 <kw name="Stop Remote Server" library="sk" type="TEARDOWN">
 <doc>Stops the remote server.</doc>
-<msg timestamp="20220201 10:50:04.607" level="INFO">Robot Framework remote server stopping</msg>
-<status status="PASS" starttime="20220201 10:50:04.604" endtime="20220201 10:50:04.607"/>
+<msg timestamp="20220201 11:27:40.919" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220201 11:27:40.917" endtime="20220201 11:27:40.919"/>
 </kw>
 <doc>Sikuli Library Demo</doc>
-<status status="PASS" starttime="20220201 10:49:54.272" endtime="20220201 10:50:04.607"/>
+<status status="PASS" starttime="20220201 11:27:33.354" endtime="20220201 11:27:40.919"/>
 </suite>
 <statistics>
 <total>
@@ -79,7 +71,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="ChoixModeDeJeu-CT2.4">ChoixModeDeJeu-CT2.4</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="ChoixModeDeJeu-CT3.4">ChoixModeDeJeu-CT3.4</stat>
 </suite>
 </statistics>
 <errors>
