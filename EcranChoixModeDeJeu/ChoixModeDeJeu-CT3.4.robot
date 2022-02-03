@@ -2,6 +2,7 @@
 Documentation     Sikuli Library Demo
 Test Setup        Add Needed Image Path
 Test Teardown     Stop Remote Server
+Library           DebugLibrary
 Library           SikuliLibrary     WITH NAME       sk
 Library           OperatingSystem
 Suite Setup       ViderLogs
