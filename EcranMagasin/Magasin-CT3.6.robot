@@ -27,7 +27,7 @@ verifPaiment
     sk.Wait Until Screen Contain    \\Magasin-CT3\\jeton0.png      2
 
 ViderLogs
-    Run     .\\clear_logs.bat
+    Run     .\\clear_logs_linux.sh
 
 Add Needed Image Path
     Add Image Path      ${IMAGE_DIR}

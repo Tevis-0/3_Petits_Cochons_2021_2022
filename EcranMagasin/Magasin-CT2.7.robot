@@ -20,15 +20,18 @@ presentationCosmetiquesCochons
     sk.Click        jeu.png
     Sleep           2
 
+    sk.Click       \\cochon.png
+
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom1.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom2.png=0.9     2
-    sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom3.png=0.31     2
+    sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom3.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom4.png=0.27     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\cochonZoom5.png=0.51     2
 
+    sk.Click       \\retour.png
 presentationCosmetiquesLoups
 
-    sk.Click       \\banqueImage\\loup1.png
+    sk.Click       \\loup.png
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom1.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom2.png=0.9     2
@@ -36,15 +39,17 @@ presentationCosmetiquesLoups
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom4.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\loupZoom5.png=0.9     2
 
+    sk.Click       \\retour.png
 presentationCosmetiquesTerrins
 
-    sk.Click        \\Magasin-CT2\\themes.png
+    sk.Click        \\terrin.png
 
     sk.Wait Until Screen Contain    \\Magasin-CT2\\pailleZoom1.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\pailleZoom2.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\pailleZoom3.png=0.9     2
     sk.Wait Until Screen Contain    \\Magasin-CT2\\pailleZoom4.png=0.9     2
 
+    sk.Click       \\retour.png
 ViderLogs
     Run     .\\clear_logs.bat
 
