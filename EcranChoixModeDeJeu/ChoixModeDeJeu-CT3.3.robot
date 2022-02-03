@@ -8,7 +8,7 @@ Suite Setup       ViderLogs
 Suite Teardown    Stop Remote Server
 
 *** Variables ***
-${IMAGE_DIR}      ${CURDIR}/imgProjet/
+${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 
 *** Test Cases ***
@@ -20,11 +20,11 @@ hoverCompetition
     sk.Click        jeu.png
     Sleep           2
 
-    sk. Mouse Move   choixModeDeJeu-CT1/competition.png
-    sk.Wait Until Screen Contain    choixModeDeJeu-CT3/competitionHover.png  1
+    sk. Mouse Move   choixModeDeJeu-CT1\\competition.png
+    sk.Wait Until Screen Contain    choixModeDeJeu-CT3\\competitionHover.png  1
 
 ViderLogs
-    Run     ./clear_logs_linux.sh
+    Run     .\\clear_logs.bat
 
 Add Needed Image Path
     Add Image Path      ${IMAGE_DIR}
