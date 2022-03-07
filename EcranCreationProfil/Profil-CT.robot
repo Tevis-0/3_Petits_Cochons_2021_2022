@@ -18,7 +18,7 @@ ${ligne}    ${2}
 ${colonne}  ${4}
 
 *** Test Cases ***
-Profil-CT1
+Profil-CT1 
     ouvrirMenu
     ecrirePseudo
     annuler

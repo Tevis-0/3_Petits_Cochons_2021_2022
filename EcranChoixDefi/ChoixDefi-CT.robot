@@ -18,38 +18,56 @@ ${coordsy}  ${527}
 ${difficultes}  ${3}
 ${defis}        ${6}
 
-
+# Ce Script lance tout les scripts robotframework de l'ecran choix defi.
 *** Test Cases ***
 
-prerequisDuChoixDuDefi
+prerequisDuChoixDuDefi 
     creationProfil
 
+# lancement du choix defi CT1.1 qui correspond a : 
+# Vérifier que le système affiche le titre de l'écran actuel.
 ChoixDefi-CT1.1
     verificationTitre
 
+# lancement du choix defi CT1.2 qui correspond a : 
+# Vérifier que le système affiche le psedo de l'écran actuel.
 ChoixDefi-CT1.2
     verificationPsedo
 
+# lancement du choix defi CT1.3 qui correspond a : 
+# Vérifier que le système affiche l'experience de l'écran actuel.
 ChoixDefi-CT1.3
     verificationXP
 
+# lancement du choix defi CT1.4 qui correspond a : 
+# Vérifier que le système affiche le niveau des differends defis.
 ChoixDefi-CT1.4
     verificationAffichageNiveaux
     
+# lancement du choix defi CT1.5 qui correspond a : 
+# Vérifier que l'utilisateur a un retour visuel quand il passe son pointeur sur le bouton d'un défi.
 ChoixDefi-CT1.5
     verificationDefi
 
+# lancement du choix defi CT1.6 qui correspond a :
+# Vérifier que le système affiche le bouton retour.
 ChoixDefi-CT1.6
     verificationRetour
 
+# lancement du choix defi CT1.7 qui correspond a :
+# Vérifier que le système modifie l'experience du profil connecté.
 ChoixDefi-CT1.7
     recuperationXP1
     jeu
     recuperationXP2 
 
+# lancement du choix defi CT1.8 qui correspond a :
+# Vérifier que le système informe l'utilisateur du reste d'expérience à acquérir pour passer de niveau.
 ChoixDefi-CT1.8
     verificationXPRestante
 
+# lancement du choix defi CT2.1 qui correspond a :
+# Vérifier que le système permet a l'utilisateur d'acceder a un plateau de jeu starter.
 ChoixDefi-CT2.1
     verificationDefisRealisables1
     jeuBreak
@@ -74,7 +92,7 @@ ChoixDefi-CT2.3
 
 *** Keywords ***
 
-viderLogs
+viderLogs 
     run     .\\clear_logs.bat
 
 creationProfil
