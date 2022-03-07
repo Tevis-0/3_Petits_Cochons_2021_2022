@@ -16,8 +16,9 @@ ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\
 
 *** Test Cases ***
 AffichageMenu
-
+    ouvrirMenu
 FloutageArrierePlan
+    ouvrirMenu
 
 AffichageBouton
 
@@ -28,9 +29,13 @@ QuitterPartie
     arretServeur
 
 *** Keywords ***
-
+ouvrirMenu
+    sk.click        pause.png
+    sk.Wait Until Screen Contain    menu.png
 annuler
     sk.click        annuler.PNG
+verifFlou
+    sk.Wait Until Screen Contain    flou.png
 arretServeur
     Stop Remote Server
 ViderLogs
