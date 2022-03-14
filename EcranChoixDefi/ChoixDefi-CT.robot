@@ -195,6 +195,7 @@ verificationBoutonsBloque
 #on crée deux boucles une pour la verticale l'autre pour l'horizontal avec les variables de 
 #difficultés initalisée au debut de ce fichier ayant pour valeur 3
 #defi initalisée au debut de ce fichier ayant pour valeur 6
+#afin de parcourir l'ensemble des boutons de l'ecran choix defi qui sont bloqués.
     FOR     ${difficultes}  IN RANGE    3
         FOR     ${defis}    IN RANGE    6
             #ici on clique sur la region avec les coordonées donées dans le tableau 
