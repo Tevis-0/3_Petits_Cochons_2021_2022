@@ -82,16 +82,20 @@ ChoixDefi-CT2.1
     verificationDefisRealisables6
     jeuBreak
     
-
+# lancement du choix defi CT2.2 qui correspond a :
+# Vérifier que le système ne permet pas a l'utilisateur d'acceder a un plateau de jeu grisé.
 ChoixDefi-CT2.2
     verificationBoutonsBloque
 
+# lancement du choix defi CT2.1 qui correspond a :
+# Vérifier que le système permet a l'utilisateur de retourner a l'ecran de precedent.
 ChoixDefi-CT2.3
     verificationCliqueRetour
+    #cet ligne ci-dessous permet d'arreter le serveur sikuli afin d'éviter qu'il tourne en arriere plan 
     arretServeur
 
 *** Keywords ***
-
+#permet de vider les logs d'erreurs precedentes le .bat pour windows et le .sh pour linux
 viderLogs 
     run     .\\clear_logs.bat
 
@@ -126,6 +130,7 @@ verificationRetour
     sk.Mouse Move               \\ChoixDefi-CT1\\boutonRetour.png
     Screen Should Contain       \\ChoixDefi-CT1\\boutonRetourHover.png
 
+#recupere l'XP du profil connecté dans une variable nomée XP1
 recuperationXP1
     ${XP1}           Get Text         \\ChoixDefi-CT1\\XP0.png
 
@@ -143,8 +148,9 @@ jeu
 recuperationXP2
 
     Sleep            3
+    #recupere l'experience apres avoir joué 
     ${XP2}           Get Text         \\ChoixDefi-CT1\\XP1.png
-    
+    #compare les deux variables d'experience
     IF  "${XP2}" > "${XP1}"
     Log     l'XP s'incrémente correctement
     END
@@ -183,21 +189,24 @@ verificationDefisRealisables6
     sk.Click        \\ChoixDefi-CT2\\StarterDefi6.png
 
 verificationBoutonsBloque
-
+    #Tableau comprenant des coordonées sur un ecran HD ces points sont donc des coordonées d'initalisation. 
     ${reg}          Create List     ${571}  ${527}  ${83}   ${88}
 
-
+#on crée deux boucles une pour la verticale l'autre pour l'horizontal avec les variables de 
+#difficultés initalisée au debut de ce fichier ayant pour valeur 3
+#defi initalisée au debut de ce fichier ayant pour valeur 6
     FOR     ${difficultes}  IN RANGE    3
         FOR     ${defis}    IN RANGE    6
-
+            #ici on clique sur la region avec les coordonées donées dans le tableau 
+            #et on verifie que l'ecran ne change pas.
             sk.Click Region  ${reg}
             sk.Wait Until Screen Contain    ecranJeu.png    2
-
+            #ici on rajoute le nombre de pixels neccesaire et calculés au prealable pour etre sur le bouton differend suivant l'horizontal.
             ${buff}=  Evaluate    ${reg}[0]+${120}
             Set List Value   ${reg}     0   ${buff}     
 
         END
-
+        #ici on rajoute le nombre de pixels neccesaire et calculés au prealable pour etre sur le bouton differend suivant la verticale.
         ${buffy}=     Evaluate    ${reg}[1]+${115}
         Set List Value   ${reg}     1   ${buffy}
         Set List Value   ${reg}     0   ${coordsx}
