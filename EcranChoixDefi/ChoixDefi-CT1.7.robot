@@ -7,7 +7,7 @@ Library           ImageHorizonLibrary
 
 *** Variables ***
 ${IMAGE_DIR}      ${CURDIR}\\imgProjet\\ChoixDefi-CT1
-${XP1} 
+${XP1}
 ${XP2}
 
 *** Test Cases ***
